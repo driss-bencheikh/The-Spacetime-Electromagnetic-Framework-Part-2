@@ -4,6 +4,10 @@ title: "The Spacetime–Electromagnetic Framework, Part II. Field Dynamics, Clif
 type: software
 version: "1.0.0"
 date-released: "2026-11-24"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24517088"
+    description: "DOI of version 1.0.0"
 license:
   - CC-BY-4.0
   - MIT
@@ -46,5 +50,6 @@ preferred-citation:
   status: preprint
   version: "1.0.0"
   year: 2026
+  doi: "10.5281/zenodo.24517088"
   notes: "Preprint."
   url: "https://github.com/driss-bencheikh/The-Spacetime-Electromagnetic-Framework-Part-2"

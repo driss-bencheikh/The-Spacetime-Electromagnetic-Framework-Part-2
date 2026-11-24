@@ -4,7 +4,7 @@
 
 **Version 1.0.0 — Preprint** (24 November 2026).
 
-**DOI:** assigned at deposit.
+**DOI of version 1.0.0:** [10.5281/zenodo.24517088](https://doi.org/10.5281/zenodo.24517088) (Zenodo record).
 
 **Repository:** https://github.com/driss-bencheikh/The-Spacetime-Electromagnetic-Framework-Part-2
 
@@ -95,4 +95,5 @@ The manuscript, text, results and documentation are released under CC BY 4.0, th
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff).
+Driss Bencheikh, *The Spacetime–Electromagnetic Framework, Part II. Field Dynamics, Clifford Transport and a One-Family Pati–Salam Construction*, version 1.0.0, preprint, 2026, doi:10.5281/zenodo.24517088.
+Machine-readable metadata: [`CITATION.cff`](CITATION.cff).

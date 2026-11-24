@@ -11,4 +11,4 @@ Notes.
 
 - No third-party code or text is bundled in this archive; the cited literature is referenced, not reproduced. The Python packages the
   scripts import (NumPy, SciPy, SymPy) and the TeX Live packages used to build the PDF are installed separately under their own licences.
-- Attribution for CC BY 4.0: *Driss Bencheikh, “The Spacetime–Electromagnetic Framework, Part II. Field Dynamics, Clifford Transport and a One-Family Pati–Salam Construction”, version 1.0.0 (preprint), 2026*, with an indication of any changes.
+- Attribution for CC BY 4.0: *Driss Bencheikh, “The Spacetime–Electromagnetic Framework, Part II. Field Dynamics, Clifford Transport and a One-Family Pati–Salam Construction”, version 1.0.0 (preprint), 2026, doi:10.5281/zenodo.24517088*, with an indication of any changes.
