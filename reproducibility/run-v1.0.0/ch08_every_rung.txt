@@ -1,0 +1,50 @@
+PASS er-1a: n=1: the 6n tower generators anticommute, square to eta, temporal ones symmetric, spatial ones antisymmetric
+PASS er-1b: n=1: Omega^2 = -1, Omega antisymmetric, commutes with the Lorentz bivectors and with the 2 internal positive generators
+PASS er-1c: n=1: the 3 = 3n(3n-1)/2 elements XY/2, X Omega/2 are antisymmetric and commute with the interior Lorentz algebra (they keep the kinetic forms)
+PASS er-1d: n=1: W0 (product of all internal generators) is an antisymmetric complex structure anticommuting with P; V_0 = Omega W0, V_X = X W0 are 3 anticommuting symmetric involutions
+PASS er-1e: n=1: V_X V_Y = XY and V_X V_0 = -X Omega: the hypothesis's algebra is the rotation algebra so(3) of the V's (Clifford relations give the commutators)
+PASS er-1f: n=1: V_0 is the total chirality Gamma up to sign: the clock axis is carried by Gamma
+PASS er-1g: n=1: U = exp(-pi W0/4) is orthogonal, commutes with Lorentz, Gamma and Omega, and U X U^-1 = X W0: the algebra is conjugate to the rotation algebra of (Gamma, P)
+PASS er-1h: n=1: the Casimir is the scalar -3n(3n-1)/8 = -0.75: every vector lies in a spinor representation of so(3)
+PASS er-1i: n=1: the unreplaced clock rotations X E1 do not commute with the boosts
+PASS er-1j: n=1: at the vacuum (the chirality projector) the 1 generators XY are unbroken and the 2 generators X Omega are broken: so(3) -> so(2)
+PASS er-1r: n=1: G_n = exp(-pi W0/4) exp(pi Gamma E1/4) is orthogonal, fixes every XY, sends X E1 to +-X Omega and the clock E1 to +-Gamma: the rotation algebra of the 3n temporal directions and the hypothesis's algebra are conjugate
+PASS er-1s: n=1: 1 = 1 + (3n-2)(3n-3)/2 generators keep the Dirac mass form T = E1 E2 E3 of the first constituent (Y^T T + T Y = 0): J, and the rotations of the 3n-2 directions outside the surplus pair (clock axis included): so(2) + so(1)
+PASS er-1k: n=1: the algebra is the Pauli-Guersey algebra span{J, e2 Omega, e3 Omega}/2
+PASS er-1l: n=1: 2 left-handed Weyl fields, one doublet
+PASS er-2a: n=2: the 6n tower generators anticommute, square to eta, temporal ones symmetric, spatial ones antisymmetric
+PASS er-2b: n=2: Omega^2 = -1, Omega antisymmetric, commutes with the Lorentz bivectors and with the 5 internal positive generators
+PASS er-2c: n=2: the 15 = 3n(3n-1)/2 elements XY/2, X Omega/2 are antisymmetric and commute with the interior Lorentz algebra (they keep the kinetic forms)
+PASS er-2d: n=2: W0 (product of all internal generators) is an antisymmetric complex structure anticommuting with P; V_0 = Omega W0, V_X = X W0 are 6 anticommuting symmetric involutions
+PASS er-2e: n=2: V_X V_Y = XY and V_X V_0 = -X Omega: the hypothesis's algebra is the rotation algebra so(6) of the V's (Clifford relations give the commutators)
+PASS er-2f: n=2: V_0 is the total chirality Gamma up to sign: the clock axis is carried by Gamma
+PASS er-2g: n=2: U = exp(-pi W0/4) is orthogonal, commutes with Lorentz, Gamma and Omega, and U X U^-1 = X W0: the algebra is conjugate to the rotation algebra of (Gamma, P)
+PASS er-2h: n=2: the Casimir is the scalar -3n(3n-1)/8 = -3.75: every vector lies in a spinor representation of so(6)
+PASS er-2i: n=2: the unreplaced clock rotations X E1 do not commute with the boosts
+PASS er-2j: n=2: at the vacuum (the chirality projector) the 10 generators XY are unbroken and the 5 generators X Omega are broken: so(6) -> so(5)
+PASS er-2r: n=2: G_n = exp(-pi W0/4) exp(pi Gamma E1/4) is orthogonal, fixes every XY, sends X E1 to +-X Omega and the clock E1 to +-Gamma: the rotation algebra of the 3n temporal directions and the hypothesis's algebra are conjugate
+PASS er-2s: n=2: 7 = 1 + (3n-2)(3n-3)/2 generators keep the Dirac mass form T = E1 E2 E3 of the first constituent (Y^T T + T Y = 0): J, and the rotations of the 3n-2 directions outside the surplus pair (clock axis included): so(2) + so(4)
+PASS er-2k: n=2: omega_6 = V_0...V_5 is a complex structure commuting with so(6) and with Lorentz (it separates 4 from 4bar)
+PASS er-2l: n=2: chi = omega_6 Omega is a symmetric involution of trace 0, equal to +-I5 = +-abcde: it correlates the su(4) type with the Lorentz chirality
+PASS er-2m: n=2: Tr(Omega omega_6) = 0, so among the 16 left-handed Weyl fields 8 are in the 4 and 8 in the 4bar: 2 x 4 + 2 x 4bar
+PASS er-2n: n=2: (1+-I5)/2 times the rotations of the spatial triple of constituent 2, and (1+-I5)/2 Omega, are antisymmetric and commute with so(6) and with Lorentz
+PASS er-2o: n=2: they form su(2) + su(2) + u(1) + u(1), the two su(2) commuting
+PASS er-2p: n=2 (numerical, relative tolerance 1e-7): the commutant of so(6) + Lorentz in M_64(R) has dimension 16 = 16, its antisymmetric part dimension 8 = 8 = dim u(2)+u(2)  [17s]
+PASS er-2q: n=2 (numerical, rounded to thirds): Q = T3L + T3R + (B-L)/2 has on the 16 left-handed fields the charges 2/3, -1/3 (x3 each), 0, -1 and -2/3, 1/3 (x3 each), 0, 1: one family (4,2,1)+(4bar,1,2)
+PASS er-3a: n=3: the 6n tower generators anticommute, square to eta, temporal ones symmetric, spatial ones antisymmetric
+PASS er-3b: n=3: Omega^2 = -1, Omega antisymmetric, commutes with the Lorentz bivectors and with the 8 internal positive generators
+PASS er-3c: n=3: the 36 = 3n(3n-1)/2 elements XY/2, X Omega/2 are antisymmetric and commute with the interior Lorentz algebra (they keep the kinetic forms)
+PASS er-3d: n=3: W0 (product of all internal generators) is an antisymmetric complex structure anticommuting with P; V_0 = Omega W0, V_X = X W0 are 9 anticommuting symmetric involutions
+PASS er-3e: n=3: V_X V_Y = XY and V_X V_0 = -X Omega: the hypothesis's algebra is the rotation algebra so(9) of the V's (Clifford relations give the commutators)
+PASS er-3f: n=3: V_0 is the total chirality Gamma up to sign: the clock axis is carried by Gamma
+PASS er-3g: n=3: U = exp(-pi W0/4) is orthogonal, commutes with Lorentz, Gamma and Omega, and U X U^-1 = X W0: the algebra is conjugate to the rotation algebra of (Gamma, P)
+PASS er-3h: n=3: the Casimir is the scalar -3n(3n-1)/8 = -9.0: every vector lies in a spinor representation of so(9)
+PASS er-3i: n=3: the unreplaced clock rotations X E1 do not commute with the boosts
+PASS er-3j: n=3: at the vacuum (the chirality projector) the 28 generators XY are unbroken and the 8 generators X Omega are broken: so(9) -> so(8)
+PASS er-3r: n=3: G_n = exp(-pi W0/4) exp(pi Gamma E1/4) is orthogonal, fixes every XY, sends X E1 to +-X Omega and the clock E1 to +-Gamma: the rotation algebra of the 3n temporal directions and the hypothesis's algebra are conjugate
+PASS er-3s: n=3: 22 = 1 + (3n-2)(3n-3)/2 generators keep the Dirac mass form T = E1 E2 E3 of the first constituent (Y^T T + T Y = 0): J, and the rotations of the 3n-2 directions outside the surplus pair (clock axis included): so(2) + so(7)
+PASS er-3k: n=3: 128 left-handed Weyl fields = 8 x 16, with 16 the spinor of so(9)
+PASS er-3l: n=3: six commuting complex structures with traceless products: each joint eigenspace has dimension 512/64 = 8, the multiplicity of (16; Weyl)
+PASS er-3m: n=3: the six bivectors of the weak directions {7,13,14,15} of Part I lie in the algebra so(9)
+PASS er-3n: n=3: the fifteen colour bivectors of Part I (spatial directions of constituents 2 and 3) commute with so(9) and with Lorentz: they lie in its commutant
+# time 25 s

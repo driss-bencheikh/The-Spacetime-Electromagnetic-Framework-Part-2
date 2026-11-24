@@ -1,0 +1,223 @@
+\chapter{The shift as a curl}
+\label{ch:curl}
+
+The interior dynamics of \PI{Chapter~4} is a curve $X(\tau)$ in $\R^{3,3}$ driven by the operators $\alpha_\pm=\partial_\tau\pm\kappa G$;
+its orbits without momentum obey $\dot X=-\kappa GX$. In the field reading, \PI{Prop.~3.10} writes the source-free evolution equations of
+Maxwell's theory as $\partial_tX=-G\,\curl X$, to which the two Gauss constraints are added. The two first-order laws have the same form,
+and they coincide on every field with $\curl X=\kappa X$ once $\tau$ and $t$ are identified. In this chapter we replace the constant shift
+by the differential one,
+\begin{equation}
+\label{eq:lift}
+\kappa G\ \longmapsto\ G\circ\curl,\qquad \alpha_\pm\ \longmapsto\ A_\pm:=\partial_t\pm G\,\curl ,
+\end{equation}
+and read \PI{Chapter~4} on fields $X(t,\mathbf x)=(\bB;\bE)$. The replacement is a choice, suggested by the coincidence on curl
+eigenfields; on a general field $G\circ\curl$ acts with different eigenvalues on different modes. What results is a dictionary between the
+two chapters of Part~I: the momentum of \PI{Prop.~4.1} becomes the pair of spatial currents, the force law becomes a mirror of Maxwell's
+equations, the split-form Lagrangian completed by the charge densities agrees with the free kinetic term up to a divergence, and the rate
+$\kappa$ becomes an eigenvalue of the curl. Its limits are stated in \cref{sec:limits2}.
+
+\section{The operator}
+
+\begin{lemma}
+\label{lem:selfadj}
+$G$ commutes with the curl and is $\eta$-self-adjoint, and the curl is symmetric for the integral over space on smooth fields of compact
+support. Hence $G\circ\curl$ is symmetric for $\int\eta(\cdot,\cdot)\,d^3x$ on such fields, as $\kappa G$ is for $\eta$. Its square is
+$(G\,\curl)^2=-\curl\curl$, which is $-|\mathbf k|^2$ on transverse plane waves and $0$ on gradient fields.
+\end{lemma}
+
+\begin{proof}
+$G$ acts on the two slots of $(\bB;\bE)$ and the curl on the dependence on $\mathbf x$, so they commute; $G$ is $\eta$-self-adjoint by
+\PI{Thm~4.8}, and $\int\mathbf a\cdot\curl\mathbf b=\int\curl\mathbf a\cdot\mathbf b$ for fields of compact support. Then
+$\int\eta(X,G\,\curl Y)=\int\eta(G\,\curl X,Y)$ and $(G\,\curl)^2=G^2\curl\curl=-\curl\curl$. Only this formal symmetry is used below; a
+self-adjoint realisation would require a choice of domain, which the arguments do not need.
+\end{proof}
+
+The steps of \PI{Sections~4.2 and~4.3} that use only the self-adjointness of $G$ therefore carry over with an integral over space. The one
+property of $\kappa G$ that $G\circ\curl$ lacks is $(\kappa G)^2=-\kappa^2$: the identity $G^2=-\id$ still holds, but
+$(G\,\curl)^2=-\curl\curl$ depends on the mode, and the single frequency of \PI{Thm~4.8} becomes a continuum.
+
+\section{Momentum, force law and Lagrangian}
+\label{sec:results2}
+
+\begin{proposition}[The momentum is the pair of spatial currents]
+\label{prop:momentum}
+With the sources of \cref{eq:sources}, $A_+X=-(\bk;\bj)$. The momentum $\pi=mA_+X$ of \PI{Prop.~4.1} is therefore the six-component
+object $-m(\bk;\bj)$, the magnetic current in the $\bB$ slot and the electric current in the $\bE$ slot. The evolution equations of
+Maxwell's theory with sources are the definition of $\pi$, and $\pi=0$ gives the source-free evolution equations. The charge densities are
+not components of $\pi$: the static field $\bB=0$, $\bE=\nabla\phi$ has $\pi=0$ and $\rho_e=\Delta\phi$. The source-free Maxwell sector is
+$\pi=0$ together with the two Gauss constraints $\rho_e=\rho_m=0$, and the evolution preserves the constraints, since both charges are
+conserved identically, $\partial_t\rho_e+\dive\bj=0$ and $\partial_t\rho_m+\dive\bk=0$, the currents being derived from $X$.
+\checks{sc-1, sc-7, sc-26}
+\end{proposition}
+
+\begin{theorem}[The force law is a mirror equation]
+\label{thm:force}
+The Euler--Lagrange expression of the split form $\tfrac m2\eta(A_+X,A_+X)$ is $-m\,\eta\,A_-A_+X$, with
+$A_-A_+=\partial_t^2+\curl\curl=(\partial_t^2-\Delta)+\nabla\,\dive$. The equation of motion is $A_-\pi=0$, that is,
+\[
+\partial_t\bk=-\curl\bj,\qquad \partial_t\bj=\curl\bk .
+\]
+For $\mathcal K=\bk+i\bj$ this reads $\partial_t\mathcal K=+i\,\curl\mathcal K$, while Maxwell's equation is $\partial_tz=-i\,\curl z$ for
+$z=\bB+i\bE$. Gradient fields form the kernel of $G\,\curl$ and solve $\ddot X=0$, the linear drift of \PI{Prop.~4.9}.
+\checks{sc-2, sc-3}
+\end{theorem}
+
+The momentum $\pi$ misses the two charge densities, and adding them restores the full Lorentz-invariant structure. In the octant
+coordinates of \PI{Thm~3.53} they occupy the two poles that $\pi$ leaves empty.
+
+\begin{theorem}[The completed Lagrangian]
+\label{thm:completed}
+Adding the two charge densities to the split form gives
+\begin{equation}
+\label{eq:Lcov}
+L_{\rm cov}=\tfrac m2\bigl[(\rho_e^2-|\bj|^2)-(\rho_m^2-|\bk|^2)\bigr]=\tfrac m2\bigl(J_e\!\cdot\!J_e-J_m\!\cdot\!J_m\bigr)
+=\tfrac m2\,\Pi^{\top}(-1)^N\Pi,\qquad \Pi=(\partial_t-D)\,\Phi_{\rm oct}(X),
+\end{equation}
+where $\Phi_{\rm oct}$, $D$ and the Fock parity $(-1)^N$ are those of \PI{Thm~3.53}, and
+$\Pi=-(\rho_e|\mathrm{vac}\rangle+\bj\cdot f+\bk\cdot g+\rho_m|\mathrm{full}\rangle)$ is the eight-component object that carries both
+four-currents: the charge densities on the two poles and the spatial currents on the six field octants. Moreover:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item the Euler--Lagrange expression of $L_{\rm cov}$ is $-m\,\eta\,\Box X$ on all six components, that of the free kinetic term
+$\tfrac m2\eta(\partial_\mu X,\partial^\mu X)$, with which $L_{\rm cov}$ agrees up to a divergence;
+\item the equation of motion is $(\partial_t+D)\Pi=0$, in components $\partial_t\bj+\nabla\rho_e=\curl\bk$ and
+$\partial_t\bk+\nabla\rho_m=-\curl\bj$, together with the two continuity equations; the squared Euclidean norm of $\Pi$ obeys a local
+conservation law, so the Maxwell sector $\Pi=0$, currents and charges together, is preserved;
+\item the identity $(\partial_t+D)(\partial_t-D)=\partial_t^2-\Delta$ of \PI{Thm~3.53}(ii) is the field form of the factorisation of
+\PI{Thm~4.2}.
+\end{enumerate}
+\checks{sc-5, sc-6, sc-8, sc-20, sc-21, sc-22, sc-23, sc-27}
+\end{theorem}
+
+In the field reading the shift is therefore not an added coupling. The free Lorentz-invariant kinetic term of an $\R^{3,3}$-valued field
+on Minkowski space is the shifted split form together with its charges, up to a divergence, and no $\kappa$ appears in it; the divergence
+is the flat-space Weitzenb\"ock identity. On the octants the binding root acts as minus the temporal volume,
+$T\,\Phi_{\rm oct}(X)=-\Phi_{\rm oct}(GX)$ with $T=e_1e_2e_3$ (\PI{Prop.~3.45}); this element returns in \cref{ch:hyp}, where Clifford
+transport sends $T$ to the element $-\Omega$ that acts on the two-form $F_X$ as $G$.
+\checks{sc-24}
+
+\section{Energy and the other forms}
+
+\begin{proposition}[Energy and virial]
+\label{prop:energy}
+The energy density of the split form is $\tfrac m2[\eta(\partial_tX,\partial_tX)+\eta(\curl X,\curl X)]=\tfrac m2\,\eta(A_+X,A_-X)$. It
+vanishes on Maxwell fields and on mirror fields. For a Maxwell part $a(\mathbf x)e^{-i\lambda t}$ plus a mirror part
+$b(\mathbf x)e^{+i\lambda t}$, with $\curl a=\lambda a$ and $\curl b=\lambda b$, it equals $2m\lambda^2\Re(a\cdot b)$, which is constant in
+time: this is \PI{Prop.~4.11}(iii) with $c_-=a$ and $c_+=b$. It is not constant in space in general (\cref{ex:energy}). The density is a
+function of the pair $(X,\pi)$ and not of $\pi$ alone: adding a Maxwell solution to $X$ leaves $\pi$ unchanged and changes the
+interference term. It is indefinite: for each nonzero wave vector the transverse sector contains oscillators of both energy signs, with
+the frequency $|\mathbf q|$, while the longitudinal sector and the whole zero mode have the dynamics of a free particle, so the unrestricted
+split Hamiltonian is unbounded below; this is the field form of \PI{Cor.~4.15}. The virial identity of \PI{Thm~4.7} becomes
+$\partial_t\eta(X,\pi)=\eta(\pi,\pi)/m+\eta(X,A_-\pi)+\text{divergence}$, with $\eta(X,\pi)/m=\bE\cdot\bj-\bB\cdot\bk$, in which
+$\bE\cdot\bj$ is the electric Joule power density.
+\checks{sc-10, sc-11, sc-14, sc-30}
+\end{proposition}
+
+\begin{proof}[Proof of the energy formula]
+With $z=\bB+i\bE$ one has $\eta(X,X)=\Re(z\cdot z)$. For $z=a\,e^{-i\lambda t}+b\,e^{i\lambda t}$,
+$(\partial_tz)\cdot(\partial_tz)=-\lambda^2a\cdot a\,e^{-2i\lambda t}+2\lambda^2a\cdot b-\lambda^2b\cdot b\,e^{2i\lambda t}$ and
+$(\curl z)\cdot(\curl z)=\lambda^2a\cdot a\,e^{-2i\lambda t}+2\lambda^2a\cdot b+\lambda^2b\cdot b\,e^{2i\lambda t}$. The oscillating terms
+cancel in the sum, which is $4\lambda^2a\cdot b$.
+\end{proof}
+
+\begin{example}
+\label{ex:energy}
+The fields $a=(\cos z,\sin z,0)$ and $b=(0,\cos x,\sin x)$ satisfy $\curl a=-a$ and $\curl b=-b$. The field $a\,e^{it}+b\,e^{-it}$, a
+Maxwell part and a mirror part with $\lambda=-1$, has the energy density $2m\sin z\cos x$: constant in time and not in space. For the
+circularly polarised plane waves of \chk{sc-14} the product $a\cdot b$ is constant, and so is the density.
+\checks{sc-25}
+\end{example}
+
+\begin{proposition}[The other forms]
+\label{prop:forms}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item Positive form. $\tfrac m2|A_+X|^2$ has the equation of motion $A_+^2X=0$. The current $A_+X$ then obeys the source-free evolution
+equations, and it is a source-free Maxwell field when its own divergences vanish; it drives the field at resonance, as in
+$z=(1+ct)(1,i,0)e^{ik(x_3-t)}$. This is \PI{Thm~4.5} in field form.
+\item The second bilinear form of Part~I. $\tfrac m2\eta(A_+X,GA_+X)=-m\,\bj\cdot\bk$ has the same equations of motion as the split
+form (\PI{Thm~4.26}). By itself it depends on the frame; its four-current completion $m\,J_e\!\cdot\!J_m=m(\rho_e\rho_m-\bj\cdot\bk)$
+is Lorentz invariant.
+\item Cross term. $\eta(\partial_tX,G\,\curl X)$ has vanishing Euler--Lagrange expression (\PI{Thm~4.12}).
+\item External current. For a prescribed conserved current $J_x$, $L=\tfrac m2[(J_e-J_x)^2-J_m^2]$ gives $\Box\bB=-\curl\bj_x$ and
+$\Box\bE=-(\partial_t\bj_x+\nabla\rho_x)$. These equations are the first-order system $(\partial_t+D)R=0$ for the residual
+$R=(\rho_e-\rho_x,\ \bj-\bj_x,\ \bk,\ \rho_m)$, whose squared Euclidean norm obeys a local conservation law. Maxwell's equations with the
+source $J_x$, Gauss's laws included, are the sector $R=0$, which is preserved in time. The vanishing of the six spatial components of $R$
+alone is not preserved: with $J_x=0$, the data $\bB=0$, $\bE=\nabla\phi$, $\partial_tX=0$ have $\bj=\bk=0$ at $t=0$, and then
+$\partial_t\bj=-\nabla\Delta\phi$.
+\end{enumerate}
+\checks{sc-4, sc-16, sc-12, sc-9, sc-13, sc-27, sc-28}
+\end{proposition}
+
+\section{The orbits of Part~I}
+
+\begin{proposition}
+\label{prop:orbits}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item If $\curl z_0=\kappa z_0$ with $\kappa\ne0$, then $\dive z_0=0$, and $z(t,\mathbf x)=e^{-i\kappa t}z_0(\mathbf x)$ is a source-free
+Maxwell field; at each point it is the orbit $e^{-\kappa G\tau}X_0$ of \PI{Chapter~4}. For real $z_0$ the field turns from purely magnetic
+to purely electric and back, with $\bE\parallel\bB$ everywhere, as \PI{Prop.~4.11}(i) describes.
+\item The general orbit $z(\tau)=c_-e^{-i\kappa\tau}+c_+e^{i\kappa\tau}$ is the time trace at one point of a free Maxwell field of angular
+frequency $|\kappa|$: the sum of a part of curl eigenvalue $\kappa$, with the value $c_-$ there, and a part of curl eigenvalue $-\kappa$, with
+the value $c_+$, of opposite helicities. The momentum of \PI{Chapter~4} measures the part $c_+$, whose helicity is negative for $\kappa>0$
+and positive for $\kappa<0$, while the field momentum, the pair of currents, vanishes.
+\item A term $c_+e^{i\kappa\tau}$ at one point has two lifts: an opposite-helicity Maxwell field, without current, or a same-helicity
+mirror field $e^{+i\kappa t}z_0(\mathbf x)$, with current. One point cannot distinguish them; the curl can. A travelling mirror plane wave
+has $\bE\times\Btext$ opposite to its phase velocity. A standing mirror field, with real $z_0$, has $\bE\parallel\bB$ and vanishing
+Poynting vector, as the standing Maxwell field of (i) does, and it carries current.
+\end{enumerate}
+\checks{sc-18, sc-19, sc-15, sc-29, sc-31, on the ABC family of curl eigenfields and on plane waves}
+\end{proposition}
+
+The lifts in (ii) and (iii) exist for all values $c_\pm\in\C^3$. Given a target $u$ at the point $\mathbf x_0$ and an eigenvalue
+$\lambda\ne0$, choose a real unit vector $\mathbf n$ orthogonal to the real and imaginary parts of $u$ and put $s=\mathbf n\cdot(\mathbf
+x-\mathbf x_0)$; then $Z_\lambda=u\cos(\lambda s)-(\mathbf n\times u)\sin(\lambda s)$ satisfies $\curl Z_\lambda=\lambda Z_\lambda$ and
+$Z_\lambda(\mathbf x_0)=u$. Such fields are ideal monochromatic modes: a nonzero square-integrable curl eigenfield with $\lambda\ne0$ would have
+its Fourier transform supported on the sphere $|\mathbf q|=|\lambda|$, which is impossible, so the lifts are generalised modes.
+
+\begin{remark}[The rate as a spectral quantity]
+\label{rem:rate}
+On a field with $\curl Z=\lambda Z$ the operators $A_\pm$ are $\partial_t\pm\lambda G$, that is, $\alpha_\pm$ with $\kappa=\lambda$. For
+plane waves $\lambda=h|\mathbf k|$ with $h=\pm1$ the helicity, so $\ell=c/|\kappa|$ is the reduced wavelength and the sign of $\kappa$ is
+the helicity. \PI{Prop.~4.49}, that nothing in the algebra fixes $\ell$, then reads: $\ell$ belongs to the solution and not to the theory.
+Parity is consistent with \PI{Thm~4.12}, since $G$ and the curl both change sign under it and $G\,\curl$ does not. The two shifts can also
+act together at first order: the solutions of $(\partial_t+G\,\curl+\kappa G)X=0$ are $e^{-\kappa Gt}Y$ with $\partial_tY=-G\,\curl Y$,
+which is a Maxwell field when the two divergences of $Y$ vanish; the frequencies are $\kappa+h|\mathbf k|$, and the uniformly rotating
+duality frame is removed by a redefinition.
+\checks{sc-14, sc-17, sc-18}
+\end{remark}
+
+\begin{remark}[A role for each form]
+\label{rem:jobs}
+Maxwell's first-order equation is Hamiltonian with the positive form: $\partial_tX=-G\,\curl\,(\delta H/\delta X)$ with
+$H=\half\int|X|^2=\int E_6$, and $-G\,\curl$ is antisymmetric for the Euclidean pairing. This is the bracket of \PI{Thm~3.15}(iv). The
+split form cannot play that role, since $-G\,\curl\,\eta$ is symmetric. In the field reading the positive form is thus the Hamiltonian of
+the first-order flow, and the split form is the Lagrangian of the second-order theory whose zero-momentum sector, with the Gauss
+constraints, is that flow: the dichotomy of \PI{Thm~4.26} becomes a division of roles.
+\end{remark}
+
+\section{Limits of the correspondence}
+\label{sec:limits2}
+
+Six features of \PI{Chapter~4} do not carry over. \emph{One frequency}: $(G\,\curl)^2=-\curl\curl$ depends on the mode, so only the
+transverse modes oscillate, each at its own frequency, while the longitudinal modes and the uniform fields drift linearly.
+\emph{Configuration and phase space}: in Maxwell's theory $X$ is a point of phase space (\PI{Thm~3.15}(iv)), while \PI{Chapter~4} makes it a
+configuration. Promoting $X$ to a configuration field introduces its independent momentum $\pi$, the pair of spatial currents; on the
+transverse sector this doubles the Maxwell initial data, from four amplitudes to eight at each nonzero wave vector, and the unrestricted
+theory has twelve. The four-currents satisfy continuity identities, while their spatial parts $\bj$ and $\bk$ in general have nonzero
+divergence. The indefinite energy is a function of the pair $(X,\pi)$ (\cref{prop:energy}). \emph{Protection}: the sector $\pi=0$ is preserved, but no gauge symmetry enforces it, which is
+the position of \PI{Cor.~4.15}, and it contains static charged fields, since the Gauss constraints are independent of $\pi$.
+\emph{Units}: in the field reading $m$ has the dimension of $\varepsilon_0$ times an area; the lift never maps a displacement to a field
+strength, it identifies the parameter $\ell$ of one reading with a spectral quantity of the other. The obstruction by units of
+\PI{Thm~3.15}(i), for monomials in $c$, $\ell$ and $\hbar$, stays, with the conversion factor it admits once $\varepsilon_0$ is allowed, and so
+does the absence of a Lorentz-equivariant linear map between the two representations, \PI{Thm~3.15}(iii). \emph{Lorentz action}: $X$ transforms under $\lG$ as a two-form and the base coordinates as a
+four-vector, so the readings meet as base and fibre (\PI{Section~13.4}). \emph{The closure}: \PI{Section~4.4} is not lifted here; its field
+form is the clock field of \cref{sec:clock}.
+
+\section{Relation to earlier work}
+
+The first-order form of Maxwell's equations is that of Riemann and Silberstein \cite{Silberstein1907,BialynickiBirula13}. Lagrangians
+quadratic in $\partial F$ are those of Bopp and Podolsky \cite{Bopp40,Podolsky42}. Curl eigenfields were studied by Chandrasekhar and
+Kendall \cite{ChandrasekharKendall57}, and waves with $\bE\parallel\bB$ by Chu and Ohkawa \cite{ChuOhkawa82}. Specific to the present
+setting are the identification of the shift of \PI{Chapter~4} with the curl; the momentum $\pi$ as the six spatial currents on the field
+octants, completed by the charge densities on the poles into the eight-component $\Pi$ that carries both four-currents; the length $\ell$
+as a reduced wavelength, with the sign of $\kappa$ as the helicity; and the sign pattern of the energy, which comes from the signature $(3,3)$ of
+$\eta$.

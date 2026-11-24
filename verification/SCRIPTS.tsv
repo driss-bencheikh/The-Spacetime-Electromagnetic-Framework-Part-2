@@ -1,0 +1,18 @@
+script	checks	number	kind	chapter	subject
+ch02_shift_as_curl.py	sc-1 to sc-31	31	symbolic, exact	2	the shift as curl: momentum, Gauss constraints and residuals, force law, completed Lagrangian, energy as a function of (X, pi), orbits, standing mirror fields, curl eigenfields through a prescribed value
+ch03_mass.py	ma-1 to ma-24	24	symbolic, exact	3	the massive theory: two halves, the temporal two-form, the prescribed and the dynamical clock, a positive duality-invariant conserved quantity
+ch04_b_coupling.py	bc-1 to bc-12	21	symbolic; bc-5, bc-12 numerical	4	the copy symmetry (n = 1 to 4), the gauged temporal half (bc-3 for two and three fields, five parts each), characteristics, the dynamical clock
+ch05_quantum_status.py	qs-1 to qs-23	23	symbolic; qs-5 to qs-11, qs-15 to qs-17, qs-19 to qs-21, qs-23 numerical; qs-18 exact and numerical	5	poles, residues and norms; tree amplitudes with b and with the clock; the backward direction, the longitudinal channel and the scalar bound; the ground-state expansion
+ch06_completion.py	co-1 to co-13	13	symbolic; co-6 to co-10, co-12, co-13 numerical	6	the so(3) Yang-Mills-Higgs completion in frame variables, its amplitudes, the exact longitudinal amplitude and its limit, the flux test
+ch07_transport.py	ax-1 to ax-25	25	matrices, exact	7	the constituent's own clock, the third element of the triple, the conjugation, the Higgs vector, the Yang-Mills term, one doublet
+ch07b_generator_of_mass.py	gm-1 to gm-10	10	matrices, exact	7	the commutant at one constituent and the generator of mass, by left multiplication
+ch07c_mass_field.py	mf-1 to mf-8, ca-1 to ca-4, mr-1 to mr-4	16	exact; mr-2, mr-3, mr-4 numerical	7, 8	the mass field at one constituent, a varying Higgs field, the coupled action, the mass field at rung two and its labels
+ch08_every_rung.py	er-1a to er-3s	49	matrices, exact; er-2p, er-2q numerical	8	the hypothesis at rungs one to three, first form
+ch08b_second_rung.py	sr-1 to sr-10	12	matrices, exact; sr-9 numerical	8	triples and the vacuum family of Part I at rung two, first form (sr-2, sr-3 for two triples)
+ch08c_clifford_form.py	cf-1a to cf-3m	34	matrices, exact; cf-2i, cf-2k, cf-2o numerical	8	the commutant, the transported algebra, the real and complex Clifford algebra of (Gamma; P), and the generator of mass at rungs one to three
+ch08d_pati_salam.py	ps-1 to ps-11	11	ps-1, ps-7 exact; ps-2 to ps-6, ps-10, ps-11 numerical; ps-8 numerical weights, then exact; ps-9 exact with a numerical rank	8	the second rung as a Pati-Salam gauge theory and its anomalies; the third rung under (A4); invariant kernels at rungs two and three, the weak algebra alone, stabilisers of endomorphisms and kernels
+ch08e_families.py	fm-1 to fm-4	4	numerical; the identities of fm-3 and fm-4 exact	8	the third rung as a family index: held interaction, Pati-Salam restriction, and the full third-rung algebra
+ch09_electroweak.py	ew-1 to ew-23	23	ew-1 exact; ew-2 to ew-23 numerical	9	the family, the Pati-Salam and electroweak directions, the Majorana line, fermion and vector masses with the Gram matrix in closed form, the uneaten direction, the split, the relative alignment of the bidoublet and the Majorana condensate
+ch09b_potential.py	pt-1 to pt-12	12	numerical	9	symmetric criticality, the quartic invariants, the closed-form gradient of the trace quartic and its real slice, the bound 1/4, the general split
+ch09c_masses.py	ms-1 to ms-4	4	numerical; ms-4 exact and numerical	9	the measured masses with a family index and the exact seesaw inversion
+total		312			

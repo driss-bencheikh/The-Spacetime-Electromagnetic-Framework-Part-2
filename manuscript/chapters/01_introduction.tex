@@ -1,0 +1,246 @@
+\chapter{Introduction}
+\label{ch:intro}
+
+\section{The question}
+
+Part~I \cite{PartI}, cited here by its printed numbers, gives two readings of a vector $X\in\R^{3,3}$. They assign different physical
+quantities and different Lorentz actions to the same six real components. In the displacement reading, $X$ describes an interval with three
+temporal and three spatial components, and a chosen four-plane carries the interior Lorentz algebra $\lint$. In the field reading,
+$X=(\bB;\bE)$ represents an electromagnetic field strength, and the Lorentz algebra is $\lG$ (\PI{Thm~3.3}). The two Lorentz actions are not
+similar (\PI{Prop.~3.6}), and the readings differ in units, in the quadratic form that is the energy, and in what is configuration and what is
+momentum (\PI{Thm~3.15}).
+
+A common operator motivates the comparison. The interior dynamics of \PI{Chapter~4} uses the shift $\partial_\tau+\kappa G$, with $G$ the
+binding root (\PI{Thm~4.8}) and $\kappa=c/\ell$ a rate that nothing in the algebra fixes (\PI{Prop.~4.49}). In the field reading the
+source-free Maxwell evolution takes the form $\partial_tX=-G\,\curl X$, together with the two Gauss constraints (\PI{Prop.~3.10}). On a
+transverse curl eigenfield with eigenvalue $\kappa$ the two evolution laws have the same form once their evolution parameters are identified.
+Part~I does not connect the two: \PI{Section~8.6} records that the link between the field-strength reading and the internal connection is not
+made, and \PI{Section~13.4} that the two readings meet as base and fibre.
+
+We ask how far this correspondence extends to dynamics and to the internal action on spinors. We first study two field models: a
+differential shift involving the curl, and a constant-rate model with a massive two-form sector. The growth of particular tree amplitudes in
+the minimally coupled massive model motivates an $\so3$ Yang--Mills--Higgs completion. We then give a transport prescription for the temporal
+Clifford generators, and we specify which rotations are gauged and which mass direction is used. Its consequences can be tested separately
+on each spinor module of the tower $\Cl(3n,3n)$ of Part~I. The central example is the second rung, where the full module carries a chiral
+Pati--Salam family.
+
+\section{Summary of results}
+
+\paragraph{The field reading of the interior dynamics.} We replace $\kappa G$ by $G\circ\curl$, with which it coincides on the corresponding
+curl eigenspace. With the signs of \cref{eq:sources}, $A_+X=-(\bk;\bj)$: the momentum $\pi=-m(\bk;\bj)$ of \PI{Chapter~4} contains the
+spatial magnetic and electric currents, and the force law is a mirror of Maxwell's equations. The charge densities complete $\pi$ into an
+eight-component object $\Pi$ that carries both four-currents, and the split-form Lagrangian completed by them agrees with the free kinetic
+term of an $\R^{3,3}$-valued field up to a divergence (\cref{ch:curl}). Read as a mass instead, the shift gives a theory that is the sum of
+two halves; the half on the temporal triple is a massive two-form with positive canonical energy, and the binding root maps it to a mirror of
+negative canonical energy (\cref{ch:mass}). Coupled to a connection at a constant rate the temporal half keeps its constraint structure and a
+positive canonical matter energy (\cref{ch:bcoupling}), but its tree amplitudes grow with energy, in transverse and in longitudinal channels
+(\cref{ch:quantum}). An $\so3$ Yang--Mills--Higgs completion, in which the connection and the massive pair are components of one field with a
+Higgs vector of variable length, cancels the leading growth in the channels and fixed nonexceptional kinematics studied. Its field equations are the Yang--Mills equations and Bianchi identities in electric and magnetic components: the Maxwell system
+of Part~I with covariant derivatives and a current made from the Higgs vector (\cref{ch:connection}).
+
+\paragraph{Clifford transport.} The hypothesis of this Part has four parts, stated precisely in \cref{def:hyp} and referred to
+throughout as (A1) to (A4). (A1) \emph{Transport}: the Clifford algebra of the temporal directions acts on the spinors through a map
+$\sigma_n$ that replaces the clock by the volume element of the full algebra. (A2) \emph{Yang--Mills}: the gauge field of the temporal
+directions takes values in the image $\gn$ of their rotations. (A3) \emph{Mass}: the generator of mass is the image $G_n=\sigma_n(T_n)$ of
+the temporal volume; where this applies, it prescribes a vacuum direction of the mass field, without determining the full vacuum. (A4) \emph{The spatial directions}: the spatial triple of the four-plane
+carries no gauge field and the mass is a Lorentz-scalar field, while the spatial directions of the other constituents carry the gauge
+algebra $\mathfrak s_n$. The transport map $\sigma_n$ replaces the clock $E_1$ of the four-plane by the volume element $\Gamma_n$ of the
+full algebra $\Cl(3n,3n)$, with $\Gamma_n^2=\id$, in the whole Clifford algebra of the $3n$ temporal directions (\cref{def:hyp}); it is not the
+volume $\Omega$ of the four-plane, for which $\Omega^2=-\id$. At one constituent the transported temporal algebra is the whole commutant of the
+interior Lorentz algebra; inside that commutant the admissible symmetric involution is fixed up to sign, and the chosen orientation
+selects $\Gamma$. The transported rotations are the algebra of
+Pauli and G\"ursey, and the image of the temporal volume $T$, the generator of the Dirac rest rotation, is $-\Omega$, which acts on the
+embedded field strength by left multiplication as the binding root (\cref{thm:clifford1,prop:unique,thm:massgen}). The Lorentz-invariant mass
+kernels are then exactly the transported Higgs vectors and Yang--Mills generators, each multiplied by the volume of the spatial triple
+(\cref{thm:massfield}). At rung $n$ the commutant of the Lorentz algebra is $\Cl(3n,3n-3)$, of dimension $2^{6n-3}$, which contains the
+transported temporal algebra, of dimension $2^{3n}$. The transported rotations form $\so{3n}$, and the transported temporal volume is a
+rotation for $n\equiv1,2$ and an involution for $n\equiv3,0$ modulo four (\cref{thm:commutant,thm:everyrung,thm:massrung}).
+
+\paragraph{One Pati--Salam family.} At the second rung the transported rotations form $\so6\cong\su4$, and the spatial directions of the
+second constituent carry $\su2_L\oplus\su2_R$. With the spectator Lorentz action and (A2), (A4), the left-handed Weyl multiplicity space of
+$\R^{64}$ carries exactly $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, one family of the Standard Model with a
+right-handed neutrino, and no projector is chosen (\cref{thm:rung2,thm:family}). Its perturbative gauge anomalies cancel, and each weak factor
+has four Weyl doublets, which passes the usual test of the $SU(2)$ global anomaly on spin spacetimes (\cref{thm:ps}). The Lorentz-invariant
+mass field decomposes into the scalar representations of left--right symmetric Pati--Salam models. For the chosen Standard-Model embedding
+the invariant kernels form one complex line, a right-handed Majorana direction $\Phi_0$. The bidoublet direction $G_2\,\omega_S$ prescribed by
+the generator of mass has the largest gauge stabiliser among the nonzero kernels. Both values are needed: together they leave
+$\su3\oplus\uu1_Q$, which fixes the generator $Q$ in this specified broken phase, and with equal couplings $\sin^2\theta_W=\tfrac38$ at their
+matching scale (\cref{thm:psstage,prop:ewdir,thm:vectors}). The electroweak numbers that Part~I found at the third rung, on a block chosen by a
+projector, recur at the second rung on the whole module, with the same trace conventions and vacuum values.
+
+\paragraph{Masses and the obstruction to the sum rule.} The generator of mass alone gives the family a single Dirac entry. In the restricted
+real ansatz of the neutral Yang--Mills values the signed Dirac entries are $z_f=\kappa-X(f_L)$, the physical Dirac masses being $|y\,z_f|$,
+and they obey one linear sum rule (\cref{thm:split}). No symmetry protects it: the excluded direction $D$ is fixed by the stabiliser of the
+vacuum, and the gradient of the invariant trace quartic $\Tr((mm^\top)^2)$, computed in closed form, has a component along it,
+$-\half v_R^2\kappa$ at $v_R\Phi_0+\kappa\,G_2\,\omega_S$ (\cref{thm:potential}); the value it induces depends on the couplings and the
+restoring curvatures. With an independent coefficient of $D$, all four signed entries of a family can be fitted (\cref{thm:splitgen}), as an
+illustration does by fitting the nine charged masses and chosen neutrino inputs (\cref{ex:observed}). Holding the interaction of the second rung fixed, the third rung gives eight
+chiral copies of the family; on restriction to the embedded Pati--Salam algebra built with $\Gamma_3$ it gives four families and four
+mirrors, which the full third-rung gauge action mixes (\cref{thm:families}).
+
+\section{Rungs as interactions}
+\label{sec:interactions}
+
+Part~I treats a rung of the tower as an arena: it asks what the spinor module of one rung can hold, and at the third rung it finds a
+Pati--Salam family on a block chosen by a projector, with the weak directions among the temporal generators and colour among the spatial
+ones (\PI{Chapter~7}). Here a rung specifies a representation space and a candidate gauge action on it: the algebras that the hypothesis
+gauges there and the mass that its generator of mass carries (\cref{fig:rungs}). A requirement that belongs to one interaction is not imposed
+on another. Chirality is required of the weak interaction, which the second rung carries, and the Higgs vector at the clock belongs to the
+first rung. These considerations motivate the rung-dependent prescription in (A3): at the second rung it supplies the bidoublet
+direction, and the additional Majorana value is specified independently; the rule (A4) is kept at the third rung (\cref{def:hyp}). We compare the
+consequences of applying the same prescription at successive rungs. Whether the corresponding gauge fields are related by dynamics is a
+separate question; in particular, \cref{prop:rung1charge} distinguishes the first-rung generator $\half J$ from the electromagnetic generator
+in the broken phase of the second rung.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\footnotesize,>=Stealth,
+  rung/.style={draw,rounded corners=3pt,align=left,text width=4.5cm,minimum height=3.8cm,inner sep=5pt,fill=blue!3,anchor=north west}]
+\node[rung] (r1) at (0,0) {\textbf{Rung one}: $\Cl(3,3)$ on $\R^8$\\[3pt]
+  gauged: $\su2$ (Pauli--G\"ursey)\\
+  generator: $-\Omega$, a rotation\\
+  vacuum: the clock, kernel $\kappa\,T$\\
+  unbroken: $\uu1_J$\\
+  matter: one Weyl doublet\\
+  \quad(global $SU(2)$ anomaly)\\
+  \phantom{x}};
+\node[rung] (r2) at (5.45,0) {\textbf{Rung two}: $\Cl(6,6)$ on $\R^{64}$\\[3pt]
+  gauged: $\su4\oplus\su2_L\oplus\su2_R$\\
+  generator: $-\Omega\,\omega_\cN$, a rotation\\
+  vacuum: $v_R\Phi_0+\kappa\,G_2\,\omega_S$\\
+  \quad(chosen, $v_R\kappa\ne0$)\\
+  unbroken: $\su3\oplus\uu1_Q$\\
+  matter: one chiral family\\
+  \quad(perturbative anomalies cancel;\\
+  \quad even number of doublets\\
+  \quad per weak factor)};
+\node[rung] (r3) at (10.9,0) {\textbf{Rung three}: $\Cl(9,9)$ on $\R^{512}$\\[3pt]
+  gauged: $\so9\oplus\so8$\\
+  generator: $G_3$, an involution\\
+  vacuum: (A3) selects none\\
+  an invariant mass kernel\\
+  matter: $(\mathbf{16},\mathbf8)$\\
+  \quad(real; admits an invariant\\
+  \quad mass)\\
+  \phantom{x}};
+\draw[->,thick] (r1.east) -- node[above,font=\scriptsize]{$+1$} (r2.west);
+\draw[->,thick] (r2.east) -- node[above,font=\scriptsize]{$+1$} (r3.west);
+\end{tikzpicture}
+\caption{The first three rungs of the tower read as candidate gauge actions on successive modules, under the hypothesis of \cref{def:hyp};
+``generator'' is the generator of mass $G_n$ of (A3), and each arrow adds a constituent. The second-rung vacuum is a chosen two-stage
+background: (A3) supplies the bidoublet direction, and the right Majorana value is an additional choice. The entries are established in
+\cref{ch:hyp} (rung one), \cref{ch:rungs,ch:ew} (rung two) and \cref{ch:rungs} (rung three).}
+\label{fig:rungs}
+\end{figure}
+
+\section{Conventions}
+\label{sec:conv}
+
+The conventions are those of Part~I. $\Cl(3,3)\cong M_8(\R)$ acts on $S=\R^8$ through the generators $e_1,\dots,e_6$ of \PI{eq.~(1.1)},
+with $\eta=\mathrm{diag}(1,1,1,-1,-1,-1)$; $e_1,e_2,e_3$ are symmetric matrices and span the temporal triple $V^+$, and $e_4,e_5,e_6$ are
+antisymmetric and span the spatial triple $V^-$. In $\Cl(p,q)$ the first index counts generators of square $+\id$, so that
+$\Cl(3,0)\cong M_2(\C)$, $\Cl(6,0)\cong M_4(\mathbb H)$ and $\Cl(0,6)\cong M_8(\R)$. The clock is a unit vector $\clock$ of $V^+$
+(\PI{Assumption~2.16}), taken as $e_1$; the four-plane is $E=\langle e_1;e_4,e_5,e_6\rangle$ with $\gamma^0=e_1$ and $\gamma^a=e_{a+3}$, and
+the surplus pair is $(e_2,e_3)$. We write
+\[
+J=e_2e_3,\qquad T=e_1e_2e_3,\qquad \omega_S=e_4e_5e_6,\qquad \Omega=e_1e_4e_5e_6=\gamma^0\gamma^1\gamma^2\gamma^3,\qquad \Gamma=e_1e_2\cdots e_6 .
+\]
+The orientation of the four-plane is the one fixed by $\Omega$; with it $\Omega$ acts on the two-forms as minus the Hodge star
+(\PI{Prop.~3.7}), and this orientation is used wherever the sign of the duality matters. The interior Lorentz algebra $\lint$ is spanned by
+the rotations $\half\gamma^a\gamma^b$ and the boosts $\half\gamma^0\gamma^a$; the kinetic forms are $K^0=-\id$ and $K^a=-\gamma^0\gamma^a$, and
+$T=\gamma^0J$ is the Dirac mass form.
+
+In the field reading $X=\sum_iB_ie_i+E_ie_{i+3}$, written $X=(\bB;\bE)$, with $\eta(X,X)=|\bB|^2-|\bE|^2$ and $\bB=-\Btext$, where $\Btext$
+is the textbook magnetic field. The binding root is $G(\bB;\bE)=(-\bE;\bB)$; the complex coordinate is $z=\bB+i\bE$, on which $G$ is
+multiplication by $i$; and $\lG=\mathrm{span}\{L_i,K_i=GL_i\}$. Sources are written with both kinds of current,
+\begin{equation}
+\label{eq:sources}
+\partial_t\bB=\curl\bE-\bk,\qquad \partial_t\bE=-\curl\bB-\bj,\qquad \rho_e=\dive\bE,\qquad \rho_m=\dive\bB ,
+\end{equation}
+with the four-currents $J_e=(\rho_e,\bj)$ and $J_m=(\rho_m,\bk)$ and the Minkowski squares $J\cdot J=\rho^2-|\text{current}|^2$. The
+undivided energy is $E_6=\half(|\bB|^2+|\bE|^2)$, and Maxwell's Lagrangian at the field point is $L_M=-\half\eta(X,X)$ (\PI{Prop.~3.20}).
+Throughout $c=1$; in \cref{ch:quantum,ch:connection} also $\hbar=1$.
+
+Three placements of the pair $(\bB;\bE)$ occur in Part~I and are used here. In the frame vector $X\in V$, $\bB$ sits on the temporal triple
+and $\bE$ on the spatial one (\PI{Thm~3.3}); this is the placement of \cref{ch:curl,ch:mass,ch:bcoupling,ch:quantum,ch:connection}. In the
+two-form $F_X$ on the four-plane, $\bE$ sits on the planes that contain the clock, the boosts $\gamma^0\gamma^i$, and $\bB$ on the purely
+spatial planes, as $F_{0i}=E_i$ and $F_{jk}=\epsilon_{ijk}B_i$ require; this is the placement of \cref{thm:massgen}. In the spinor module,
+$\bE$ sits on the three octants of Fock weight one and $\bB$ on the three of weight two (\PI{Introduction and Section~3.5}); the sign triples
+that label these octants are eigenvalues of the pole operators $e_ie_{i+3}$, not metric signatures. The frame placement carries the signs of
+the tensor convention: $\eta(X,X)=\half F_{\mu\nu}F^{\mu\nu}$ in the signature $(+,-,-,-)$, and in rationalised units with $c=1$ the free
+Maxwell density is $-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\half\eta(X,X)$; Jackson, eq.~(12.85), and Landau and Lifshitz, eq.~(27.4), write the
+corresponding expressions in Gaussian units \cite{Jackson,LandauLifshitz2}. The opposite sign, $|\bE|^2-|\bB|^2$, is the real part of the square of the
+Riemann--Silberstein vector $\bE+i\bB$ \cite{Silberstein1907,BialynickiBirula13} and of the bivector $\bE+I\bB$ of the spacetime algebra
+\cite{Hestenes66}; it is the sign of the second placement.
+
+At rung $n$ the algebra is $\Cl(3n,3n)$ on $\R^{8^n}$, with the generators
+$E_{6(k-1)+a}=\omega^{\otimes(k-1)}\otimes e_a\otimes\id^{\otimes(n-k)}$, $\omega=e_1\cdots e_6$, for the constituent $k$ and $a=1,\dots,6$.
+The four-plane, $\Omega$ and $\lint$ are those of the first constituent: this is the spectator action of \PI{Section~5.2}, as used at the
+second rung in \PI{Section~8.5.3}. The $3n-1$ positive generators outside the four-plane are called internal, and their set is $P$: the
+surplus pair $E_2,E_3$ and the temporal triples of the other constituents. The set of the $3n-3$ spatial generators of the other constituents
+is $\cN$, and $\omega_\cN$ is their product. As in \PI{Thm~9.62}, $T_n$ is the product of the $3n$ temporal generators in increasing order,
+$S_n$ that of the $3n$ spatial ones, and $\Gamma_n$ is the volume element of $\Cl(3n,3n)$; $T_1=T$, $S_1=\omega_S$ and $\Gamma_1=\Gamma$. The
+index $n$ is dropped where the rung is clear. Two charges must be kept apart: the charge $\half J$ of the first rung (\cref{sec:rung1int})
+and the electric charge $Q=T_{3L}+T_{3R}+\half(B\!-\!L)$ of the second (\cref{prop:rung1charge}); both appear in \cref{fig:rungs}.
+
+\section{Scope and evidence}
+\label{sec:scope}
+
+This Part studies the consequences of the transport and model assumptions (A1) to (A4), with the spectator Lorentz action, together with
+the field reading of Part~I. It makes no empirical prediction. The value $\sin^2\theta_W=\tfrac38$ is a matching value under the assumption
+of a single coupling at an unspecified scale; the masses of \cref{ex:observed} are fitted, not derived. The scattering and mass-spectrum
+calculations are at tree level; \cref{ch:rungs,ch:ew} also evaluate anomaly coefficients. No statement of Part~I is changed: where a result
+here bears on one, the bearing is stated, and the statement of Part~I stands as printed.
+
+Each statement is supported in one of three ways: by a proof in the text; by a scripted computation, named in a line \emph{Checks} that
+closes the statement or its proof; or by a citation, when the result is standard. Interpretations are stated as such in the prose, and the
+checks do not test them. A check establishes the identity or the number that it states and nothing more. Symbolic identities and matrix
+identities with integer or dyadic entries are exact; rank decisions from floating-point singular values, sampled amplitudes and numerical
+searches hold with the stated tolerances and on the stated domains; statements for general $n$ are proved in the text and checked at
+$n=1,2,3$ (\cref{app:verification}).
+
+\section{Relation to prior work}
+\label{sec:prior}
+
+Several programmes read Standard-Model structure off a Clifford or division algebra: the gauge symmetries of the Standard Model from the
+rotations of the spinors of the Clifford algebra $C\ell_7$ \cite{TraylingBaylis01}, leptons and quarks from the ideals of the complex Clifford
+algebra $\C\ell_6$ \cite{Stoica18}, and constructions from the normed division algebras \cite{Furey,Gresnigt}. The representation theory of
+one family, with the branching of the spinor of $\so{10}$ through $\so6\oplus\so4$ to the Pati--Salam algebra, is reviewed in
+\cite{BaezHuerta10}. The spectral programme obtains a Pati--Salam model with sixteen fermions per family when the order-one condition is
+dropped \cite{ChamseddineConnesVanSuijlekom13}; \PI{Section~14.4} compares it with the constructions of Part~I. The construction closest to
+\cref{ch:rungs} is Krasnov's \cite{Krasnov18}. He realises the spinors of $SO(7,7)$ on the forms of a null seven-plane, finds the Pati--Salam
+algebra as the compact part $\so4\oplus\so6$ of the commutant $\so{4,6}$ of a Lorentz subalgebra, and places one family with a right-handed
+neutrino on a module of real dimension $64$; the Lorentz subalgebra is selected by a choice that is not made dynamical. \PI{Section~14.3}
+shows that his module and the chiral block of Part~I are equivalent as representations of $\so{1,3}\oplus\so4\oplus\so6$, once the outer
+automorphisms are fixed compatibly on both sides. The family of \cref{thm:rung2} has the same content, on the whole spinor module of the
+second rung, and the same argument applies to it.
+
+The matter content is therefore shared prior art. What this Part adds is the route to it and what follows from it: the transport map and its
+commutant theorems at one constituent and at every rung (\cref{thm:clifford1,thm:massgen,thm:commutant,thm:everyrung}), which relate the
+temporal rotations of the displacement reading to an internal gauge algebra; the family on the whole module of the second rung without a
+projector, under (A1) to (A4) (\cref{thm:rung2,thm:ps}); the analysis of the mass field, with a Majorana line that the transported algebra
+does not reach (\cref{thm:psstage,prop:notransport}); and the explicit obstruction to the mass relation of the restricted ansatz
+(\cref{thm:potential}). The field dynamics of \cref{ch:curl,ch:mass,ch:bcoupling,ch:quantum,ch:connection} continues \PI{Chapter~4}; the
+results it inherits, from Maxwell's and Proca's equations to tree unitarity and the model of Georgi and Glashow, are cited where they are
+used.
+
+\section{Organisation}
+
+\Cref{ch:curl,ch:mass,ch:bcoupling,ch:quantum,ch:connection} read the interior dynamics of Part~I on fields: the shift as the curl, the shift
+as a mass, the coupling to a connection, the quantum status of that coupling, and its completion. \Cref{ch:hyp} states the hypothesis and
+works it out at one constituent. \Cref{ch:rungs} climbs the tower, with the second rung and the third. \Cref{ch:ew} realises the electroweak
+stage of the second rung and the masses of the family, with the obstruction to the sum rule. \Cref{ch:conclusions} collects the assumptions,
+the obstructions and the open problems, and \cref{app:verification} describes the verification and the code. \Cref{sec:prior} places the
+construction among earlier ones.
+
+\section{Use of AI assistance}
+\label{sec:ai}
+
+This Part continues Part~I and was produced by the same method (\PI{Section~I.3 and Chapter~15}). It was developed in an iterative process
+with AI systems: Claude models assisted with candidate statements, exploratory proofs, alternative constructions, the verification scripts,
+calculations and the drafting of the text, and ChatGPT and Perplexity with discussion and with referee-style criticism of successive drafts. The questions,
+the hypothesis and the decisions on what is stated were not delegated. Every candidate result was examined, and then proved in the text,
+reduced to a scripted check, referred to the literature, or discarded; objections raised in the reviews were checked by independent
+computation before the text was corrected. No particular model version was in use throughout. AI-assisted review is not peer review, and
+agreement between models is not proof: each statement of this Part carries its own evidence, as described in \cref{sec:scope}. I take full
+responsibility for the content of this Part and for its conclusions.

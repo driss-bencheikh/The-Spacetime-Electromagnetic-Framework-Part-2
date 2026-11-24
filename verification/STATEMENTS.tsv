@@ -1,0 +1,88 @@
+number	kind	title	label	checks
+2.1	lemma		lem:selfadj	-
+2.2	proposition	The momentum is the pair of spatial currents	prop:momentum	sc-1, sc-7, sc-26
+2.3	theorem	The force law is a mirror equation	thm:force	sc-2, sc-3
+2.4	theorem	The completed Lagrangian	thm:completed	sc-5, sc-6, sc-8, sc-20, sc-21, sc-22, sc-23, sc-27
+-	paragraph	Momentum, force law and Lagrangian	-	sc-24
+2.5	proposition	Energy and virial	prop:energy	sc-10, sc-11, sc-14, sc-30
+2.6	example		ex:energy	sc-25
+2.7	proposition	The other forms	prop:forms	sc-4, sc-16, sc-12, sc-9, sc-13, sc-27, sc-28
+2.8	proposition		prop:orbits	sc-18, sc-19, sc-15, sc-29, sc-31, on the ABC family of curl eigenfields and on plane waves
+2.9	remark	The rate as a spectral quantity	rem:rate	sc-14, sc-17, sc-18
+3.1	theorem	The theory is two theories	thm:halves	ma-1, ma-2, ma-12
+3.2	theorem	A massive two-form with positive energy	thm:temporal	ma-3, ma-4, ma-5, ma-6, ma-9
+3.3	proposition	The spatial half is the mirror	prop:mirror	ma-7, ma-8, ma-13
+3.4	proposition	One massive spin-one particle and its potential	prop:london	ma-10, ma-11, ma-15
+3.5	proposition	Rest states	prop:rest	ma-14
+3.7	theorem	The rate is the gradient of a clock	thm:clock	ma-18, ma-19, ma-20, ma-21, ma-22, ma-23
+3.8	proposition	No first-order factorisation of this form on the octants	prop:nofirst	ma-17
+3.9	proposition	The same density on potentials	prop:BP	ma-16
+-	paragraph	What the second route costs	-	ma-24
+4.1	proposition	The copy symmetry	prop:copy	bc-1, bc-2, bc-12, for $n=1,2,3,4$
+4.2	theorem	Classical consistency at a constant rate	thm:gauged	bc-3, for $n=2$ and $n=3$, five parts each
+4.3	proposition	Equal rates only	prop:equalrates	bc-4
+4.4	proposition	A lower bound on the frequency	prop:edge	-
+4.5	proposition	Characteristics	prop:cone	bc-5, numerically on 24 random backgrounds with nonzero field strength for $n=2,3$, and for $F_b=0$
+4.6	proposition	The clock in the temporal half	prop:clockhalf	bc-6, bc-7, bc-8, bc-9, bc-10, bc-11
+5.1	proposition	Poles and norms	prop:poles	qs-1, qs-2, qs-3, qs-4, qs-22
+5.2	theorem	The amplitude $X+b\to X+b$	thm:compton	qs-5, qs-6, qs-7, qs-20, qs-8, qs-21, qs-9; (ii) and (iii) numerically, the closed forms at sampled points
+5.3	proposition	What removes the growth in this amplitude	prop:moment	qs-10, qs-17, qs-23, qs-19, numerically, (ii) and (iii) against the closed form
+5.4	proposition	Several fields	prop:stueck	qs-12, for the identity; no amplitude was computed for three fields
+5.5	theorem	The amplitude $X+\pi\to X+\pi$	thm:clockamp	qs-11, numerically
+5.6	proposition	The uniform sector as quantum mechanics	prop:ladder	qs-15, qs-16, qs-18; (ii) exactly by perturbation theory, and numerically
+5.7	proposition	What protects the relation between mass and rate	prop:shifts	qs-13, qs-14
+6.1	theorem	Three frame vectors	thm:frame	co-1, co-2, co-3, co-4
+6.2	proposition	What the completion adds to the working model	prop:whatadds	co-5
+6.3	theorem	High-energy behaviour at fixed angle	thm:bounded	co-6, co-7, co-8, co-9, co-10, co-12, co-13; (ii) the closed form against the vertex extraction at $24$ points and its limit at five values of $(g,v,\lambda)$; (iv) numerically, at $90^\circ$
+-	paragraph	Amplitudes	-	co-11
+7.4	proposition		prop:twoalg	ax-1, gm-3
+7.5	theorem		thm:ownclock	ax-2, ax-3, ax-4, ax-5, ax-6, ax-7, ax-8
+7.6	theorem	The commutant of the Lorentz algebra	thm:clifford1	gm-1, gm-2, gm-3, gm-4
+7.7	proposition	The third element	prop:unique	ax-24
+7.8	theorem	The same rule as a conjugation	thm:conjugation	ax-2, ax-3, ax-4, ax-13, ax-14, ax-15, ax-22, ax-25
+7.9	theorem	The rest rotation becomes the binding rotation	thm:massgen	gm-5, gm-6, gm-10
+7.10	proposition	Two roles of $T$ come apart	prop:twojobs	gm-6, gm-7, gm-9
+7.11	proposition		prop:higgs1	ax-9, ax-10, ax-11, ax-16, ax-17, ax-18, gm-8
+7.12	proposition	The massless criterion at the first rung	prop:massless1	ax-19, ax-20, ax-21
+7.13	theorem	The mass as a Lorentz-scalar field	thm:massfield	mf-1, mf-2, mf-3, mf-4, mf-5
+7.14	proposition	The mass in every direction, and the component neutral under the charge	prop:massread	mf-6, mf-7
+-	paragraph	The coupled action at one constituent	-	mf-8
+7.15	proposition	What the action gives	prop:coupled	ca-1, ca-2, ca-3, ca-4, mf-6, co-5, for the algebra of (i) to (iv) and the sign of $D_\mu h$; the field equations follow by the variation of \PI{Prop.~7.2}, with \cref{thm:frame} and \cref{prop:whatadds}
+7.16	theorem	The quadratic Lagrangians of the curvature	thm:ymforced	ax-23, for the dimension
+7.17	proposition	One doublet	prop:onedoublet	ax-12, gm-4
+8.1	theorem	The commutant is a Clifford algebra	thm:commutant	cf-na, cf-nb, gm-1, cf-2i, for $n=1,2,3$
+8.2	theorem	The hypothesis at rung $n$	thm:everyrung	cf-nc, cf-nd, cf-ne, cf-2i, er-na to er-nj, er-nr, for $n=1,2,3$; (vi) at $n=2$, with the inclusion at $n=3$
+8.5	theorem	The generator of mass at rungs one, two and three	thm:massrung	cf-nf, cf-ng, cf-nh, cf-nl, ps-9
+8.6	remark	The generator of mass and the binding root	rem:Gn	cf-3m
+-	paragraph	The first rung	-	cf-1a to cf-1h, cf-1l, er-1k, er-1l
+8.8	theorem	One Pati--Salam family	thm:rung2	cf-2a to cf-2o, er-2k to er-2q; the dimensions in (iii) and the charges in (iv) numerically
+-	paragraph	The second rung	-	cf-2h, cf-2m, for the count and the spins
+8.9	theorem	The mass field at the second rung	thm:massfield2	mr-1, mr-2, mr-3, mr-4; (ii) and (iii) numerically, with Casimir eigenvalues rounded to quarters
+8.10	theorem	A Pati--Salam gauge theory	thm:ps	ps-1, exactly; ps-2, ps-8, (ii) on random elements and exactly on the weights; ps-3 to ps-6, numerically with dimensions read as ranks
+-	paragraph	The second rung	-	ps-10
+8.11	proposition	The vacuum family of Part~I inside $\mathfrak g_2$	prop:vacua2	cf-2n, cf-2g, sr-5, sr-6, sr-7, sr-8, sr-10, er-ns, in both forms
+-	paragraph	The second rung	-	ps-11
+-	paragraph	The second rung	-	sr-1, sr-2, sr-3, sr-4, sr-9
+8.12	theorem		thm:rung3	er-3k, er-3l, er-3m, er-3n, cf-3e, cf-3f, cf-3h
+8.13	proposition	The third rung under (A4)	prop:rung3s	ps-7, ps-9, fm-4
+8.15	theorem	Families at the third rung	thm:families	fm-1, fm-2, fm-3, fm-4, numerically; the identities of (iii) and (iv) exactly
+-	paragraph	The first rung as an interaction	-	ew-1
+9.1	proposition	The charge of the first rung at the second	prop:rung1charge	ew-15, numerically
+9.2	theorem	One family of the Standard Model	thm:family	ew-2, ew-3, numerically, with the charges rounded to sixths after a bound on the error
+9.3	theorem	The direction that keeps the Standard Model	thm:psstage	ew-4, ew-5, ew-6, ew-7, numerically
+9.4	proposition	The generator of mass at the second rung	prop:ewdir	ew-8, for (i) to (iv), numerically
+9.5	proposition	The Majorana line is not transported	prop:notransport	ew-21
+9.6	theorem	The masses of the family at the generator of mass	thm:fermionmasses	ew-9, ew-10, ew-11, numerically
+9.7	theorem	The vector masses at the electroweak stage	thm:vectors	ew-12, ew-19, numerically: (i) against the eigenvalues at three vacua, (ii) against the printed digits of \PI{Example~7.36}
+9.8	theorem	Broken directions at the second rung	thm:uneaten	ew-13, ew-14, numerically
+-	paragraph	The uneaten direction	-	ew-20
+9.9	proposition	The Yang--Mills values of the neutral generators	prop:ymvalues	ew-16, numerically
+-	paragraph	The split of the masses	-	ew-22
+9.11	theorem	The masses of the family in the restricted split	thm:split	ew-17, ew-18, pt-6, numerically; (iv) follows from (ii) by the triangle inequality
+-	paragraph	The split of the masses	-	ew-17, ew-18, for the numbers
+9.13	theorem	Obstruction to the sum rule	thm:potential	pt-1, pt-2, pt-3, pt-4, pt-8, pt-9, pt-11, pt-12; (i) is symmetric criticality \cite{Michel71} applied to the checked stabilisers
+9.14	proposition	What a quartic selects	prop:select	pt-5, pt-10, numerically
+-	paragraph	The sum rule is not protected	-	ew-23
+9.16	theorem	The general split	thm:splitgen	pt-7, numerically
+9.17	example		ex:observed	ms-1, ms-2, ms-3, ms-4, numerically
+-	paragraph	Comparison with Part~I	-	ew-5, ew-7, ew-9 to ew-14, for the coincidence of the numbers

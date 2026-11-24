@@ -1,0 +1,21 @@
+PASS bc-1: the generators L_i, K_i = G L_i of the Lorentz algebra of the field reading lie in so(3,3) and commute with G
+PASS bc-2: n = 1, 2, 3 copies under a common Lorentz algebra: the commuting elements of so(3n,3n) have dimensions [0, 2, 6] = n(n-1); those keeping the two triples apart [0, 1, 3] = n(n-1)/2 = dim so(n)
+PASS bc-3-2a: n=2: L is invariant to first order under dX = wX, db = [w, b] - dw/g
+PASS bc-3-2b: n=2: E has no velocity and EL_E/m = kappa^2 E + curl_D k: E is auxiliary with coefficient kappa^2 for every b
+PASS bc-3-2c: n=2: EL_B/m = D_t k + grad_D rho_m - kappa^2 B (the free force law with covariant derivatives)
+PASS bc-3-2d: n=2: p = -m k, and the canonical energy density is sum_a[(m/2)(|k|^2 + rho_m^2) + m kappa^2 E_6] - g b_0^{ab} p^a.B^b + div(E x p) - E.EL_E
+PASS bc-3-2e: n=2: on solutions rho_e = -(g/kappa^2) B_b.k and j = (g/kappa^2)(E_b x k - B_b rho_m), with E_b, B_b the field strength of b: they vanish when F_b = 0
+PASS bc-4: n=2, unequal rates: d_mu J^mu = -1 g (EL . eps X) -1 g m (kappa_1^2 - kappa_2^2) eta(X^1, X^2): the copy current is conserved on solutions only for equal rates
+PASS bc-3-3a: n=3: L is invariant to first order under dX = wX, db = [w, b] - dw/g
+PASS bc-3-3b: n=3: E has no velocity and EL_E/m = kappa^2 E + curl_D k: E is auxiliary with coefficient kappa^2 for every b
+PASS bc-3-3c: n=3: EL_B/m = D_t k + grad_D rho_m - kappa^2 B (the free force law with covariant derivatives)
+PASS bc-3-3d: n=3: p = -m k, and the canonical energy density is sum_a[(m/2)(|k|^2 + rho_m^2) + m kappa^2 E_6] - g b_0^{ab} p^a.B^b + div(E x p) - E.EL_E
+PASS bc-3-3e: n=3: on solutions rho_e = -(g/kappa^2) B_b.k and j = (g/kappa^2)(E_b x k - B_b rho_m), with E_b, B_b the field strength of b: they vanish when F_b = 0
+PASS bc-5: (numerical, 24 random backgrounds with nonzero field strength, n = 2, 3, weak and strong field) principal symbol P = xi^2 + N with N = e_xi C_F e_xi linear in the field strength, N != 0 and N^2 = 0 (relative size 4.0e-16), det P = (xi^2)^(6n) (relative error 3.5e-12); for F = 0, N = 0: the characteristics are the light cones
+PASS bc-6: clock field in the temporal half: EL_E/m = (d theta)^2 E + curl k, so E = -curl k/(d theta)^2: algebraic while (d theta)^2 > 0, degenerate where the clock stops
+PASS bc-7: the theta equation is d_mu[(I0 - m eta(X, X)) d^mu theta] = 0, with clock momentum p_theta = (I0 - m eta(X, X)) d_t theta
+PASS bc-8: energy density = |p|^2/2m + (m/2) rho_m^2 + (1/2)(I0 - m eta(X,X))(theta_t^2 + |grad theta|^2) + m (d theta)^2 |E|^2 + div(E x p) - E.EL_E: positive when I0 > m eta(X,X) and (d theta)^2 > 0
+PASS bc-9: theta = kappa t returns the temporal half with rate kappa (plus the constant I0 kappa^2/2)
+PASS bc-10: with a dynamical clock (one field, b = 0) the constraint m s E = curl p, s = theta_t^2 - |grad theta|^2, theta_t = p_theta/C, C = I0 - m|B|^2 + m|E|^2, has the Jacobian m(s 1 - (4 m theta_t^2/C) E E^T) in E at fixed canonical data; at B = 0, grad theta = 0, |E|^2 = I0/(3m) its eigenvalue along E vanishes while s > 0 and C = 4 I0/3 > 0: the elimination of E is not regular there
+PASS bc-11: the uniform field E = 0, B = (b cos kappa t, 0, 0) solves the temporal half with the prescribed rate theta = kappa t, but not the clock equation kappa d_t eta(X, X) = 0 of the dynamical clock: prescribed and dynamical clocks have different solution sets
+PASS bc-12: (numerical rank, n = 1, 2, 3, 4) the elements of so(3n,3n) commuting with l_G have dimensions [0, 2, 6, 12] = n(n-1), and are the A (x) 1 + B (x) G with A, B antisymmetric, the algebra so(n, C) with G as imaginary unit; those keeping the two triples apart have dimensions [0, 1, 3, 6] = dim so(n)

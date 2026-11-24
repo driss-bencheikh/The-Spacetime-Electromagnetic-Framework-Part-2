@@ -1,0 +1,44 @@
+{
+ "title": "The Spacetime–Electromagnetic Framework, Part II. Field Dynamics, Clifford Transport and a One-Family Pati–Salam Construction",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "version": "1.0.0",
+ "publication_date": "2026-11-24",
+ "language": "eng",
+ "creators": [
+  {
+   "name": "Bencheikh, Driss",
+   "affiliation": "Independent Researcher"
+  }
+ ],
+ "description": "<p>Part I of <em>The Spacetime–Electromagnetic Framework</em> gives two inequivalent readings of the same real six-dimensional space R<sup>3,3</sup>, as a displacement and as an electromagnetic field strength, with different Lorentz actions. This second part develops the field dynamics of the interior shift, a Clifford transport between the two readings, and a one-family construction.</p><p><strong>Field dynamics.</strong> Replacing the constant shift by G∘curl recovers Maxwell evolution in the zero-current sector when Gauss's laws hold, and the six-component momentum becomes the pair of spatial currents. On a constant-rate background a massive two-form sector has positive canonical energy; coupled to a connection, its tree amplitudes grow with energy, and an so(3) Yang–Mills–Higgs completion cancels the leading growth in the fixed-angle tree amplitudes examined.</p><p><strong>Clifford transport.</strong> The transport map, in the split Clifford algebra Cl(3n,3n) and for a fixed Lorentz four-plane, replaces the clock generator by the volume element of the full algebra. At n = 1 the transported temporal algebra is the entire commutant of the Lorentz algebra, and left multiplication by its transported volume implements duality on field-strength bivectors; at general n, with the spectator Lorentz action, the commutant is Cl(3n,3n−3) and the transported rotations form so(3n).</p><p><strong>One family.</strong> At n = 2, gauging these rotations together with the two weak factors supplied by the spatial Clifford algebra gives one chiral Pati–Salam family, with a right-handed neutrino, on the full spinor module. For the chosen Standard-Model embedding the invariant mass kernels form one complex Majorana line; a nonzero value on it, together with the bidoublet prescribed by the transported volume, leaves su(3) ⊕ u(1)<sub>Q</sub> unbroken. A three-parameter choice of neutral Dirac kernels gives a linear relation among four signed Dirac entries. At the specified two-stage background, an allowed invariant quartic has a nonzero gradient transverse to this choice, computed in closed form, so the imposed symmetries do not enforce the relation. Vacuum alignment, mass scales and the number of light families remain open.</p><p>The archive contains the manuscript, its LaTeX source, and the verification package: 16 Python scripts with 312 checks, the runner and a recorded run. This is a preprint and not a completed unified physical theory; the manuscript states its assumptions and open problems, and how AI systems were used in its preparation (Section 1.8).</p>",
+ "keywords": [
+  "split-signature Clifford algebras",
+  "curl realisation of Maxwell evolution",
+  "massive two-form fields",
+  "tree unitarity",
+  "Clifford transport",
+  "commutants of Lorentz algebras",
+  "Pati-Salam models",
+  "electroweak symmetry breaking",
+  "fermion mass relations",
+  "vacuum alignment",
+  "computer-assisted algebra"
+ ],
+ "license": "cc-by-4.0",
+ "access_right": "open",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/driss-bencheikh/The-Spacetime-Electromagnetic-Framework-Part-2",
+   "relation": "isSupplementedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://github.com/driss-bencheikh/spacetime-electromagnetic-framework",
+   "relation": "continues",
+   "scheme": "url",
+   "resource_type": "publication-preprint"
+  }
+ ],
+ "notes": "Preprint. The manuscript, its LaTeX source, the run record and the documentation are licensed under CC BY 4.0; the verification software (Python scripts) under the MIT licence; LICENSE.md states which files each licence covers."
+}

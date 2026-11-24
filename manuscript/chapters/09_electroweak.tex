@@ -1,0 +1,676 @@
+\chapter{The electroweak stage}
+\label{ch:ew}
+
+Read as interactions (\cref{sec:interactions}), the first rung carries an abelian interaction and the mass of one constituent, and the second
+rung the strong and the electroweak interactions of one family. This chapter realises the electroweak stage of the second rung: the family
+and its charges, the direction that breaks the Pati--Salam algebra, the electroweak direction that the generator of mass provides, the
+fermion and vector masses, the split of the masses within the family, and the obstruction to the sum rule that a restricted split obeys.
+
+Part~I has an electroweak stage at the third rung, on a block of rank $64$ chosen by a projector (\PI{Section~7.6.1}). Its numbers recur
+here, at the second rung, on the whole spinor module (\cref{sec:partI}). The normalisations are those of \PI{Section~7.6.1}. A mass kernel is
+normalised by unit singular values on its support. The generators of the gauge algebra are orthonormal for the trace form
+$\langle X,Y\rangle=\Tr(X^\top Y)/64$, and one coupling $g_A$ multiplies them all; this is an assumption, since the product algebra allows
+three couplings, and the conventionally normalised coupling, for which $T_{3L}$ has the eigenvalues $\pm\half$ on the doublets, is
+$g=\sqrt8\,g_A$. Vector masses are computed from the Gram matrix
+\begin{equation}
+\label{eq:gram}
+K_{ab}(\Phi)=\Tr\bigl([T_a,\Phi]^\top[T_b,\Phi]\bigr)
+\end{equation}
+of the orthonormal generators $T_a$ at a vacuum value $\Phi$. Its eigenvalues are the squared masses of the action of \PI{Section~7.4.3}
+for $g_A=1$, whose scalar kinetic term uses the unnormalised trace; with the normalised kinetic term of the action of \cref{sec:vectors} the
+squared masses are $M^2=Zg_A^2K/64$. At the second rung $\su2_L$ is the half $\half(\id+\omega_\cN)$ of the rotations of $\cN$, $\su2_R$ the
+other half, and
+\[
+Y=T_{3R}+\half(B\!-\!L),\qquad Q=T_{3L}+Y,\qquad B\!-\!L=\tfrac23(H_1+H_2+H_3),
+\]
+with $H_1,H_2,H_3$ the Cartan generators of \cref{thm:rung2}(iv). These generators are antisymmetric real matrices. The charge of a field
+under a generator $X$ is an eigenvalue of the Hermitian operator $\hat X=-iX$ on the eigenspace $\Omega=+i$, and traces of charges are traces
+of powers of $\hat X$: for example $\Tr\hat Y^2=\tfrac{10}3$ per Lorentz component on the family, while $\Tr Y^2=-\tfrac{10}3$. The kernels
+$\Phi_0$, $K_{1u}$ and $K_{1d}$ are defined in \cref{thm:psstage,thm:fermionmasses}.
+
+\section{The first rung as an interaction}
+\label{sec:rung1int}
+
+At the first rung the generator of mass carried into $V^-$ is minus the clock, $G_1\,\omega_S=-\gamma^0$. It selects the clock axis, whose
+oriented representative $E_1$ maps to $\Gamma$ by (A1); with this orientation the mass kernel is $\Gamma\omega_S=T$, the Higgs vector at the
+clock of \cref{ch:hyp}. In the gauged $\mathfrak g_1=\su2$
+its stabiliser is $\uu1_J$, with two massive vectors and one massless one. The global phase $\Omega$ moves $T$ in a direction that the gauge
+algebra does not reach, the Dirac phase of \PI{Thm~7.12}, and the kernels of $\mathcal M_1$ fixed by $\uu1_J$ form the complex line through
+$T$, spanned by $T$ and $T\Omega=J\omega_S$.
+\checks{ew-1}
+
+As a classical gauge theory the first rung therefore carries an abelian interaction with unbroken $\uu1_J$, a massive charged pair of
+charge $\pm1$, and a massive fermion doublet of charge $\pm\half$, with the Lagrangian of \cref{sec:coupled}. Its $SU(2)$ completion with the
+single fermion doublet has the global anomaly of \cref{prop:onedoublet}; its residual charges and classical spectrum remain meaningful. Its
+charge $\half J$ is not the electric charge of the family: at the second rung $\half J=H_1$ is a generator of $\su4$ with the values
+$\pm\half$ on every field.
+
+\begin{proposition}[The charge of the first rung at the second]
+\label{prop:rung1charge}
+At the second rung the charge $\half J$ of the first is $H_1=\half E_2E_3$, a Cartan generator of $\su4$, with the values $\pm\half$ on
+every left-handed field, while $Q$ takes the values $0$, $\pm\tfrac13$, $\pm\tfrac23$ and $\pm1$. In the trace form, and in the limit
+$v_R\to\infty$ of \cref{thm:vectors}:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item of the squared norm of $H_1$, two thirds lie along colour, one twelfth along the photon direction $Q$, one twentieth along the $Z$,
+which is along $T_{3L}-\tfrac38Q$, and one fifth along the $Z'$;
+\item of the squared norm of $Q$, three eighths lie along $T_{3L}$, three eighths along $T_{3R}$, and one twelfth along each of $H_1$, $H_2$
+and $H_3$.
+\end{enumerate}
+\checks{ew-15, numerically}
+\end{proposition}
+
+The generator of the first rung thus has the squared overlap $\tfrac1{12}$ with the photon direction of the second, the same as the charges
+$H_2$ and $H_3$ of the other two planes of the six temporal directions; the three together make $B\!-\!L$, which carries a quarter of the
+squared norm of the photon direction. No rescaling and no change of basis turns the spectrum $\pm\half$ of $\half J$ into that of $Q$. These
+are statements about generators in the trace metric. The photon direction of the second rung is a new combination, of which the generator
+of the first is one part, and whether the gauge field of the first rung continues into that of the second is not addressed.
+
+\section{The family}
+
+\begin{theorem}[One family of the Standard Model]
+\label{thm:family}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item On the sixteen left-handed Weyl fields of $\R^{64}$, colour, $T_{3L}$ and $Y$ take the values of one family of the Standard Model
+with a right-handed neutrino,
+\[
+(\mathbf3,\mathbf2)_{1/6}\oplus(\bar{\mathbf3},\mathbf1)_{-2/3}\oplus(\bar{\mathbf3},\mathbf1)_{1/3}\oplus(\mathbf1,\mathbf2)_{-1/2}\oplus
+(\mathbf1,\mathbf1)_{1}\oplus(\mathbf1,\mathbf1)_{0},
+\]
+with $B\!-\!L=\tfrac13,-\tfrac13,-\tfrac13,-1,1,1$; a colour triplet with $B\!-\!L=\tfrac13$ is a $\mathbf3$, one with $-\tfrac13$ a
+$\bar{\mathbf3}$.
+\item On these fields $\Tr\hat Y=\Tr\hat Y^3=\Tr\hat T_{3L}^2\hat Y=\Tr\hat C^2\hat Y=0$ for a colour generator $C$, and
+$\Tr\hat Y^2=\tfrac{10}3$ per Lorentz component:
+the gravitational, $Y^3$, $SU(2)^2Y$ and $SU(3)^2Y$ anomalies vanish.
+\end{enumerate}
+\checks{ew-2, ew-3, numerically, with the charges rounded to sixths after a bound on the error}
+\end{theorem}
+
+The lepton assignments are the standard electroweak ones of \cite{Glashow61,Weinberg67}; the quark charges follow from the branching of
+(i), and the right-handed neutrino is that of the Pati--Salam model \cite{PatiSalam}. Which of the two $\su2$ is $\su2_L$ is
+fixed by the orientation that defines the left-handed fields (\cref{thm:ps}(v)); here it is the half on which $\omega_\cN=+1$, which acts on
+the $\mathbf4$.
+
+\section{The Pati--Salam direction}
+
+\begin{theorem}[The direction that keeps the Standard Model]
+\label{thm:psstage}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item The kernels of $\mathcal M_2$ invariant under $\su3\oplus\su2_L\oplus\uu1_Y$, for the embedding of \cref{thm:family}, form one complex
+line, spanned by $\Phi_0$ and $\Omega\Phi_0$, and it lies in the $(\overline{\mathbf{10}},\mathbf1,\mathbf3)$. No other part of
+$\mathcal M_2$ contains such a kernel.
+\item The stabiliser of $\Phi_0$ in the gauge algebra is $\su3\oplus\su2_L\oplus\uu1_Y$, of dimension $12$. The eigenvalues of the Gram
+matrix \cref{eq:gram}, relative to $|\Phi_0|^2$, are $0$ twelve times, $4$ eight times and $20$ once: six leptoquark vectors with
+$Y=\pm\tfrac23$ and the pair $W_R^\pm$ with $Y=\pm1$ at one value, and a neutral $Z'$ at five times that value.
+\item $\Phi_0$ has rank four, and its range is the kernel of $Y$ on $\R^{64}$: it is a Majorana mass for the right-handed neutrino and for
+nothing else.
+\item The orbit of $\Phi_0$ under the $21$ gauge generators and its orbit under these and the two global phases $\Omega$ and $G_2$ have the
+same dimension, nine, and $[\Omega,\Phi_0]=[G_2,\Phi_0]=-2\,[T_{3R},\Phi_0]$: the phase rotations of the condensate are gauge rotations, so
+no separate Goldstone direction, and no Majoron, arises from these phases at this condensate.
+\end{enumerate}
+\checks{ew-4, ew-5, ew-6, ew-7, numerically}
+\end{theorem}
+
+Statement (i) has a short reason. Among the symmetric products of two of the left-handed fields of \cref{thm:family}, only
+$\nu^c\nu^c$ is a singlet of $\su3\oplus\su2_L\oplus\uu1_Y$: every other product carries colour, weak isospin or hypercharge. The invariant
+kernels therefore form one complex line, supported on the right-handed neutrino. Once the stage is required to keep the algebra of the
+Standard Model, its direction is unique up to a phase; its scale $v_R$ is not fixed. Part~I selects the same direction by potentials
+(\PI{Section~7.5}); here it is characterised by what it keeps. Spontaneous parity breaking in left--right
+symmetric theories was studied in \cite{SenjanovicMohapatra75}; the right-handed triplet used here has the left--right quantum numbers of
+$\Delta_R$ in \cite[eq.~(2.4)]{MohapatraSenjanovic81}, and its $\su4$ representation is that of \cite[eqs.~(3.5)--(3.7)]{DingKingLu2021}.
+It is the vacuum $\Phi_0$ of \PI{Thms~7.34 and~7.41}, with the same spectrum $0,4,20$ and the same absence of a Majoron.
+
+\section{The electroweak direction}
+
+By (A3) the mass of the second rung is carried by the generator of mass, carried into $V^-$: $\kappa\,G_2\,\omega_S$.
+
+\begin{proposition}[The generator of mass at the second rung]
+\label{prop:ewdir}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item $G_2\,\omega_S=\pm\gamma^0\omega_\cN$ is an antisymmetric, Lorentz-invariant mass kernel with $(G_2\,\omega_S)^2=-\id$, and it lies in
+the $(\mathbf1,\mathbf2,\mathbf2)$.
+\item Its stabiliser in the gauge algebra is $\su4\oplus\su2_V$, of dimension $18$, and $T_{3L}+T_{3R}$ lies in $\su2_V$.
+\item The kernels of $\mathcal M_2$ fixed by this stabiliser form the complex line through $G_2\,\omega_S$.
+\item The image of the clock vector, $\Gamma\omega_S$, has a stabiliser of dimension $16$, and $\Phi_0$ one of dimension $12$.
+\item No nonzero kernel of $\mathcal M_2$ has a stabiliser of dimension larger than $18$.
+\end{enumerate}
+\checks{ew-8, for (i) to (iv), numerically}
+\end{proposition}
+
+\begin{proof}[Proof of (v)]
+The stabiliser of a sum of components in different isotypic parts is the intersection of their stabilisers, so it suffices to consider one
+part at a time. In the $(\mathbf1,\mathbf2,\mathbf2)$ the gauge algebra acts on a complex $2\times2$ matrix $\Phi$ by
+$\Phi\mapsto U_L\Phi U_R^\dagger$, and the stabiliser of a nonzero $\Phi$ is $\su4\oplus\su2_V$ when $\Phi^\dagger\Phi$ is a multiple of
+$\id$ and $\su4\oplus\uu1$ otherwise. Let $\mathfrak h$ be the stabiliser of a nonzero kernel, with $\dim\mathfrak h\ge18$. Its projection to
+$\su4$ has dimension at least $12$. A proper subalgebra $\mathfrak k$ of $\su4$ has dimension less than $12$: otherwise its orthogonal
+complement for the Killing form, of dimension at most three, would be $\mathfrak k$-invariant, and the kernel of the action of $\mathfrak k$
+on it, of dimension at least nine since $\mathfrak k$ acts there through an orthogonal algebra of dimension at most three, would be a nonzero
+ideal of $\su4$ inside $\mathfrak k$, against simplicity. So the projection is $\su4$. Then $\mathfrak h\cap\su4$ is an ideal of $\su4$, and
+it is not zero, since otherwise $\mathfrak h$ would embed in $\su2\oplus\su2$, of dimension six. Hence $\mathfrak h\supset\su4$, and a kernel
+fixed by $\su4$ lies in the $(\mathbf1,\mathbf2,\mathbf2)$, the only part on which $\su4$ acts trivially (\cref{thm:massfield2}).
+\end{proof}
+
+The electroweak direction of (A3) is therefore the direction of largest symmetry among the nonzero values of the mass field, unique up to the
+gauge group, the global phase and the scale; it is the vacuum $v_R=0$, $|v_u|=|v_d|$ of \PI{Thm~7.42}. Let a potential of the mass field be
+invariant under the gauge algebra and the global phases. Its gradient at a point of this line is fixed by the stabiliser, so by (iii) it
+lies in the complex line; the phase invariance removes its angular component within the line, and the gradient is radial. On the
+fixed-norm sphere the direction is therefore critical, as in the criterion of Michel \cite{Michel71}; in the full space the radial
+derivative can survive. The same holds at the first rung for $T$. Whether the potential has a stationary point at a given radius, or its
+minimum there, is not decided. Together with $\Phi_0$ the generator of mass leaves $\su3\oplus\uu1_Q$ (\cref{fig:chain}): in this specified
+broken phase the unbroken abelian factor is the electric charge, and its gauge field is the photon direction.
+
+The electroweak direction is a transported element, $G_2\,\omega_S=\sigma_2(T_2)\,\omega_S$. The Pati--Salam direction is not, although it
+lies, like every kernel, in $\Cl(6,3)\,\omega_S$ (\cref{thm:massfield2}(i)).
+
+\begin{proposition}[The Majorana line is not transported]
+\label{prop:notransport}
+Let $\mathcal T=\sigma_2(\Cl(V^+_2))$ be the algebra generated by $(\Gamma;P)$. Every kernel $C\omega_S$ with $C\in\mathcal T$ commutes with
+the three diagonal weak rotations $S_i=T_i^L+T_i^R$. No nonzero kernel on the complex line of $\Phi_0$ does. Hence no nonzero kernel on that
+line has the form $\sigma_2(a)\,\omega_S$.
+\checks{ew-21}
+\end{proposition}
+
+\begin{proof}
+Each $S_i=\half N_jN_k$ commutes with every generator of $\mathcal T$, since each of $N_j,N_k$ anticommutes with it, and with $\omega_S$, for
+the same reason. The line of $\Phi_0$ lies in the $(\overline{\mathbf{10}},\mathbf1,\mathbf3)$, a singlet of $\su2_L$ and a triplet of
+$\su2_R$, hence a triplet of the diagonal $\su2_V$, whose only fixed vector is zero; this applies to both real directions of the line.
+\end{proof}
+
+The argument excludes a construction of $\Phi_0$ from the transported temporal algebra, even after multiplication by $\omega_S$; it does not
+exclude a construction that uses the further spatial generators.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\small,>=Stealth,
+  alg/.style={draw,rounded corners=3pt,align=center,inner sep=5pt,fill=blue!3}]
+\node[alg] (top) at (0,0) {$\su4\oplus\su2_L\oplus\su2_R$\\ \footnotesize dimension $21$};
+\node[alg] (l) at (-4.2,-2.2) {$\su3\oplus\su2_L\oplus\uu1_Y$\\ \footnotesize dimension $12$};
+\node[alg] (r) at (4.2,-2.2) {$\su4\oplus\su2_V$\\ \footnotesize dimension $18$};
+\node[alg] (bot) at (0,-4.4) {$\su3\oplus\uu1_Q$\\ \footnotesize dimension $9$};
+\draw[->,thick] (top) -- node[above left,align=right,font=\footnotesize]{$v_R\,\Phi_0\in(\overline{\mathbf{10}},\mathbf1,\mathbf3)$\\ Gram eigenvalues $0^{12},4^8,20^1$} (l);
+\draw[->,thick] (top) -- node[above right,align=left,font=\footnotesize]{$\kappa\,G_2\,\omega_S\in(\mathbf1,\mathbf2,\mathbf2)$\\ the generator of mass} (r);
+\draw[->,thick] (l) -- node[below left,align=right,font=\footnotesize]{$\kappa\,G_2\,\omega_S$\\ $W^\pm$, $Z$: $m_W^2/m_Z^2\to\frac58$} (bot);
+\draw[->,thick] (r) -- node[below right,align=left,font=\footnotesize]{$v_R\,\Phi_0$} (bot);
+\end{tikzpicture}
+\caption{The breaking of the gauge algebra of the second rung by the two vacuum directions (\cref{thm:psstage,prop:ewdir,thm:vectors}), for
+the chosen two-stage background with $v_R\kappa\ne0$. The Pati--Salam direction $\Phi_0$ is the only one that keeps the algebra of the
+Standard Model; the generator of mass is the nonzero direction of largest symmetry. Together they leave colour and the electric charge, in
+either order. The eigenvalues of the Gram matrix at the first step are relative to $|\Phi_0|^2$, with their multiplicities.}
+\label{fig:chain}
+\end{figure}
+
+\section{Fermion and vector masses}
+\label{sec:vectors}
+
+\begin{theorem}[The masses of the family at the generator of mass]
+\label{thm:fermionmasses}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item The kernels of $\mathcal M_2$ invariant under $\su3\oplus\uu1_Q$ form a space of dimension $12$: two each in the
+$(\overline{\mathbf{10}},\mathbf1,\mathbf3)$ and the $(\mathbf{10},\mathbf3,\mathbf1)$, four each in the $(\mathbf{15},\mathbf2,\mathbf2)$ and the
+$(\mathbf1,\mathbf2,\mathbf2)$. In each bidoublet the up-type kernels, zero on the sectors $d$ and $e$, and the down-type kernels, zero on $u$
+and $\nu$, form spaces of dimension two. The sectors $u$, $d$, $\nu$, $e$ of the charge have real dimensions $24$, $24$, $8$ and $8$.
+\item An up-type kernel $K_{1u}$ of the $(\mathbf1,\mathbf2,\mathbf2)$ gives one Dirac entry to the up quarks and the neutrinos, a down-type
+kernel $K_{1d}$ one to the down quarks and the electron: $m_u=m_\nu^D$ and $m_d=m_e$.
+\item $G_2\,\omega_S$ has up-type and down-type parts of equal norm, and all its $64$ singular values are $1$: with it alone every Dirac pair
+of the family has the same entry, and the sixteen Weyl fields form eight Dirac fermions of equal mass.
+\item A kernel $K_{15}$ of the $(\mathbf{15},\mathbf2,\mathbf2)$, aligned with $K_{1u}$ on the quarks, is $-3K_{1u}$ on the leptons:
+$\Phi=\kappa_1K_{1u}+\kappa_{15}K_{15}$ gives $m_{\rm quark}=|\kappa_1+\kappa_{15}|$ and $m_{\rm lepton}=|\kappa_1-3\kappa_{15}|$.
+\item For $\Phi=v_R\Phi_0+\kappa K_{1u}$ the neutral sector has the singular values $\half\bigl(\sqrt{v_R^2+4\kappa^2}\mp v_R\bigr)$, four
+times each: the seesaw pair. At $(v_R,v_u,v_d)=(20,3,1)$ the masses are $\half(\sqrt{436}\mp20)$ for the neutral pair, $3$ for the up quarks
+and $1$ for the down quarks and the electron, as in \PI{Example~7.36}.
+\end{enumerate}
+\checks{ew-9, ew-10, ew-11, numerically}
+\end{theorem}
+
+The masses in (ii) to (v) are those of the kernel itself, that is, for a unit Yukawa coupling; with a common Yukawa coupling $y$ restored
+they are multiplied by $|y|$. These are the statements of \PI{Prop.~7.35} at the second rung: the factor of Georgi and Jarlskog
+\cite{GeorgiJarlskog79} and the seesaw \cite{Minkowski77,MohapatraSenjanovic80}. What the second rung adds is (iii): with the mass carried by
+the generator of mass alone, as (A3) has it, every Dirac entry of the family is $y\kappa$. With $v_R\Phi_0$ present the two neutral masses
+are the singular values of the seesaw block. The masses of a family are not equal, so a split needs values of the mass field in other
+neutral directions; (A3) alone does not give them (\cref{sec:split}).
+
+\begin{theorem}[The vector masses at the electroweak stage]
+\label{thm:vectors}
+Let $\Phi=v_R\Phi_0+v_uK_{1u}+v_dK_{1d}$, with the up-type and down-type kernels
+$K_{1u},K_{1d}=\half G_2\,\omega_S\mp(T_{3L}+T_{3R})\,\omega_S$ of \cref{prop:ymvalues}(ii), and put $r=v_R^2$ and $C=64(v_u^2+v_d^2)$.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item In a trace-orthonormal basis adapted to the charges the Gram matrix \cref{eq:gram} is zero on the eight gluons and $16r$ on the six
+leptoquarks; it has two equal charged blocks and one neutral block,
+\[
+K_{\rm ch}=\begin{pmatrix}C&-128v_uv_d\\-128v_uv_d&C+16r\end{pmatrix},\qquad
+K_{\rm n}=\begin{pmatrix}C&-C&0\\-C&C+32r&-16\sqrt6\,r\\0&-16\sqrt6\,r&48r\end{pmatrix},
+\]
+the latter on the normalised axes of $T_{3L}$, $T_{3R}$ and $B\!-\!L$. The characteristic polynomial of $K_{\rm n}$ is
+$\lambda\bigl[\lambda^2-(2C+80r)\lambda+128Cr\bigr]$. For $v_R\ne0$ and $(v_u,v_d)\ne(0,0)$ it has exactly one zero eigenvalue, the photon;
+it has two if exactly one of $C$ and $r$ vanishes, and three at $\Phi=0$.
+\item At $(v_R,v_u,v_d)=(20,1,\half)$ the eigenvalues of $K$ are
+\[
+0\ (9),\quad 79.360\ (2),\quad 127.872\ (1),\quad 6400\ (6),\quad 6480.640\ (2),\quad 32032.128\ (1),
+\]
+the numbers of \PI{Example~7.36}, with $m_W^2/m_Z^2=0.62062$; at $v_R=200$ the ratio differs from $\tfrac58$ by $-4.4\times10^{-5}$. The
+stabiliser in the gauge algebra is $\su3\oplus\uu1_Q$, and $Q$ annihilates $\Phi$.
+\item As $r\to\infty$ at fixed $v_u$, $v_d$ with $C>0$, the light charged root tends to $C$ and the light neutral root to $8C/5$, so $m_W^2/m_Z^2\to\tfrac58=1-\sin^2\theta_W$,
+with
+\[
+\sin^2\theta_W=\frac{|T_{3L}|^2}{|T_{3L}|^2+|Y|^2}=\frac{1/8}{1/8+5/24}=\frac38 .
+\]
+\item With the generator of mass, $\Phi=20\,\Phi_0+G_2\,\omega_S$, the ratio is $m_W^2/m_Z^2=0.61349$.
+\end{enumerate}
+\checks{ew-12, ew-19, numerically: (i) against the eigenvalues at three vacua, (ii) against the printed digits of \PI{Example~7.36}}
+\end{theorem}
+
+In the action of \cref{sec:coupled} carried to the second rung,
+\[
+L=\half\Psi^\top K^\mu D_\mu\Psi-\tfrac y2\,\Psi^\top m\,\Psi-\tfrac14F^a_{\mu\nu}F^{a\mu\nu}+\tfrac Z2\,\langle D_\mu m,D^\mu m\rangle-V(m),
+\]
+with $D_\mu m=\partial_\mu m+g_A\,[A_\mu,m]$, $m\in\mathcal M_2$ and the trace form $\langle\cdot,\cdot\rangle$, the squared vector masses are $M^2=Zg_A^2K/64=Zg^2K/512$. At the
+background $v_R\Phi_0+\kappa\,G_2\,\omega_S$ in the decoupling regime $v_R\gg|\kappa|$, where $v_u=v_d=\kappa$, this gives $M_W^2=\tfrac14Zg^2\kappa^2$ and
+$M_Z^2=\tfrac25Zg^2\kappa^2$, the form of the Standard Model with $v=\sqrt Z\,\kappa$, and Dirac entries $y\kappa$; the kernel
+$\kappa\,G_2\,\omega_S$ alone leaves $\su4\oplus\su2_V$. The vacuum stabiliser fixes the generator $Q$; its gauge-field combination also
+depends on the couplings. For independent canonically normalised couplings $g_L$, $g_R$ and $g_4$ of the three factors,
+$1/g_Y^2=1/g_R^2+2/(3g_4^2)$, and equal couplings give $\sin^2\theta_W=\tfrac38$ at the scale where they match. This is the value of
+\PI{Thm~7.34}(c) and of unified theories with the canonical normalisation of hypercharge \cite{GeorgiQuinnWeinberg74,PDGGUT}; without that scale, the spectrum, the running and the thresholds it is a
+normalisation and not a prediction of the low-energy angle. The deviation of $m_W^2/m_Z^2$ from $\tfrac58$ comes from the mixing of $W$ and
+$Z$ with $W_R$ and $Z'$; it is of order $\kappa^2/v_R^2$ and vanishes as $v_R\to\infty$, so that $\rho=1$ at tree level up to such
+corrections, as in Part~I.
+
+\section{The uneaten direction}
+
+\begin{theorem}[Broken directions at the second rung]
+\label{thm:uneaten}
+For $\Phi=v_R\Phi_0+v_uK_{1u}+v_dK_{1d}$, with the $21$ gauge generators, and $23$ with the global phases $\Omega$ and $G_2$:
+\begin{center}
+\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+vacuum & stab.\ in 21 & stab.\ in 23 & massive vectors & 23-orbit & uneaten\\
+\midrule
+generic, $v_R\ne0$, $v_uv_d\ne0$ & 9 & 10 & 12 & 13 & 1\\
+$v_R\ne0$, exactly one of $v_u,v_d$ zero & 9 & 11 & 12 & 12 & 0\\
+$v_R\ne0$, $v_u=v_d=0$ & 12 & 14 & 9 & 9 & 0\\
+$v_R=0$, $v_uv_d\ne0$, $|v_u|\ne|v_d|$ & 16 & 17 & 5 & 6 & 1\\
+$v_R=0$, $|v_u|=|v_d|\ne0$ & 18 & 19 & 3 & 4 & 1\\
+$v_R=0$, one of $v_u,v_d$ zero & 16 & 18 & 5 & 5 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+These are the dimensions of \PI{Thm~7.42}, row by row. The vacuum $v_R\Phi_0+\kappa\,G_2\,\omega_S$ is in the first row, and $G_2\,\omega_S$
+alone in the fifth. At the generic vacuum the global charge $4B=-G_2+(B\!-\!L)$, with the values $\tfrac43$, $0$ and $-\tfrac43$, is unbroken,
+and the broken charge is $\Omega-G_2$, which is $2$ on the $(\mathbf4,\mathbf2,\mathbf1)$ and $0$ on the $(\bar{\mathbf4},\mathbf1,\mathbf2)$.
+With all fields left-handed, the anomaly coefficients of $\Omega-G_2$ are $2$, $4$, $\tfrac43$, $\tfrac{16}3$ and $16$ for $SU(3)^2$,
+$SU(2)_L^2$, $Y^2$, $Q^2$ and gravitation, and those of $4B$ are $0$, $2$, $-2$ and $0$ for $SU(3)^2$, $SU(2)_L^2$, $Y^2$ and gravitation.
+\checks{ew-13, ew-14, numerically}
+\end{theorem}
+
+The orbit count proves that at the generic vacuum one tangent of the orbit under the $23$ generators is not a gauge direction. It becomes a
+Goldstone mode only if the potential and the rest of the classical action preserve the two global phases, which gauge covariance does not
+require. If they do, the generic vacuum has one broken global direction independent of the gauge orbit; its current has a colour anomaly,
+which makes it a candidate axion-like direction \cite{PecceiQuinn77,Weinberg78,Wilczek78}, as $1-\Gamma$ is in \PI{Thm~7.42}. The unbroken
+$4B$ is baryon number for the classical vacuum stabiliser, with the electroweak anomaly listed. Gauge invariance alone permits explicit
+breaking. On the $(\mathbf1,\mathbf2,\mathbf2)$, a complex bidoublet $F\mapsto U_LFU_R^\dagger$, the gauge-invariant quadratic forms span a
+space of dimension three, of which only the norm is invariant under $\Omega-G_2$; the other two are $\Re\det F$ and $\Im\det F$, the forms of
+\PI{Prop.~7.43}. The broken phase multiplies $F$ by $e^{iq\alpha}$ and $\det F$ by $e^{2iq\alpha}$, so at $\alpha=0$ a term $\mu^2\Re\det F$ has the slope
+$-2q\mu^2\Im\det F$ and the second derivative $-4q^2\mu^2\Re\det F$. At the real diagonal backgrounds of the theorem, where
+$\det F=v_uv_d$, it gives the uneaten direction a curvature at tree level when $v_uv_d\ne0$ and none when one of them vanishes; for a general
+complex $F$ a mass interpretation also requires a stationary vacuum. Its mass and couplings are not determined by the orbit count, which
+also gives no decay constant.
+\checks{ew-20}
+
+\section{The split of the masses}
+\label{sec:split}
+
+With the generator of mass alone the family has one Dirac entry (\cref{thm:fermionmasses}(iii)). The hypothesis has a second source of values
+of the mass field: by (A4) a Yang--Mills generator carried into $V^-$ by $\omega_S$ is a value of the mass field, and at one constituent the
+mass field consists of exactly these and the Higgs vectors (\cref{thm:massfield}). At the electroweak stage a vacuum value along a generator
+must leave $\su3\oplus\uu1_Q$ unbroken, so the generators that can carry one are the neutral generators, the combinations of $T_{3L}$,
+$T_{3R}$ and $B\!-\!L$.
+
+\begin{proposition}[The Yang--Mills values of the neutral generators]
+\label{prop:ymvalues}
+Write $z_f$ for the value of a neutral kernel on the Dirac pair $f\in\{u,d,\nu,e\}$, relative to $G_2\,\omega_S$ and with $\Omega$ as the
+imaginary unit, and $X(f_L)$ for the charge of the left-handed member $f_L$ under a generator $X$.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item For $X=T_{3L}+T_{3R}$, $B\!-\!L$ and $Q$ the kernel $X\omega_S$ has $z_f=-X(f_L)$, the sign being an orientation convention common to
+all neutral generators: the values $(-\half,\half,-\half,\half)$, $(-\tfrac13,-\tfrac13,1,1)$ and $(-\tfrac23,\tfrac13,0,1)$ on
+$(u,d,\nu,e)$. The kernel $(T_{3L}-T_{3R})\,\omega_S$ is symmetric and gives no mass. Multiplication by $\Omega$ multiplies the values by $i$.
+\item $\half G_2\,\omega_S-(T_{3L}+T_{3R})\,\omega_S$ and $\half G_2\,\omega_S+(T_{3L}+T_{3R})\,\omega_S$ are the up-type and the down-type
+kernels $K_{1u}$ and $K_{1d}$ of \cref{thm:fermionmasses}, with unit singular values on $u$ and $\nu$, and on $d$ and $e$: the generator of
+mass is their sum, and the Yang--Mills value of $T_{3L}+T_{3R}$ is half their difference.
+\item $(T_{3L}+T_{3R})\,\omega_S$ lies in the $(\mathbf1,\mathbf2,\mathbf2)$ and $(B\!-\!L)\,\omega_S$ in the $(\mathbf{15},\mathbf2,\mathbf2)$. The
+factor $-3$ of Georgi and Jarlskog is the ratio of the $B\!-\!L$ charges of the leptons and the quarks.
+\item With their products by $\Omega$, the kernels $G_2\,\omega_S$, $(T_{3L}+T_{3R})\,\omega_S$ and $(B\!-\!L)\,\omega_S$ span six of the
+eight real dimensions of the neutral bidoublet kernels. The other two contain a kernel $D$ with the values $(1,-1,-3,3)$: the part of the
+$(\mathbf{15},\mathbf2,\mathbf2)$ in which up and down differ.
+\end{enumerate}
+\checks{ew-16, numerically}
+\end{proposition}
+
+The products by $\Omega$ are not Yang--Mills values, since for $X$ in the gauge algebra $\Omega X$ is symmetric; nor is
+$\Omega\,G_2\,\omega_S=-S_2$, the spatial volume of the rung (\cref{thm:massfield2}(iv)), the generator of mass. The map $X\mapsto X\omega_S$
+is equivariant under $\su4$ and under the diagonal $\su2_V$, but not under $\su2_L\oplus\su2_R$: $[t,X\omega_S]=[t,X]\,\omega_S+X\,[t,\omega_S]$,
+and the generators $\half N_i$ of $\mathfrak s_2$ anticommute with $\omega_S$. For instance $B\!-\!L$ commutes with every weak generator,
+while $(B\!-\!L)\,\omega_S$ transforms in a weak bidoublet. The kernels $X\omega_S$ are therefore allowed backgrounds constructed from the
+neutral generators, and restricting the vacuum to them is an ansatz.
+\checks{ew-22}
+
+\begin{definition}[The restricted split]
+\label{def:split}
+The restricted electroweak vacuum of the mass field is the generator of mass with its rate together with the Yang--Mills value of a neutral
+generator, both carried into $V^-$:
+\[
+m=\kappa\,G_2\,\omega_S+X\omega_S,\qquad X=x_3\,(T_{3L}+T_{3R})+x_B\,(B\!-\!L),\qquad \kappa,\ x_3,\ x_B\in\R .
+\]
+A part of $X$ along $T_{3L}-T_{3R}$ drops out.
+\end{definition}
+
+\begin{theorem}[The masses of the family in the restricted split]
+\label{thm:split}
+Let $m$ be the vacuum of \cref{def:split}.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item The signed Dirac entries are $z_f=\kappa-X(f_L)$:
+\[
+z_u=\kappa-\tfrac{x_3}2-\tfrac{x_B}3,\qquad z_d=\kappa+\tfrac{x_3}2-\tfrac{x_B}3,\qquad
+z_\nu=\kappa-\tfrac{x_3}2+x_B,\qquad z_e=\kappa+\tfrac{x_3}2+x_B ,
+\]
+and the Dirac masses are $|z_f|$, or $|y\,z_f|$ with a common Yukawa coupling $y$ restored.
+\item The signed entries obey the sum rule $z_u-z_d=z_\nu-z_e$. Any three of them are reached, with $\kappa=\tfrac14(2z_u+z_d+z_e)$,
+$x_3=z_d-z_u$ and $x_B=\tfrac34(z_e-z_d)$, and the fourth follows: $z_\nu=z_u-z_d+z_e$.
+\item With $v_R\Phi_0$ added and a nonzero bidoublet part, the stabiliser in the gauge algebra is $\su3\oplus\uu1_Q$. Among the $23$
+generators with the global phases it has dimension $11$ at $x_3=\mp2\kappa$, $x_B=0$, the pure up-type and the pure down-type kernels, where
+$m_d=m_e=0$ or $m_u=m_\nu^D=0$ and no direction is left uneaten, and $10$ elsewhere. At the pure up-type vacuum the kernels fixed by this
+extended stabiliser span the eight real dimensions of the lines of $\Phi_0$, of the neutral $(\mathbf{10},\mathbf3,\mathbf1)$, and of the
+up-type kernels of the $(\mathbf1,\mathbf2,\mathbf2)$ and the $(\mathbf{15},\mathbf2,\mathbf2)$; the gauge stabiliser alone, colour and $Q$,
+fixes all twelve neutral directions.
+\item For every choice of the signs, $|m_\nu^D-m_u|\le m_d+m_e$, and so also when the values are multiplied by phases through $\Omega$.
+\end{enumerate}
+\checks{ew-17, ew-18, pt-6, numerically; (iv) follows from (ii) by the triangle inequality}
+\end{theorem}
+
+The restricted split thus divides the family in a definite way (\cref{fig:diracpairs}). The generator of mass gives the common value
+$\kappa$; the Yang--Mills value of $T_{3L}+T_{3R}$ splits up from down by $\mp\tfrac{x_3}2$; and that of $B\!-\!L$ splits quarks from leptons
+in the ratio of their charges: the lepton-to-quark coefficient of this contribution is $-3$, analogous to the Clebsch factor of Georgi and
+Jarlskog \cite{GeorgiJarlskog79}, whose eigenvalue relations would need a specified texture and matching scale. Each signed entry is the rate minus the charge of the left-handed
+field under one neutral generator. Three real values give four entries, so the Dirac entry of the neutrino is fixed by the other three,
+$z_\nu=z_u-z_d+z_e$. The hierarchy of the top quark over the bottom quark and the tau motivates reading the heaviest family, within this
+ansatz, as close to $x_3=-2\kappa$, $x_B=0$, the pure up-type kernel, which is the vacuum of larger symmetry in (iii); its down-type masses
+then measure the distance from that vacuum, and by (iv) its neutrino Dirac mass lies within $m_d+m_e$ of its up-type mass. This is the
+equality of the up-type and the neutrino Dirac masses of Pati--Salam theories with one bidoublet and a common $\su4$-singlet Yukawa coupling
+\cite{PatiSalam,MohapatraSenjanovic80}, here with a definite correction; a coupling to the $(\mathbf{15},\mathbf2,\mathbf2)$ can split quark
+from lepton entries. At $(\kappa,x_3,x_B)=(1,-1.98,0.004)$ the masses of $u$, $d$, $\nu$ and $e$ are $1.98867$, $0.00867$,
+$1.994$ and $0.014$.
+\checks{ew-17, ew-18, for the numbers}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\small,>=Stealth,x=4.6cm,y=2.1cm]
+\draw[->,black!50] (-1.05,-1.5) -- (1.0,-1.5) node[right,font=\footnotesize]{$T_{3L}(f_L)$};
+\draw[->,black!50] (-1.05,-1.5) -- (-1.05,0.85) node[above,font=\footnotesize]{$(B\!-\!L)(f_L)$};
+\foreach \x/\l in {-0.5/{-\tfrac12},0.5/{\tfrac12}} {\draw[black!50] (\x,-1.53) -- (\x,-1.47); \node[below,font=\footnotesize] at (\x,-1.53) {$\l$};}
+\foreach \y/\l in {-1/{-1},0.3333/{\tfrac13}} {\draw[black!50] (-1.08,\y) -- (-1.02,\y); \node[left,font=\footnotesize] at (-1.08,\y) {$\l$};}
+\draw[black!20,dashed] (-1.05,0.3333) -- (-0.5,0.3333) (-1.05,-1) -- (-0.5,-1) (-0.5,-1.5) -- (-0.5,-1) (0.5,-1.5) -- (0.5,-1);
+\draw[thick,blue!60!black] (-0.5,-1) rectangle (0.5,0.3333);
+\foreach \x/\y in {0.5/0.3333,-0.5/0.3333,0.5/-1,-0.5/-1} \fill[blue!60!black] (\x,\y) circle (2.2pt);
+\node[above=3pt] at (0.5,0.3333) {$u$: $(1,-\tfrac12,-\tfrac13,1)$};
+\node[above=3pt] at (-0.5,0.3333) {$d$: $(1,\tfrac12,-\tfrac13,-1)$};
+\node[below=3pt] at (0.5,-1) {$\nu$: $(1,-\tfrac12,1,-3)$};
+\node[below=3pt] at (-0.5,-1) {$e$: $(1,\tfrac12,1,3)$};
+\node[font=\footnotesize] at (0,-0.33) {$z_u-z_d-z_\nu+z_e=8d$};
+\end{tikzpicture}
+\caption{The four Dirac pairs of the family at the charges $(T_{3L},B\!-\!L)$ of their left-handed members, with the values of the four real
+neutral Dirac directions $\bigl(G_2\,\omega_S,\ (T_{3L}+T_{3R})\,\omega_S,\ (B\!-\!L)\,\omega_S,\ D\bigr)$ on each. The generator of mass is
+constant, the Yang--Mills values of $T_{3L}+T_{3R}$ and $B\!-\!L$ are affine in the two charges, and $D=6\,T_{3L}(B\!-\!L)$ is their product.
+The alternating sum around the rectangle annihilates the affine functions and picks out $D$: the sum rule of \cref{thm:split} is the absence
+of the product term (\cref{thm:splitgen}).}
+\label{fig:diracpairs}
+\end{figure}
+
+\begin{remark}[The electric charge alone]
+The Yang--Mills value of the electric charge alone, $X=\lambda Q$, gives $z_f=\kappa-\lambda Q(f_L)$: the neutrino keeps $\kappa$, and
+$z_u=\kappa-\tfrac{2\lambda}3$, $z_d=\kappa+\tfrac\lambda3$, $z_e=\kappa+\lambda$. Eliminating $\kappa$ and $\lambda$ gives
+$2z_u=5z_d-3z_e$, so $m_u\le\half(5m_d+3m_e)$ everywhere in this ansatz: the down-type masses cannot both be small against the up-type mass.
+The split needs $T_{3L}+T_{3R}$ and $B\!-\!L$ as independent values.
+\end{remark}
+
+\section{The sum rule is not protected}
+\label{sec:potential}
+
+The vacuum of the restricted split, $v_R\Phi_0$ together with \cref{def:split}, is put in by hand: the hypothesis gives no potential for the
+mass field. We now show that no symmetry protects the sum rule of \cref{thm:split}(ii): an invariant quartic drives the mass field out of the
+restricted ansatz, by an amount that we compute in closed form. With $S$, $F$, $R$ and $L$ the parts of $m$ in the
+$(\mathbf{15},\mathbf2,\mathbf2)$, the $(\mathbf1,\mathbf2,\mathbf2)$, the $(\overline{\mathbf{10}},\mathbf1,\mathbf3)$ and the
+$(\mathbf{10},\mathbf3,\mathbf1)$, the quartics
+\[
+I_1=\Tr\bigl((mm^\top)^2\bigr),\qquad I_2=\Tr(SF^\top RR^\top),\qquad I_3=\Tr(FF^\top RR^\top),\qquad I_4=\Tr(LF^\top RF^\top)
+\]
+are invariant under the gauge algebra and the global phases, since the projections onto the parts are equivariant and the gauge group acts by
+$m\mapsto UmU^\top$ with $U$ orthogonal; $I_1$ is invariant under all of $O(64)$. Gradients are taken for the inner product $\Tr(A^\top B)$,
+for which the gradient of $I_1$ is $4\,mm^\top m$. Write $G=G_2\,\omega_S$, $S_3=T_{3L}+T_{3R}$, and $P_f$ for the projector onto the charge
+sector $f$. The directions $G$, $S_3\omega_S$, $(B\!-\!L)\,\omega_S$ and $D$ are mutually trace-orthogonal, so the component of a kernel along
+$D$ is well defined.
+
+\begin{theorem}[Obstruction to the sum rule]
+\label{thm:potential}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item Let $v_R\ne0$ and let $\Phi=v_R\Phi_0+K$ with $K$ a nonzero kernel of \cref{def:split}, for instance $v_R\Phi_0+\kappa G$ with
+$\kappa\ne0$. The gauge stabiliser of $\Phi$ is $\su3\oplus\uu1_Q$, and the kernels it fixes are the twelve neutral directions of
+\cref{thm:fermionmasses}(i), $D$ among them. At generic such $\Phi$, including $v_R\Phi_0+\kappa G$, the stabiliser among the $23$ generators
+with the global phases has dimension ten and fixes the same twelve directions. The gradient of every gauge-invariant potential at $\Phi$
+therefore lies in this space, and no gauge or global symmetry forbids a component along $D$. At $v_R=0$ the stabiliser of $\kappa G$ fixes
+only the complex line through $G$ (\cref{prop:ewdir}).
+\item Let $m=v_R\Phi_0+K$, where $K=\kappa G+x_3S_3\omega_S+x_B(B\!-\!L)\omega_S+dD$ has the values $z_f$ on the Dirac pairs. Then
+\begin{equation}
+\label{eq:gradI1}
+mm^\top m=v_R^3\,\Phi_0+v_R^2\,z_\nu\,GP_\nu+v_R\,z_\nu^2\,\bigl(2\Phi_0-G\Phi_0G\bigr)+\sum_fz_f^3\,GP_f ,
+\end{equation}
+where $G\Phi_0G$ is a Majorana kernel of $\nu_L$ in the neutral $(\mathbf{10},\mathbf3,\mathbf1)$, and the neutrino block of the generator of
+mass is $GP_\nu=\tfrac18\bigl(G-2S_3\omega_S+3(B\!-\!L)\omega_S-D\bigr)$. The gradient $4\,mm^\top m$ of $I_1$ has the component
+\begin{equation}
+\label{eq:Dcoef}
+c_D=\tfrac12\bigl(z_u^3-z_d^3-z_\nu^3+z_e^3-v_R^2\,z_\nu\bigr)
+\end{equation}
+along $D$. At a vacuum of \cref{def:split}, where $d=0$ and the sum rule holds,
+$c_D=-\tfrac12\bigl[3(z_u-z_d)(z_e-z_d)(z_u+z_e)+v_R^2\,z_\nu\bigr]$; at $v_R\Phi_0+\kappa G$ it is $-\half v_R^2\kappa$.
+\item At $\Phi=v_R\Phi_0+\kappa G$ the gradients of $I_2$, $I_3$ and $I_4$ are neutral. Besides components along the condensates already
+present, such as the term $2\kappa^2v_R\Phi_0$ of the gradient of $I_3$, which rescales $\Phi_0$, the new directions they induce are: for
+$I_2$ the up-type $(\mathbf{15},\mathbf2,\mathbf2)$, with the values $(1,0,-3,0)$, in proportion to $v_R^2\kappa$; for $I_3$ the pure up-type
+$(\mathbf1,\mathbf2,\mathbf2)$, with the values $(1,0,1,0)$, in proportion to $v_R^2\kappa$; and for $I_4$ only the neutral
+$(\mathbf{10},\mathbf3,\mathbf1)$, in proportion to $v_R\kappa^2$. The tadpoles of $I_1$ and $I_2$ have a part along $D$; those of $I_3$ and
+$I_4$ do not.
+\item At $v_R=0$ the four gradients at $\kappa G$ lie along $G$.
+\end{enumerate}
+\checks{pt-1, pt-2, pt-3, pt-4, pt-8, pt-9, pt-11, pt-12; (i) is symmetric criticality \cite{Michel71} applied to the checked stabilisers}
+\end{theorem}
+
+\begin{proof}[Proof of (ii)]
+$G$ is antisymmetric with all singular values one, so $G^\top G=\id$ and $G^2=-\id$; it is neutral, so it commutes with the projectors $P_f$,
+which are spectral projectors of $Q^2$. Each of $G$, $S_3\omega_S$, $(B\!-\!L)\omega_S$ and $D$ is, on each sector, a real multiple of $G$
+(\cref{prop:ymvalues,thm:splitgen}), so $K=\sum_fz_fGP_f$, $K^2=-\sum_fz_f^2P_f$ and $K^3=-\sum_fz_f^3GP_f$. By \cref{thm:psstage}(iii),
+$\Phi_0$ is antisymmetric with $\Phi_0^\top\Phi_0=P_N$, the projector onto $N=\ker Y$, a subspace of dimension four in the sector $\nu$; so
+$\Phi_0^2=-P_N$ and $\Phi_0^3=-\Phi_0$. Within the sector $\nu$, $G$ lies in the $(\mathbf1,\mathbf2,\mathbf2)$ and changes $Y$ by $\pm\half$,
+so it maps $N$ into its complement $L$ in the sector and $L$ into $N$. Hence $P_NGP_N=0$, $P_NG+GP_N=GP_\nu$ and $\Phi_0G\Phi_0=0$. Since
+$m^\top=-m$, $mm^\top m=-m^3$, and the expansion of $(v_R\Phi_0+K)^3$ with these relations gives \cref{eq:gradI1}; the kernel $G\Phi_0G$ is
+supported on $L$.
+
+For \cref{eq:Dcoef} it suffices to work in the real slice. The sectors $u$, $d$ and $e$, of real dimensions $24$, $24$ and $8$, carry
+$mm^\top=z_f^2$, and the sector $\nu$, of real dimension $8$, carries the Weyl mass matrix
+$\bigl(\begin{smallmatrix}0&z_\nu\\z_\nu&v_R\end{smallmatrix}\bigr)$, whose two singular values each occur four times. Hence
+\[
+I_1=24z_u^4+24z_d^4+8z_e^4+8z_\nu^4+16v_R^2z_\nu^2+4v_R^4 .
+\]
+The direction $D$ changes $(z_u,z_d,z_\nu,z_e)$ by $(1,-1,-3,3)$ per unit of $d$, it is trace-orthogonal to $G$, $S_3\omega_S$ and
+$(B\!-\!L)\omega_S$, and $\Tr(D^\top D)=24+24+72+72=192$. So $c_D=\tfrac1{192}\,\partial I_1/\partial d$, which is \cref{eq:Dcoef}. The four
+real directions have the values $(1,1,1,1)$, $(-\half,\half,-\half,\half)$, $(-\tfrac13,-\tfrac13,1,1)$ and $(1,-1,-3,3)$, so a real neutral
+Dirac kernel with the values $w_f$ has the component $\tfrac18(w_u-w_d-w_\nu+w_e)$ along $D$; the values $(0,0,1,0)$ give the stated form of
+$GP_\nu$. Under the sum rule $z_\nu=z_u-z_d+z_e$, the identity $x^3+y^3+w^3-(x+y+w)^3=-3(x+y)(y+w)(w+x)$ with $(x,y,w)=(z_u,-z_d,z_e)$
+gives the last form.
+\end{proof}
+
+What this establishes is a lack of symmetry protection, not the size of the violation. At a vacuum of \cref{def:split} with $v_R\ne0$, $c_D$
+vanishes only on a hypersurface of the values. For $v_R$ large against the Dirac entries it is dominated by $-\tfrac12v_R^2z_\nu$, and by the
+sum rule $|z_\nu|=|z_u-z_d+z_e|\ge m_u-m_d-m_e$, which for a family like the heaviest is close to $m_u$: there the tadpole along $D$ is of
+order $v_R^2m_t$. A potential that contains $I_1$ with a coupling $\lambda$ generically sources a value along $D$: the vacuum moves unless its other
+invariants cancel the tadpole, which no symmetry requires. The size of the displacement depends on the curvature of the potential: with a stable, nonsingular
+restoring curvature $M^2$ along $D$ and negligible mixing, $d\approx-\lambda c_D/M^2$ to first order; in general the displacement is given by
+the inverse Hessian on the physical fluctuations. With a value $d$ the sum rule fails by $8d$, $z_u-z_d-z_\nu+z_e=8d$, and the inequality of
+\cref{thm:split}(iv) holds only up to $8|d|$; it can fail outright (\chk{pt-6}). Terms like $I_4$ give $\nu_L$ a Majorana mass of order
+$\lambda\,v_R\kappa^2/M_L^2$, the induced value of the type-II seesaw \cite{MohapatraSenjanovic81}, which \cref{def:split} also excludes.
+
+The sum rule is therefore a property of the values that the restricted ansatz supplies, not a consequence of gauge invariance, and a
+left--right symmetry that could relate the two triplets is broken by $\Phi_0$ itself. At the stated neutral background the gradient of a gauge-invariant potential lies in the
+fixed space of colour and $Q$, so to first order it preserves colour and charge; directions that carry colour or charge could still
+destabilise a stationary point, and stability in them is not examined.
+
+\begin{proposition}[What a quartic selects]
+\label{prop:select}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item For every nonzero $m\in\mathcal M_2$,
+\[
+\frac{\Tr\bigl((mm^\top)^2\bigr)}{\Tr(mm^\top)^2}\le\frac14 ,
+\]
+with equality exactly when $m$, as a complex symmetric Weyl mass matrix, has rank one.
+\item Within the $(\overline{\mathbf{10}},\mathbf1,\mathbf3)$ equality holds exactly on the orbit of $\Phi_0$ up to a nonzero scale: at fixed
+nonzero norm, the kernels of real rank four with a stabiliser of dimension $12$.
+\item The $(\mathbf{10},\mathbf3,\mathbf1)$ contains the analogous kernels, of real rank four and with the same ratio $\tfrac14$. The connected
+gauge group preserves the two triplets separately, so the trace quartic $I_1$ alone does not distinguish a right-handed condensate from a
+left-handed one.
+\item On the $(\mathbf1,\mathbf2,\mathbf2)$ the ratio lies between $\tfrac1{64}$, at $G_2\,\omega_S$, and $\tfrac1{32}$, at the pure up-type
+and down-type kernels; at $v_uK_{1u}+v_dK_{1d}$ it is $(v_u^4+v_d^4)/\bigl(32(v_u^2+v_d^2)^2\bigr)$.
+\end{enumerate}
+\checks{pt-5, pt-10, numerically}
+\end{proposition}
+
+\begin{proof}[Proof of (i) and (ii)]
+Write the kernel as a complex symmetric $16\times16$ Weyl mass matrix with singular values $s_i$. Each $s_i$ occurs four times among the
+singular values of the real kernel $m$, so $\Tr((mm^\top)^2)=4\sum_is_i^4$ and $\Tr(mm^\top)=4\sum_is_i^2$, and the ratio is
+$\tfrac14\sum_is_i^4/(\sum_is_i^2)^2\le\tfrac14$, with equality exactly when one $s_i$ is nonzero. A symmetric tensor of rank one is $w\otimes w$
+with $w\in L$. In the right-handed triplet $w$ lies in the $(\bar{\mathbf4},\mathbf1,\mathbf2)$, a $4\times2$ matrix, and $w\otimes w$ lies in
+$\mathrm{Sym}^2\bar{\mathbf4}\otimes\mathrm{Sym}^2\mathbf2=(\overline{\mathbf{10}},\mathbf1,\mathbf3)$ exactly when its component in
+$\Lambda^2\bar{\mathbf4}\otimes\Lambda^2\mathbf2=(\mathbf6,\mathbf1,\mathbf1)$, whose coefficients are the $2\times2$ minors of $w$, vanishes:
+that is, when $w=a\otimes b$. The group $SU(4)\times SU(2)_R$ with the phase acts transitively on such products of fixed norm, and $\Phi_0$ is
+one of them.
+\end{proof}
+
+A quartic of the $(\overline{\mathbf{10}},\mathbf1,\mathbf3)$ part with the sign that favours the largest ratio thus selects the orbit of
+$\Phi_0$ at fixed length within that part: the Majorana mass of a single Weyl field, the right-handed neutrino. On the
+$(\mathbf1,\mathbf2,\mathbf2)$ the same sign favours the pure up-type or down-type kernel, and the opposite sign the generator of mass. The parts
+have separate invariants, and at fixed component norms the signs of two couplings favour the indicated orbits in the right triplet and in the
+bidoublet. They do not fix the relative orientation of the two condensates. For the generator of mass this orientation is not physical:
+$G_2\,\omega_S$ is fixed by $\su2_V$, so a rotation of it by $SU(2)_R$ equals one by $SU(2)_L$, which fixes $\Phi_0$, and every relative
+orientation is gauge-equivalent to the aligned one. For a rank-one bidoublet it is physical: at fixed $\Phi_0$ a rotation of $K_{1u}$ alone by
+$SU(2)_R$ keeps both quartic ratios but, at a generic angle, lowers the joint gauge stabiliser from dimension nine to eight, keeping colour
+and losing $Q$. Selecting the neutral up-type alignment relative to the Majorana condensate therefore requires a mixed invariant or an
+alignment assumption. With the single trace $I_1$ of all of $m$, the sign that selects a rank-one condensate does not prefer the right
+triplet to the left one.
+\checks{ew-23} Once $v_R\ne0$, $I_3$ tilts the bidoublet towards the up-type or the down-type kernel by the sign of its coupling.
+The ratio $\kappa/v_R$ is not fixed: $\kappa\ll v_R$, which $\rho=1$ needs, is a tuning of the mass parameter of the bidoublet, the hierarchy
+problem of left--right and Pati--Salam theories \cite{MohapatraSenjanovic81}. Whether a potential has its global minimum at the full vacuum,
+with the values it induces and stable in every direction, is not decided here.
+
+\section{The general split}
+\label{sec:splitgeneral}
+
+The potential adds what \cref{def:split} leaves out, a value along $D$. The values of $D$ on the Dirac pairs, $(1,-1,-3,3)$, are six times the
+product of the two charges of the left-handed member, $6\,T_{3L}(f_L)\,(B\!-\!L)(f_L)$ (\cref{fig:diracpairs}).
+
+\begin{definition}[The real neutral Dirac sector]
+\label{def:splitgen}
+The real neutral Dirac sector of the mass field is
+\[
+m=\kappa\,G_2\,\omega_S+X\omega_S+d\,D,\qquad X=x_3\,(T_{3L}+T_{3R})+x_B\,(B\!-\!L),\qquad \kappa,\ x_3,\ x_B,\ d\in\R .
+\]
+\end{definition}
+
+This four-parameter family is the real part of the neutral Dirac sector. The full space of kernels that keep colour and the electric charge
+has twelve real dimensions: four complex Dirac entries, the Dirac directions with their products by $\Omega$, and two complex Majorana entries,
+the line of $\Phi_0$ and the neutral left triplet. If the left triplet takes a vacuum value, the neutral fermion block and the vector masses
+must include it.
+
+\begin{theorem}[The general split]
+\label{thm:splitgen}
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item Each Dirac pair has the signed entry $z_f=\kappa-X(f_L)+6d\,T_{3L}(f_L)\,(B\!-\!L)(f_L)$: a function of the two charges of the
+left-handed field, affine in each.
+\item The map $(\kappa,x_3,x_B,d)\mapsto(z_u,z_d,z_\nu,z_e)$ has determinant $\tfrac{32}3$ and the inverse
+\[
+\begin{gathered}
+\kappa=\tfrac18\bigl(3(z_u+z_d)+z_\nu+z_e\bigr),\qquad x_3=\tfrac14\bigl(3(z_d-z_u)+z_e-z_\nu\bigr),\\
+x_B=\tfrac38\bigl((z_\nu+z_e)-(z_u+z_d)\bigr),\qquad d=\tfrac18\,(z_u-z_d-z_\nu+z_e).
+\end{gathered}
+\]
+Every signed Dirac spectrum of one family is reached, and the sum rule of \cref{thm:split}(ii) holds exactly when $d=0$.
+\end{enumerate}
+\checks{pt-7, numerically}
+\end{theorem}
+
+We therefore drop the sum rule in the general form. It is a property of the values that the restricted ansatz supplies, not of the theory
+with its potential, in which an allowed term generically sources $d$; with $d$ free the four signed Dirac entries of the family are independent, and no relation among
+them is claimed. The Dirac masses are $|y\,z_f|$ with a common Yukawa coupling; the signs, or the phases through $\Omega$, matter as soon as a
+neutrino Dirac mass is to be inferred from the charged masses. With one family the sum rule would fix only the Dirac entry of the neutrino,
+which is not observed, so it contradicts no measured mass by itself; the measured light neutrino mass is a seesaw eigenvalue, through which
+the Dirac entry bears on it, of order
+$(m_\nu^D)^2/M_R$, and for a family like the heaviest it would put $m_\nu^D$ within $m_b+m_\tau$ of $m_t$, so that a light mass of about
+$0.05$~eV would ask for $M_R$ of order $10^{14}$~GeV. With three families it would become the relation $M_\nu^D-M_u=M_e-M_d$ among mass
+matrices; since the potential does not protect it and the data do not require it, the general form does without it.
+
+\section{An illustration: the measured masses}
+\label{sec:observed}
+
+The general split gives each Dirac pair of a family its own entry. To give each fermion its measured mass it is enough that the three
+families, however they arise (\cref{sec:open}), carry an index on which nothing else acts. A value of the mass field is then a sum
+$m=\sum_\alpha D_\alpha\otimes F_\alpha$ of the four directions of \cref{def:splitgen} times symmetric family matrices; with the reading of
+\cref{thm:families}(i) these are Lorentz-invariant mass kernels, and with diagonal $F_\alpha$ each family has its own four values.
+
+\begin{example}
+\label{ex:observed}
+Take the values of the Particle Data Group of 2024 \cite{PDG2024}, as listed in \cite[eq.~(2.2)]{AntuschHinzeSaad2025}: the pole masses of the top
+quark, $172.4$~GeV from cross sections, and of the charged leptons, and the $\overline{\rm MS}$ masses $m_u$, $m_d$, $m_s$ at $2$~GeV,
+$m_c(m_c)$ and $m_b(m_b)$. With all signs positive, a unit Yukawa coupling and no neutrino Dirac mass, \cref{thm:splitgen}(ii) gives:
+\begin{center}
+\footnotesize\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}cccc|rrrr@{}}
+\toprule
+family & up-type & down-type & charged lepton & $\kappa$ & $x_3$ & $x_B$ & $d$\\
+\midrule
+1 & $u$: $2.16$ MeV & $d$: $4.70$ MeV & $e$: $0.51099895$ MeV & $2.63637$ & $2.03275$ & $-2.38088$ & $-0.253625$ MeV\\
+2 & $c$: $1.2730$ GeV & $s$: $93.5$ MeV & $\mu$: $105.6583755$ MeV & $0.525645$ & $-0.85821$ & $-0.472816$ & $0.160645$ GeV\\
+3 & $t$: $172.4$ GeV & $b$: $4.183$ GeV & $\tau$: $1776.93$ MeV & $66.4407$ & $-125.719$ & $-65.5523$ & $21.2492$ GeV\\
+\bottomrule
+\end{tabular}
+\end{center}
+A neutrino Dirac mass $m_\nu^D$ adds $\bigl(\tfrac18,-\tfrac14,\tfrac38,-\tfrac18\bigr)\,m_\nu^D$ to the four values of its family. One value of
+the mass field with diagonal family matrices then gives the nine charged fermions their measured masses at once. For the neutrinos we use the two
+mass-squared differences measured in oscillations, $\Delta m^2_{21}=7.49\times10^{-5}$~eV$^2$ and $\Delta m^2_{31}=2.513\times10^{-3}$~eV$^2$,
+the normal-ordering best fit of NuFIT~6.0 with the Super-Kamiokande atmospheric data (IC24 with SK) \cite[Table~1]{NuFIT6}; oscillation data
+constrain mass-squared differences and mixing parameters, and the lightest mass and the heavy Majorana scale are inputs of this example. Choose $v_R\Phi_0\otimes\id$ with a common $v_R=10^{14}$~GeV and a massless lightest neutrino. The seesaw block
+$\bigl(\begin{smallmatrix}0&m_\nu^D\\m_\nu^D&v_R\end{smallmatrix}\bigr)$ has the light singular value $m_i$ exactly when
+$m_\nu^D=\sqrt{m_i(v_R+m_i)}$, which agrees with $\sqrt{m_iv_R}$ to the digits shown: the Dirac masses $0$, $29.42$ and $70.80$~GeV give the
+light masses $0$, $8.654$ and $50.13$~meV, with the measured splittings.
+\checks{ms-1, ms-2, ms-3, ms-4, numerically}
+\end{example}
+
+Nothing is predicted here: twelve values are fitted to twelve masses, and the Dirac masses of the neutrinos, the common $v_R$, the massless
+lightest neutrino and the family index are inputs. The example fits eigenvalues. The inputs are at different scales and in different
+schemes, and a relation among them would need the running to a common scale, which is not done; the values of the table would change with
+it, and they always exist. With diagonal family matrices the mass matrices of all sectors are aligned and there is no mixing: the quark and
+lepton mixings require a misalignment of the corresponding family mass matrices, and they are open. The $W$, $Z$ and Higgs masses take their
+values through the free coefficients of the action and of the potential; with $y=1$ the values that give the top quark its mass dominate the
+electroweak scale, a relation not examined here.
+
+\section{Comparison with Part~I}
+\label{sec:partI}
+
+The electroweak stage of \PI{Sections~7.4--7.7} lies at the third rung, on a block of rank $64$ chosen by a projector, with colour on the
+spatial directions of the second and third constituents and the weak directions among the temporal ones; its gauge algebra is the effective
+algebra of the block, its electroweak direction has $v_u$ and $v_d$ free, its fermion masses are free (\PI{Prop.~7.35}), and its potential
+selects $\Phi_0$ (\PI{Section~7.5}), with the global minimality of the full vacuum left open. Here the stage lies at the second rung, on the
+whole module. Colour lies in $\su4=\mathfrak g_2$ on the temporal directions and the weak interaction on the spatial triple of the second
+constituent; the gauge algebra is the one that (A2) and (A4) gauge; the electroweak direction is the generator of mass, $|v_u|=|v_d|$, at
+which the Dirac entries are equal; the split comes from the Yang--Mills values of the neutral generators and a term in the product of the
+charges that an allowed term of the potential generically sources; and at the stated neutral background the gradient of a potential keeps
+colour and charge to first order while sourcing the excluded direction. The numbers of
+\PI{Prop.~7.35, Example~7.36 and Thms~7.41 and~7.42} are the same in both, because both stages are one Pati--Salam family with the trace form
+of a module of dimension $64$, a $(\overline{\mathbf{10}},\mathbf1,\mathbf3)$ and a $(\mathbf1,\mathbf2,\mathbf2)$, evaluated with the same trace
+conventions and the same vacuum values; the rates and the mass ratios also depend on the gauge and scalar metrics, the couplings, the
+relative alignment and the magnitudes of the vacuum values, which are the same choices in both. What differs is where the structure comes
+from: in Part~I a rung is an arena and the family is found inside the third rung by a projector; here a rung is an interaction, and the
+family is the second rung.
+\checks{ew-5, ew-7, ew-9 to ew-14, for the coincidence of the numbers}

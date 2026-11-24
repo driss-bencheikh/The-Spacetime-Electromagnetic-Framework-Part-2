@@ -1,0 +1,31 @@
+PASS sc-1: A_+X = (d_t + G curl)X = -(k; j): A_+X = 0 is the frame Maxwell system of Part I, Prop. 3.10, and the momentum m A_+X is minus the pair of currents
+PASS sc-2: split form (m/2) eta(A_+X, A_+X): Euler-Lagrange = -m eta (d_t^2 + curl curl) X
+PASS sc-3: the same expression is -m eta A_-(A_+X): the force law is A_- pi = 0, in currents d_t k = -curl j, d_t j = curl k
+PASS sc-4: positive form (m/2)|A_+X|^2: Euler-Lagrange = -m A_+^2 X
+PASS sc-5: completed form L_cov = split form + (m/2)(rho_e^2 - rho_m^2): Euler-Lagrange = -m eta Box X on all six components
+PASS sc-6: L_cov = (m/2)(J_e.J_e - J_m.J_m) (Minkowski squares of the two four-currents) has the Euler-Lagrange expression of the free kinetic term (m/2) eta(d_mu X, d^mu X)
+PASS sc-7: both charges are conserved identically: d_t rho_e + div j = 0, d_t rho_m + div k = 0
+PASS sc-8: for every field: -Box B = curl j + d_t k + grad rho_m and -Box E = d_t j + grad rho_e - curl k (sourced Maxwell implies the wave equations)
+PASS sc-9: the cross term eta(d_t X, G curl X) has vanishing Euler-Lagrange expression (field form of the total derivative of Part I, Thm 4.12)
+PASS sc-10: energy density (m/2)[eta(d_t X, d_t X) + eta(curl X, curl X)] = (m/2) eta(A_+X, A_-X)
+PASS sc-11: virial identity d_t eta(X, pi) = eta(pi, pi) + eta(X, A_-pi) + div(B x pi_E + E x pi_B), with eta(X, pi) = E.j - B.k (pi in units of m)
+PASS sc-12: second Lorentz-class form (m/2) eta(A_+X, G A_+X) = -m j.k: Euler-Lagrange = -m eta G A_-A_+X, the same equations of motion
+PASS sc-13: with an external current J_x, L = (m/2)[(J_e - J_x)^2 - J_m^2] gives Box B = -curl j_x, Box E = -(d_t j_x + grad rho_x)
+PASS sc-26: the static field B = 0, E = grad phi has A_+X = 0 (zero momentum) and rho_e = Laplacian phi: the two Gauss constraints are not fixed by the momentum; zero momentum gives the source-free evolution equations, and the source-free Maxwell sector also needs rho_e = rho_m = 0
+PASS sc-27: with a conserved external current J_x, the Euler-Lagrange equations of (m/2)[(J_e - J_x)^2 - J_m^2] are the first-order system (d_t + D)R = 0 for the residual R = (rho_e - rho_x, j - j_x, k, rho_m), whose two continuity equations hold identically; (1/2)|R|^2 obeys a local conservation law, so R = 0 at one time gives R = 0 at all times: the Maxwell sector with source J_x is R = 0, all eight components
+PASS sc-28: with J_x = 0, data B = 0, E = grad phi, d_t X = 0 have k = j = 0 at t = 0, but on solutions of Box X = 0 the current starts with d_t j = -grad Laplacian phi: the vanishing of the six spatial residuals alone does not propagate
+PASS sc-14: a Maxwell part a e^{-ikt} plus a mirror part b e^{+ikt} (curl a = k a, curl b = k b) has energy density Re 2 m k^2 a.b, constant in time: Part I, Prop. 4.11(iii) with c_- = a, c_+ = b (for these circular plane waves a.b = 2 alpha beta is also constant in space)
+PASS sc-25: the energy density 2 m lambda^2 Re(a.b) is constant in time and not in space in general: a = (cos z, sin z, 0) and b = (0, cos x, sin x) have curl a = -a, curl b = -b, and the field a e^{it} + b e^{-it} has the density 2 m sin z cos x
+PASS sc-15: the mirror wave (1, i, 0)e^{ik(z+t)} has E x B = -e_3 in frame variables (E x B_text = +e_3) while its phase moves along -e_3; its momentum field is 2 d_t z
+PASS sc-16: positive form: (1 + ct)(1, i, 0)e^{ik(z-t)} has A_+z a Maxwell field and A_+^2 z = 0 (resonant drift, Part I, Thm 4.5 in field form)
+PASS sc-17: both shifts at first order: e^{-i kappa t} x (Maxwell field) solves (d_t + G curl + kappa G)X = 0, with frequencies kappa + h|k|
+PASS sc-18: curl eigenfields (ABC family, curl Z = kappa Z): z = e^{-i kappa t}(Z1 + iZ2) is a source-free Maxwell field, at each point the orbit e^{-kappa G t}X_0 of Part I, Chapter 4; for Z2 = 0, E x B = 0
+PASS sc-19: two helicities at one frequency: a Maxwell field (currents zero) whose pointwise Chapter-4 momentum d_t z + i kappa z is 2 i kappa times the negative-helicity part
+PASS sc-20: octant basis (vac, f_k = a^+_k vac, g_m, full) is orthonormal and (-1)^N = diag(+,-,-,-,+,+,+,-) on it
+PASS sc-21: Part I, eq. (3.53): Pi = (d_t - D) Phi_oct(X) = -(rho_e vac + j.f + k.g + rho_m full): charges on the two poles, currents on the six field octants
+PASS sc-22: Pi^T (-1)^N Pi = J_e.J_e - J_m.J_m, so L_cov = (m/2) Pi^T (-1)^N Pi
+PASS sc-23: (d_t + D) on (p0, a, b, p3): p0_t + div a | a_t - curl b + grad p0 | b_t + curl a + grad p3 | p3_t + div b; D is self-adjoint for (-1)^N and D^2 is the Laplacian: the force law (d_t + D)Pi = 0 is the Box equation
+PASS sc-24: T Phi_oct(X) = -Phi_oct(GX) with T = e1 e2 e3 (Part I, Prop. 3.45): on the octants the binding root is -T
+PASS sc-29: a standing mirror field z = e^{+i kappa t} Z (Z a real ABC curl eigenfield) solves the mirror equation, has E parallel to B and zero Poynting vector, and carries the currents k = 2 kappa sin(kappa t) Z, j = -2 kappa cos(kappa t) Z: the Poynting vector opposes the phase velocity only for travelling mirror waves
+PASS sc-30: adding the Maxwell solution (0, cos x, sin x) e^{it} to the field of sc-25 leaves the momentum d_t z + i curl z unchanged and changes the energy density from 2 m sin z cos x by 2 m: the energy is a function of the pair (X, pi), not of pi alone
+PASS sc-31: for a real unit n orthogonal to the real and imaginary parts of u and s = n.(x - x0), Z = u cos(lambda s) - (n x u) sin(lambda s) has curl Z = lambda Z, div Z = 0 and Z(x0) = u, for symbolic lambda, x0 and u in the plane orthogonal to n = e_z and for n = (1, 2, 2)/3: every value has a curl eigenfield through it

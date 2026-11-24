@@ -1,0 +1,192 @@
+\chapter{Mass on the temporal triple}
+\label{ch:mass}
+
+In \cref{ch:curl} the rate $\kappa$ became an eigenvalue of the curl and left the theory. A second lift keeps it: lift the Lagrangian of
+\PI{Chapter~4} rather than its first-order operators. By \PI{Thm~4.12} and \PI{Prop.~3.20} that Lagrangian is
+\[
+L_\kappa=\tfrac m2\,\eta(\dot X,\dot X)+m\kappa^2L_M(X)-m\kappa\,\tfrac{d}{d\tau}(\bE\cdot\bB),\qquad L_M=-\half\eta(X,X):
+\]
+the binding well is $m\kappa^2$ times Maxwell's Lagrangian evaluated at the field point. Giving $X$ a dependence on space and keeping
+Lorentz invariance,
+\begin{equation}
+\label{eq:Lfull}
+L_{\rm full}=\tfrac m2\,\eta(\partial_\mu X,\partial^\mu X)-\tfrac{m\kappa^2}2\,\eta(X,X)\ \simeq\
+\tfrac m2\bigl(J_e\!\cdot\!J_e-J_m\!\cdot\!J_m\bigr)-\tfrac{m\kappa^2}2\,\eta(X,X),\qquad(\Box+\kappa^2)X=0 ,
+\end{equation}
+where $\simeq$ is equality up to a divergence (\cref{thm:completed}). The interior of \PI{Chapter~4} is exactly the sector of fields that
+do not depend on $\mathbf x$. In this chapter $\kappa>0$ is a rate, not the signed curl eigenvalue of \cref{ch:curl}, and $\ell=1/\kappa$.
+
+\section{Two halves}
+
+\begin{theorem}[The theory is two theories]
+\label{thm:halves}
+For the representative of \cref{eq:Lfull} written with the four-currents, $L_{\rm full}=L_A+L_B+\tfrac{m\kappa^2}2\eta(X,X)$, with
+\begin{align}
+L_B&=-\tfrac m2\,J_m\!\cdot\!J_m-\tfrac{m\kappa^2}2\,\eta(X,X)&&\text{(temporal half: $\bB$ dynamical),}\label{eq:LB}\\
+L_A&=+\tfrac m2\,J_e\!\cdot\!J_e-\tfrac{m\kappa^2}2\,\eta(X,X)&&\text{(spatial half: $\bE$ dynamical).}\label{eq:LA}
+\end{align}
+For every field, $-\Box X=(\curl\bj;\ \partial_t\bj+\nabla\rho_e)+(\partial_t\bk+\nabla\rho_m;\ -\curl\bk)$, where the first part has no
+magnetic current and the second no electric current, identically. Hence every solution of $(\Box+\kappa^2)X=0$ is a sum
+\[
+X=X_a+X_b,\qquad X_a=\ell^2\,(\curl\bj;\ \partial_t\bj+\nabla\rho_e),\qquad X_b=\ell^2\,(\partial_t\bk+\nabla\rho_m;\ -\curl\bk),
+\]
+in which both terms are built from the currents of $X$ itself, $X_a$ a solution of $L_A$ and $X_b$ a solution of $L_B$. The decomposition
+holds on shell.
+\checks{ma-1, ma-2, ma-12}
+\end{theorem}
+
+\section{The temporal half}
+
+\begin{theorem}[A massive two-form with positive energy]
+\label{thm:temporal}
+Put $X_{0i}=E_i$, $X_{ij}=\epsilon_{ijk}B_k$ and $H=dX$. Then
+\begin{equation}
+\label{eq:KR}
+L_B=m\Bigl[\tfrac1{12}H_{\mu\nu\rho}H^{\mu\nu\rho}-\tfrac{\kappa^2}4X_{\mu\nu}X^{\mu\nu}\Bigr],
+\end{equation}
+the Lagrangian of a massive two-form field in our normalisation, an analogue of the massive sector that Kalb and Ramond obtain from
+coupled fields in their open-string discussion \cite{KalbRamond74}. Moreover:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item only $\bB$ has a velocity, and $\bE$ is auxiliary. Its equation $\kappa^2\bE+\curl\bk=0$ contains $\bE$ also through $\bk$; in the
+canonical variables of (iii) it is the constraint $m\kappa^2\bE=\curl\bp$, explicit in $\bE$, and in velocities it reads
+$(\kappa^2+\curl\curl)\bE=\curl\partial_t\bB$;
+\item the electric charge and current vanish on solutions;
+\item the momentum is $\bp=\partial L_B/\partial(\partial_t\bB)=-m\bk$, and the force law is $\partial_t\bk=\kappa^2\bB-\nabla\rho_m$: the
+restoring force of the well of \PI{Chapter~4} and the gradient of the magnetic charge density;
+\item on solutions and up to a divergence the canonical energy density is
+\begin{equation}
+\label{eq:energyB}
+\tfrac m2\bigl(|\bk|^2+\rho_m^2\bigr)+m\kappa^2E_6(X)\ \ge0 .
+\end{equation}
+\end{enumerate}
+\checks{ma-3, ma-4, ma-5, ma-6, ma-9}
+\end{theorem}
+
+The Lagrangian $L_B$ is of Lorentz class, a split form, and its Hamiltonian is $m\kappa^2$ times the undivided energy $E_6$ plus the
+Euclidean square of the magnetic four-current: the two quadratic forms that compete in \PI{Thm~4.26} appear here as the Lagrangian and the
+energy of one theory.
+
+\begin{proposition}[The spatial half is the mirror]
+\label{prop:mirror}
+$L_A(X)=-L_B(GX)$. In $L_A$ the field $\bE$ is dynamical with momentum $m\bj$, $\bB$ is auxiliary, the magnetic charge vanishes on
+solutions, and the canonical energy density is $-[\tfrac m2(|\bj|^2+\rho_e^2)+m\kappa^2E_6]$ up to a divergence. A linearly polarised
+transverse wave of the temporal half whose magnetic field has the peak amplitude $b$, and its image under $G$, carry the mean energy densities $+m\kappa^2b^2/2$ and
+$-m\kappa^2b^2/2$ in the full theory. This is the anti-isometry of \PI{Thm~4.8} in dynamical form: the binding root maps the half of
+positive canonical energy to the half of negative canonical energy.
+\checks{ma-7, ma-8, ma-13}
+\end{proposition}
+
+\begin{proposition}[One massive spin-one particle and its potential]
+\label{prop:london}
+The temporal half has three polarisations of mass $\hbar\kappa/c^2$. It is dual to a vector field: $X=G(dC)$, that is,
+$\bB=-\partial_t\bC+\nabla C_0$ and $\bE=\curl\bC$, for which the electric current and charge vanish identically. The field equations
+determine the representative
+\[
+\bC=-\ell^2\bk,\qquad C_0=\ell^2\rho_m ,
+\]
+in which the potential is the magnetic four-current; any other potential of the same $X$ differs from it by a gradient $d\chi$, which
+changes neither $X$ nor its currents. For a transverse wave of wavenumber $k$ and frequency $\omega$, $\bE\perp\bB$ and
+$|\bE|/|\bB|=k/\omega$; for the longitudinal wave $\bE=0$. In the spatial half the same relation holds with the electric current, the
+representative $\ba=\ell^2\bj$ for potentials $\bB=\curl\ba$ and $\bE=\partial_t\ba-\nabla A_0$.
+\checks{ma-10, ma-11, ma-15}
+\end{proposition}
+
+The relation between potential and current is of London's type \cite{London35}, in the gauge and normalisation of the representative
+above, with $\ell$ the static decay length of the massive equation; a penetration depth in London's sense would require a medium and boundary conditions, which are absent here. The vector field is
+that of Proca \cite{Proca36}, and the equivalence of a massive two-form and a massive vector in four dimensions is standard. The magnetic
+current one-form is the Hodge dual of the three-form $H=dX$, with the orientation of \cref{sec:conv}; in the representative determined by
+the field equations it equals $\kappa^2C$, and the Proca field strength is $dC=-GX$.
+
+\begin{proposition}[Rest states]
+\label{prop:rest}
+Uniform fields of the temporal half have $\bE=0$ and $\ddot\bB=-\kappa^2\bB$. They are the orbits of \PI{Prop.~4.11}(iv): $z$ real,
+momentum not zero, positive energy. The orbits without momentum of \PI{Chapter~4}, the duality rotations $z=e^{-i\kappa\tau}z_0$, need a
+temporal and a spatial oscillator of equal amplitude; in the full theory their energy is zero, and they are not in the temporal half.
+\checks{ma-14}
+\end{proposition}
+
+\begin{remark}[Mass]
+\label{rem:mass}
+The dispersion relation is $\omega^2=c^2k^2+\kappa^2$, so wave packets move with the inertia $M=\hbar\kappa/c^2$. The parameter $m$ is the
+normalisation of the field (\PI{Prop.~4.13}(iv)) and drops out of the mass. \PI{Section~7.2} calls the reading of the rate as a mass,
+$mc^2=\hbar\kappa$, an added identification and not a result. Given the lift, $\hbar\kappa=Mc^2$ is the Compton relation of the field, with
+$M$ in the place of $m$. At rest all three polarisations can be represented by the temporal components $\bB$. A moving transverse mode acquires an electric
+component; a longitudinal mode keeps $\bE=0$.
+\end{remark}
+
+\section{The clock field}
+\label{sec:clock}
+
+\begin{theorem}[The rate is the gradient of a clock]
+\label{thm:clock}
+Let $\theta(x)$ be a scalar field and $D_\mu=\partial_\mu+(\partial_\mu\theta)\,G$.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item The covariant kinetic term is
+\begin{equation}
+\label{eq:clock}
+\tfrac m2\,\eta(D_\mu X,D^\mu X)=\tfrac m2\,\eta(\partial_\mu X,\partial^\mu X)-m\,\partial_\mu\theta\,\partial^\mu(\bE\cdot\bB)
++m\,s\,L_M(X),\qquad s=\partial_\mu\theta\,\partial^\mu\theta ,
+\end{equation}
+so that $s$ is the coefficient of the mass-type term, $\kappa^2$ for $\theta=\kappa t$.
+\item For a prescribed clock the Euler--Lagrange equation of $X$ is $(\Box+s)X+(\Box\theta)\,GX=0$. A particle mass and a dispersion law
+follow on a background with constant timelike gradient, where $\Box\theta=0$; for $\theta=\kappa t$ the equation is $(\Box+\kappa^2)X=0$,
+and the middle term of \cref{eq:clock} is a total derivative. A general inhomogeneous clock has the additional term $(\Box\theta)GX$.
+\item On fields that do not depend on $\mathbf x$, the Lagrangian $\tfrac{I_0}2\partial_\mu\theta\partial^\mu\theta+\tfrac m2\eta(D_\mu X,D^\mu X)$
+is the closure of \PI{Prop.~4.24}.
+\item For a dynamical clock the equation of $\theta$ is the conservation law
+\[
+\partial_\mu\bigl[(I_0-m\,\eta(X,X))\,\partial^\mu\theta-m\,\partial^\mu(\bE\cdot\bB)\bigr]=0 .
+\]
+At $\theta=\kappa t$ it reads $\kappa\,\partial_t\eta(X,X)+\Box(\bE\cdot\bB)=0$: the background $\theta=\kappa t$ solves the joint system
+only together with matter fields that satisfy this condition.
+\end{enumerate}
+\checks{ma-18, ma-19, ma-20, ma-21, ma-22, ma-23}
+\end{theorem}
+
+The mass is thus the rate of a clock. From here on the clock is the background $\bar\theta=\kappa t$ unless stated otherwise;
+\cref{ch:quantum} expands about it and treats the fluctuation of a dynamical clock separately. A prescribed clock and a dynamical one have
+different solution sets, as the uniform solutions of the temporal half show (\cref{prop:clockhalf}). On an open region where $\theta$ is
+constant the full theory is massless and \cref{ch:curl} applies, with Maxwell's equations, Gauss's laws included, as its sector $\Pi=0$.
+Pointwise vanishing of the clock gradient is not enough, since the equation of $X$ contains $\Box\theta$: $\theta=t^2/2$ has
+$\partial\theta=0$ at $t=0$ and $\Box\theta=1$. A spacelike gradient would give $s<0$.
+
+\section{What the second route excludes}
+
+\begin{proposition}[No first-order factorisation of this form on the octants]
+\label{prop:nofirst}
+The real rotation-invariant matrices on the octants that anticommute with $e_1,e_2,e_3$ form the two-dimensional space
+$\alpha(-1)^N+\beta\,T(-1)^N$, with square $(\alpha^2+\beta^2)\,\id$. None squares to $-\id$, so $\Box+\kappa^2$ has no rotation-covariant
+factorisation of the form $(\partial_t+D+\kappa M)(\partial_t-D-\kappa M)$ on the octants.
+\checks{ma-17}
+\end{proposition}
+
+\begin{proposition}[The same density on potentials]
+\label{prop:BP}
+Varied in the potentials instead of in $X$, the density $L_M+\tfrac{\ell^2}2J_e\!\cdot\!J_e$ has the Euler--Lagrange expression
+$(1+\ell^2\Box)(\rho_e,\bj)$: a massless branch and a massive one, the structure of the higher-derivative electrodynamics of Bopp and
+Podolsky \cite{Bopp40,Podolsky42}, whose field equations in the potentials are given explicitly by Podolsky \cite{Podolsky42}. Varying in $X$,
+as \PI{Chapter~4} does, keeps only the massive branch.
+\checks{ma-16}
+\end{proposition}
+
+In the two lifts the rate $\kappa$ thus enters either at first order, as an eigenvalue of the curl, where the field is massless and
+$\kappa$ is not a parameter, or at second order, as a mass, where $\ell$ is a parameter: the decay length of the massive equation, or the
+length of Podolsky.
+
+\section{What the second route costs}
+
+Three properties are lost. First, for the adopted split action, positive canonical energy and duality exclude each other. The field
+equation of the full theory commutes with $G$, so the duality rotations map its solutions to solutions, but they preserve neither its
+action nor its canonical energy: $L_{\rm full}(GX)=-L_{\rm full}(X)$ for the representative \cref{eq:Lfull}, since
+$\eta(GU,GV)=-\eta(U,V)$, and the canonical energy is indefinite. The temporal half has positive canonical energy, and $G$ does not map its
+solutions to solutions of the same half: it takes them to the spatial half (\cref{prop:mirror}). This is \PI{Thm~4.26} again, as a
+statement about the canonical energy of the action and the selection of one massive half. The free equations $(\Box+\kappa^2)X=0$ also
+conserve the quantity $\half\int\bigl(|\partial_tX|^2+|\nabla X|^2+\kappa^2|X|^2\bigr)d^3x$, the sum of six Klein--Gordon energies in the
+Euclidean norm, which is positive and invariant under duality; it is not the canonical energy of \cref{eq:Lfull}.
+\checks{ma-24}
+Second, the choice of the half is not derived: it is local and Lorentz invariant, and we fix it by the sign of $\eta$ together with $m>0$,
+taking the positive triple as the dynamical one; the Lagrangian of \PI{Chapter~4} by itself gives the full theory. Third, $X$ is no longer
+Maxwell's field strength: in this route it is a two-form potential whose field strength is dual to the magnetic current, and its massless
+limit is not Maxwell's theory, since a free massless two-form has one degree of freedom and Maxwell's field two. Maxwell's field belongs to
+the first route: on a region where the clock is constant the full theory is the completed form of \cref{ch:curl}, whose sector $\Pi=0$ is
+Maxwell's, while stopping the clock in the temporal half does not give Maxwell's theory.

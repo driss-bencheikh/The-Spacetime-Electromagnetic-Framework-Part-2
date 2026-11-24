@@ -1,0 +1,25 @@
+PASS ax-1: so(3)_+ and the algebra with e1 -> Omega are antisymmetric, close as su(2), share J/2 and have Casimir -3/4 on S
+PASS ax-2: of so(3)_+ only J commutes with the interior Lorentz algebra; the replaced algebra commutes with all of it
+PASS ax-3: so(3)_+ and Lorentz generate an algebra of dimension 15 = 15 = dim so(3,3); the replaced algebra and Lorentz one of dimension 9 = 9
+PASS ax-4: the replaced algebra keeps the four kinetic forms K^mu; of so(3)_+ only J does
+PASS ax-5: so(3)_+ keeps the mass form T; of the replaced algebra only J does
+PASS ax-6: for a rotor U of Spin(V^+): U (n.e) U^-1 = (Rn).e with R a rotation, U^T K^a(Rn) U = K^a(n) and U^T T U = T: the Dirac data are covariant once the clock is a field
+PASS ax-7: Part I, Prop. 9.53(i): Y^T K^a + K^a Y = 2 Y(gamma^0) gamma^a with Y(gamma^0) = beta e3 - gamma e2: the breaking is the motion of the clock
+PASS ax-8: the commutators of the two clock rotations with the boosts span the six mixed bivectors e_u e_{a+3}, u = 2,3: with them the coset is a charged four-vector of generators
+PASS ax-9: the six blades e1e2, e1e3, T, e2 w_S, e3 w_S, J w_S are antisymmetric and Lorentz invariant (the kernel space of Lemma 7.11)
+PASS ax-10: the replaced algebra maps the triple (e2 w_S, e3 w_S, T) into itself; Omega maps it onto (e1e2, e1e3, J w_S)
+PASS ax-11: squared norms of the variation of T under J/2, e3 Omega/2, e2 Omega/2, Omega/2: [0.0, 8.0, 8.0, 8.0]
+PASS ax-12: the commutant of Lorentz and the replaced algebra on S has dimension 2 = 2: S is one irreducible module of complex type, one Weyl doublet
+PASS ax-13: g = P_+ + J P_- is orthogonal, and g maps the rotations of V^+ about (e1, e2, e3) to +-(J/2, e3 Omega/2, Omega e2/2): the algebras agree, g so(3)_+ g^-1 = g_1, with the axes e2, e3 interchanged relative to sigma (ax-25)
+PASS ax-14: g e1 g^-1 = Gamma, g e2 g^-1 = -e3, g e3 g^-1 = e2 and g T g^-1 = -Omega: the clock goes to the chirality and the temporal volume to minus the pseudoscalar; g is the rule e1 -> Gamma followed by a quarter turn of the surplus pair
+PASS ax-15: (Gamma, e2, e3) are anticommuting symmetric involutions commuting with Lorentz, and their rotation algebra is the replaced algebra
+PASS ax-16: for n = (1,2,2): H(n)^2 = |n|^2, H symmetric, (1 + H/|n|)/2 a projector of rank 4, commuting with the Lorentz algebra
+PASS ax-17: H(n) transforms as a vector under the group of the replaced algebra; J fixes only the poles n = +-(1,0,0)
+PASS ax-18: the mass kernel H(n) w_S is antisymmetric and Lorentz invariant, and at the pole it is +-T, the Dirac mass form
+PASS ax-19: at the pole [Q, Pi_0] = 0, and the two tangents dPi are symmetric, charged and orthogonal, with Tr dPi = 0 and Tr(dPi^2) = 2 each: the criterion of Part I, Cor. 8.53, is met
+PASS ax-20: no bivector of so(3,3) moves the chirality projector: Part I, Prop. 8.55, concerns bivector variations
+PASS ax-21: mass pattern Tr([Y, Pi_0]^2) for the components along (e1, e2, e3): [0.0, 2.0, 2.0]
+PASS ax-22: Omega^2 = -1, Omega commutes with Lorentz, Omega R_i = -B_i and Omega B_i = +R_i: Omega is the Hodge star of the two-forms of the four-plane
+PASS ax-23: the symmetric forms on the frame invariant under the Lorentz algebra of the field reading form a space of dimension 2 = 2, spanned by eta and eta G
+PASS ax-24: X_alpha = cos(alpha) e1 + sin(alpha) Gamma is a symmetric involution anticommuting with e2 and e3 for every alpha, and commutes with l_int only for cos(alpha) = 0; the symmetric elements of the commutant of l_int that anticommute with e2 and e3 are the multiples of Gamma, so the involutions among them are +-Gamma
+PASS ax-25: g e1 g^-1 = Gamma, g e2 g^-1 = -e3, g e3 g^-1 = e2, so conjugation by g is sigma followed by the quarter turn e2 -> -e3, e3 -> e2, also on the rotations: g (e3 e1/2) g^-1 = e2 Gamma/2 while sigma(e3 e1/2) = e3 Gamma/2, an independent generator; exp(-pi J/4) g is orthogonal and implements sigma exactly

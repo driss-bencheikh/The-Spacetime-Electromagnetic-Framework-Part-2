@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The Spacetime–Electromagnetic Framework, Part II. Field Dynamics, Clifford Transport and a One-Family Pati–Salam Construction"
+type: software
+version: "1.0.0"
+date-released: "2026-11-24"
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: "https://github.com/driss-bencheikh/The-Spacetime-Electromagnetic-Framework-Part-2"
+authors:
+  - family-names: Bencheikh
+    given-names: Driss
+    affiliation: "Independent Researcher"
+abstract: >-
+  Part II of The Spacetime–Electromagnetic Framework: the field dynamics of the interior shift of Part I, a Clifford transport between its two readings, and one chiral Pati–Salam family on the full spinor module of the second rung, with the analysis of the mass field and an explicit obstruction to a restricted mass relation. Preprint, with a computational verification package. Manuscript and documentation under CC BY 4.0; verification software under MIT (see LICENSE.md).
+keywords:
+  - split-signature Clifford algebras
+  - curl realisation of Maxwell evolution
+  - massive two-form fields
+  - tree unitarity
+  - Clifford transport
+  - commutants of Lorentz algebras
+  - Pati-Salam models
+  - electroweak symmetry breaking
+  - fermion mass relations
+  - vacuum alignment
+  - computer-assisted algebra
+references:
+  - type: report
+    title: "The Spacetime–Electromagnetic Framework: Mathematical Structures and Obstructions in Split-Signature Clifford Geometry"
+    authors:
+      - family-names: Bencheikh
+        given-names: Driss
+        affiliation: "Independent Researcher"
+    year: 2026
+    url: "https://github.com/driss-bencheikh/spacetime-electromagnetic-framework"
+    notes: "Part I."
+preferred-citation:
+  type: report
+  title: "The Spacetime–Electromagnetic Framework, Part II. Field Dynamics, Clifford Transport and a One-Family Pati–Salam Construction"
+  authors:
+    - family-names: Bencheikh
+      given-names: Driss
+      affiliation: "Independent Researcher"
+  status: preprint
+  version: "1.0.0"
+  year: 2026
+  notes: "Preprint."
+  url: "https://github.com/driss-bencheikh/The-Spacetime-Electromagnetic-Framework-Part-2"

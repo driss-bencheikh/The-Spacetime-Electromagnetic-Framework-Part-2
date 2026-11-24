@@ -1,0 +1,55 @@
+% Part II of the Spacetime--Electromagnetic Framework.
+% Build (from this directory): pdflatex main; bibtex main; pdflatex main; pdflatex main.
+\input{preamble}
+
+\title{\textbf{The Spacetime--Electromagnetic Framework}\\[6pt]
+\large Part II. Field Dynamics, Clifford Transport\\[2pt]
+and a One-Family Pati--Salam Construction}
+\author{Driss Bencheikh\\[2pt]\normalsize Independent Researcher}
+\date{24 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Part~I gives two inequivalent readings of the same real six-dimensional space $\R^{3,3}$, as a displacement and as an electromagnetic field
+strength, with different Lorentz actions. This Part develops the field dynamics of the interior shift, a Clifford transport between the two
+readings, and a one-family construction. Replacing the constant shift by $G\circ\curl$ recovers Maxwell evolution in the zero-current sector
+when Gauss's laws hold, and the six-component momentum becomes the pair of spatial currents. On a constant-rate background a massive two-form
+sector has positive canonical energy; coupled to a connection, its tree amplitudes grow with energy, and an $\so3$ Yang--Mills--Higgs
+completion cancels the leading growth in the fixed-angle tree amplitudes examined. The transport map, in the split Clifford algebra
+$\Cl(3n,3n)$ and for a fixed Lorentz four-plane, replaces the clock generator by the volume element of the full algebra. At $n=1$ the
+transported temporal algebra is the entire commutant of the Lorentz algebra, and left multiplication by its transported volume implements
+duality on field-strength bivectors; at general $n$, with the spectator Lorentz action, the commutant is $\Cl(3n,3n-3)$ and the transported
+rotations form $\so{3n}$. At $n=2$, gauging these rotations together with the two weak factors supplied by the spatial Clifford algebra gives
+one chiral Pati--Salam family, with a right-handed neutrino, on the full spinor module. For the chosen Standard-Model embedding the invariant
+mass kernels form one complex Majorana line; a nonzero value on it, together with the bidoublet prescribed by the transported volume, leaves
+$\su3\oplus\uu1_Q$ unbroken. A three-parameter choice of neutral Dirac kernels gives a linear relation among four signed Dirac entries. At the
+specified two-stage background, an allowed invariant quartic has a nonzero gradient transverse to this choice, computed in closed form, so the
+imposed symmetries do not enforce the relation. Vacuum alignment, mass scales and the number of light families remain open.
+
+\medskip\noindent\textbf{Keywords:} split-signature Clifford algebras; curl realisation of Maxwell evolution; massive two-form fields; tree
+unitarity; Clifford transport; commutants of Lorentz algebras; Pati--Salam models; electroweak symmetry breaking; fermion mass relations;
+vacuum alignment; computer-assisted algebra.
+\end{abstract}
+
+\tableofcontents
+
+\include{chapters/01_introduction}
+\include{chapters/02_shift_as_curl}
+\include{chapters/03_mass}
+\include{chapters/04_b_coupling}
+\include{chapters/05_quantum_status}
+\include{chapters/06_one_connection}
+\include{chapters/07_transport}
+\include{chapters/08_every_rung}
+\include{chapters/09_electroweak}
+\include{chapters/10_conclusions}
+
+\appendix
+\include{chapters/A_verification}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}

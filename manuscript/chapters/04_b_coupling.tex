@@ -1,0 +1,182 @@
+\chapter{Coupling to \texorpdfstring{$b$}{b}}
+\label{ch:bcoupling}
+
+This chapter takes the temporal half of \cref{ch:mass} as a working model and couples it to the connection $b$ of \PI{Chapter~9}. The model
+is tested in \cref{ch:quantum} and replaced in \cref{ch:connection}. At a constant rate the coupling keeps the constraint structure and the
+positive canonical matter energy of the free temporal half, and it reproduces in a field theory the pattern that \PI{Chapter~9} found on a
+worldline; with a dynamical clock the elimination of the auxiliary field can become singular (\cref{prop:clockhalf}).
+
+\section{What can be gauged}
+
+\begin{proposition}[The copy symmetry]
+\label{prop:copy}
+For one field nothing in $\so{3,3}$ commutes with $\lG$. For $n$ fields $X^a$ under a common $\lG$, the elements of $\so{3n,3n}$ that
+commute with it form an algebra of dimension $n(n-1)$, the complex orthogonal algebra $\mathfrak{so}(n,\C)$ with $G$ as the imaginary
+unit, and those that keep the two triples apart form its compact real form $\so n$.
+\checks{bc-1, bc-2, bc-12, for $n=1,2,3,4$}
+\end{proposition}
+
+\begin{proof}
+An element that commutes with the rotations $L_i$, which act on $\bB$ and on $\bE$ as the same rotation of $\R^3$, has each of its
+$3\times3$ blocks proportional to the identity, since $\R^3$ is an absolutely irreducible module of $\so3$. If it also commutes with the
+boosts $K_i=GL_i$, it commutes with $G$, because $(XG-GX)\sum_iL_i^2=0$ and $\sum_iL_i^2$ is invertible. On one copy the real $2\times2$
+matrices of blocks that commute with $G=\bigl(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\bigr)$ are $a\,\id+b\,G$, so on $n$ copies the
+commutant of $\lG$ is $\{A\otimes\id+B\otimes G:\ A,B\in M_n(\R)\}$. Since $\id$ and $G$ are $\eta$-self-adjoint, the $\eta$-adjoint of
+$A\otimes\id+B\otimes G$ is $A^\top\otimes\id+B^\top\otimes G$, and membership in $\so{3n,3n}$ requires $A$ and $B$ antisymmetric. This
+gives $A+GB$ with $A,B\in\so n$, the algebra $\mathfrak{so}(n,\C)$ of real dimension $n(n-1)$. $G$ exchanges the two triples, so the
+elements that keep them apart have $B=0$.
+\end{proof}
+
+This is the pattern stated at the head of \PI{Chapter~9}: one abelian field at two constituents, $\so3$ at three, and
+$\so4=\su2\oplus\su2$ at four. In the massive theory $b$ is then the Yang--Mills field of the copy symmetry, and the massive spin-one
+quanta are its matter.
+
+\section{The gauged temporal half}
+
+Let $b_\mu\in\so n$, $D_\mu=\partial_\mu+g\,b_\mu$ and $F_{\mu\nu}=\partial_\mu b_\nu-\partial_\nu b_\mu+g[b_\mu,b_\nu]$, with the
+electric-type and magnetic-type parts $\cE_i=F_{0i}$ and $\cB_i=\half\epsilon_{ijk}F_{jk}$, and
+\begin{equation}
+\label{eq:Lgauged}
+\begin{gathered}
+L=\sum_a\Bigl[\tfrac m2|\bk^a|^2-\tfrac m2(\rho_m^a)^2-\tfrac{m\kappa^2}2\bigl(|\bB^a|^2-|\bE^a|^2\bigr)\Bigr]+L_{\rm YM}(b),\\
+\bk=-(D_t\bB-\curl_D\bE),\qquad \rho_m=\dive_D\bB .
+\end{gathered}
+\end{equation}
+
+\begin{theorem}[Classical consistency at a constant rate]
+\label{thm:gauged}
+For $n=2$ and $n=3$:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item $L$ is invariant to first order under $\delta X=\omega X$ and $\delta b_\mu=[\omega,b_\mu]-\partial_\mu\omega/g$.
+\item $\bE$ has no velocity, and its equation is $\kappa^2\bE+\curl_D\bk=0$. In the canonical variables $(\bB,\bp)$, with $\bp=-m\bk$ by
+(iii), it is the constraint $m\kappa^2\bE=\curl_D\bp$, algebraic with the coefficient $m\kappa^2$ for every $b$: there is no critical field
+at which the constraint degenerates, and each field keeps three degrees of freedom. In velocities the same equation reads
+$(\kappa^2+\curl_D\curl_D)\bE=\curl_DD_t\bB$, a spatial differential equation.
+\item $\bp=-m\bk$ and $D_t\bk=\kappa^2\bB-\nabla_D\rho_m$: the free force law with covariant derivatives.
+\item In a prescribed connection, on solutions and up to a divergence, the canonical energy density of the matter is
+$\sum_a[\tfrac m2(|\bk^a|^2+(\rho_m^a)^2)+m\kappa^2E_6(X^a)]-g\,b_0^{ab}\,\bp^a\!\cdot\!\bB^b$. Its first part is positive, and $b_0$
+multiplies the copy charge density. For a dynamical $b$ the Yang--Mills energy of $b$ is added, with the normalisation of $L_{\rm YM}$, and
+$b_0$ becomes the multiplier of Gauss's law, whose source is the copy charge density.
+\item The field strength of $b$ induces the quantities that vanish in the free temporal half:
+$\rho_e^a=-g\ell^2\,\cB^{ab}\!\cdot\!\bk^b$ and $\bj^a=g\ell^2\,(\cE^{ab}\times\bk^b-\cB^{ab}\rho_m^b)$. They vanish for $F_b=0$; a flat
+connection is then locally a gauge transformation, while globally its holonomy and the boundary conditions still enter.
+\end{enumerate}
+\checks{bc-3, for $n=2$ and $n=3$, five parts each}
+\end{theorem}
+
+The divergences in (iv) integrate to zero for fields of finite energy on $\R^3$ that decay at infinity, or on a periodic box. With a
+dynamical connection the copy current of the matter is covariantly conserved, $D_\mu J^\mu=0$; the charges conserved in the ordinary sense
+are those of the global copy symmetry, and they include the contribution of the Yang--Mills field.
+
+\begin{proposition}[Equal rates only]
+\label{prop:equalrates}
+For $n=2$ with rates $\kappa_1\ne\kappa_2$ the copy current obeys, on solutions,
+$\partial_\mu J^\mu=-g\,m\,(\kappa_1^2-\kappa_2^2)\,\eta(X^1,X^2)$. The Yang--Mills equation requires a conserved source, so the copy
+symmetry cannot be gauged for generic matter configurations, those with $\eta(X^1,X^2)\ne0$; the vacuum $X=0$, $b=0$ is of course a
+solution. In general a generator $\omega$ of the copy symmetry preserves the mass term exactly when it commutes with
+$\mathrm{diag}(\kappa_a^2)$, so gauging all of $\so n$ requires equal squared rates.
+\checks{bc-4}
+\end{proposition}
+
+Equal squared rates do not require a common clock: the prescribed clocks $\theta_1=\kappa t$ and $\theta_2=\kappa(t\cosh a-x\sinh a)$ have
+the same squared gradient $\kappa^2$ and give the same coefficient of the mass term. We assume one clock, which enforces equal squared rates;
+with a dynamical clock this assumption also selects one common fluctuation and its coupling to the matter.
+
+\begin{proposition}[A lower bound on the frequency]
+\label{prop:edge}
+Let $b_0=0$ and let $b$ be independent of time, on $\R^3$ with fields of finite energy or on a periodic box. Then
+$\partial_t\bB=\mathcal A\bp/m$ and $\partial_t\bp=-m\,\mathcal C\bB$ with $\mathcal A=1+\ell^2\curl_D\curl_D\ge1$ and
+$\mathcal C=\kappa^2-\nabla_D\dive_D\ge\kappa^2$. Hence every normal mode has $\omega^2\ge\kappa^2$, for every strength of the field: there
+is no instability, and $b$ lowers no frequency below the rate. Whether $\kappa^2$ is the bottom of the spectrum depends on the background
+and on the space: on a periodic box, a flat connection with nontrivial holonomy shifts the momenta of a charged copy and raises the lowest
+frequency above $\kappa$.
+\end{proposition}
+
+\begin{proof}
+For an $\so n$ connection $\curl_D$ is symmetric and $\dive_D$ is minus the adjoint of $\nabla_D$, with no surface terms under the stated
+conditions; this gives the two bounds. For a normal mode $\mathcal A\mathcal C\bB=\omega^2\bB$, so $\mathcal C\bB=\omega^2\mathcal A^{-1}\bB$,
+and $\kappa^2|\bB|^2\le\langle\bB,\mathcal C\bB\rangle=\omega^2\langle\bB,\mathcal A^{-1}\bB\rangle\le\omega^2|\bB|^2$, since
+$0<\mathcal A^{-1}\le1$.
+\end{proof}
+
+\begin{proposition}[Characteristics]
+\label{prop:cone}
+Let $b$ be a smooth prescribed connection and $\kappa>0$ constant. Substituting the divergence condition into the field equation gives a
+wave equation whose principal symbol is $P(\xi)=\xi^2\,\id+N(\xi)$, with $N(\xi)$ proportional to $\kappa^{-2}e_\xi C_Fe_\xi$, where
+$e_\xi=\xi\wedge$ and $C_F$ is the algebraic contraction with the field strength of $b$ from three-forms to one-forms. Then $N^2=0$, so
+$\det P=(\xi^2)^{6n}$ for every background, and the characteristic surfaces are the light cones. $N$ vanishes for $F_b=0$ and is nonzero
+in general, and where $N\ne0$ the principal symbol is not diagonalisable. This identifies the characteristic cone of this reduction;
+well-posedness of the coupled evolution is not established.
+\checks{bc-5, numerically on 24 random backgrounds with nonzero field strength for $n=2,3$, and for $F_b=0$}
+\end{proposition}
+
+\begin{proof}
+The field equation is $\delta_Dd_DX=\kappa^2X$, with $d_D$ and $\delta_D$ the covariant exterior derivative and codifferential. Since
+$\delta_D\delta_D$ is algebraic, given by the curvature, applying $\delta_D$ gives the divergence condition $\kappa^2\delta_DX=C_F(d_DX)$.
+Adding $d_D\delta_DX$ to the field equation gives $(\delta_Dd_D+d_D\delta_D)X-\kappa^{-2}d_DC_F(d_DX)=\kappa^2X$, whose first operator has
+the principal symbol $\xi^2\,\id$ and whose second has a principal symbol proportional to $\kappa^{-2}e_\xi C_Fe_\xi$. Its square contains
+$e_\xi e_\xi=0$. A matrix $\xi^2\,\id+N$ with $N^2=0$ has the single eigenvalue $\xi^2$, of multiplicity $6n$.
+\end{proof}
+
+For the clock in the temporal half we use, with one field and $b=0$, the action
+\begin{equation}
+\label{eq:LthetaB}
+L_{\theta B}=\tfrac m2\bigl(|\bk|^2-\rho_m^2\bigr)+\half\bigl(I_0-m\,\eta(X,X)\bigr)(\partial\theta)^2 ,
+\end{equation}
+the temporal half with $\kappa^2$ replaced by $(\partial\theta)^2$, together with the kinetic term of the clock. The full clock action of
+\cref{thm:clock} also contains $-m\,\partial_\mu\theta\,\partial^\mu(\bE\cdot\bB)$, which contributes to the equation of a general clock; the
+temporal model adopted here omits it.
+
+\begin{proposition}[The clock in the temporal half]
+\label{prop:clockhalf}
+Consider \cref{eq:LthetaB}, with $s=(\partial\theta)^2$. The equation of $\bE$ is $ms\bE=\curl\bp$, with $\bp=-m\bk$.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item For a prescribed clock, $\bE=\curl\bp/(ms)$ is algebraic where $s\ne0$ and degenerate where $s=0$, which includes null gradients as
+well as a vanishing one; a spacelike gradient permits the division but not the positivity of (iii).
+\item For a dynamical clock, $\theta_t=p_\theta/C$ depends on $\bE$ through $C=I_0-m|\bB|^2+m|\bE|^2$, and at fixed canonical data the
+Jacobian of the constraint in $\bE$ is $m\bigl(s\,\id-(4m\theta_t^2/C)\,\bE\bE^\top\bigr)$. At $\bB=0$, $\nabla\theta=0$, $\theta_t\ne0$
+and $|\bE|^2=I_0/(3m)$ its eigenvalue along $\bE$ vanishes although $s=\theta_t^2>0$ and $C=4I_0/3>0$: the elimination of $\bE$ is regular
+only where this Jacobian is invertible.
+\item The equation of $\theta$ is $\partial_\mu[(I_0-m\,\eta(X,X))\,\partial^\mu\theta]=0$, the clock momentum is
+$p_\theta=(I_0-m\,\eta(X,X))\,\partial_t\theta$, and on the constraint surface, up to the divergence $\dive(\bE\times\bp)$, the canonical
+energy density is
+\[
+\frac{|\bp|^2}{2m}+\tfrac m2\rho_m^2+\half\bigl(I_0-m\,\eta(X,X)\bigr)\bigl(\theta_t^2+|\nabla\theta|^2\bigr)+m\,(\partial\theta)^2|\bE|^2 ,
+\]
+positive when $I_0>m\,\eta(X,X)$ and $s>0$.
+\item For the prescribed clock $\theta=\kappa t$ this is the temporal half. For a dynamical clock that background requires
+$\kappa\,\partial_t\eta(X,X)=0$, which the uniform solution $\bE=0$, $\bB=(b\cos\kappa t,0,0)$ of the temporal half violates.
+\end{enumerate}
+\checks{bc-6, bc-7, bc-8, bc-9, bc-10, bc-11}
+\end{proposition}
+
+\section{Relation to Part~I, Chapter~9}
+
+\PI{Chapter~9} studies a connection on a worldline, and its conclusions have counterparts here: statements of the same kind in another
+setting, not derivations of one from the other. On the worldline the binding frequency never comes from a connection; here the mass comes
+from the clock and not from $b$ (\cref{prop:clockhalf}). A connection changes no rate there; here $\omega\ge\kappa$ in every static
+magnetic-type $b$ (\cref{prop:edge}). A connection is removable between equal rates and not between unequal ones there; here there is a
+gauge field between equal rates and no consistent gauging between unequal ones for generic matter (\cref{prop:equalrates}). A compact field
+moves quanta and keeps their number there; here $\so n$ is compact, and the copy current is covariantly conserved (\cref{thm:gauged}). And
+isospin one at two and three constituents, with doublets from four, corresponds to $\so2$, $\so3$ and $\so4=\su2\oplus\su2$
+(\cref{prop:copy}).
+
+\section{Conditions of the model}
+
+The model rests on three conditions. \emph{One clock for all fields}, which enforces the equal squared rates of \cref{prop:equalrates}:
+this is the ``several constituents and one rotor'' of \PI{Prop.~4.33}. \emph{The clock is timelike everywhere}, $(\partial\theta)^2>0$
+(\cref{prop:clockhalf}): where $(\partial\theta)^2=0$ the equation of $\bE$ degenerates; with a dynamical clock the elimination of $\bE$
+needs in addition the Jacobian condition of \cref{prop:clockhalf}(ii). \emph{The clock inertia is positive}, $C=I_0-m\,\eta(X,X)>0$. This alone does not make the rate nearly constant: in the homogeneous
+temporal model the rotor charge $h$ is conserved and $\dot\theta=h/(I_0-m|\bB|^2)$, so $\bB=0$ and $m|\bB|^2=I_0/2$ give rates in the ratio
+one to two. Approximating a dynamical clock by a prescribed constant rate requires in addition small matter-induced variations of the rate
+over the scales studied, $m|\bB|^2/I_0\ll1$ along the motion in the homogeneous model, as the multiscale requirement of \PI{Cor.~4.30}
+does with its small parameter; an inhomogeneous approximation also needs control of the gradients.
+
+On an open region with a constant clock and a flat connection the temporal half becomes a free massless two-form, with one degree of
+freedom. For a curved prescribed connection the would-be gauge transformation $\delta X=d_D\Lambda$ changes $d_DX$ by $g\,F_b\wedge\Lambda$
+(\cref{prop:stueck}), so the free count does not carry over, and a constraint analysis that we do not make would be required. Not settled
+here are strict well-posedness, backgrounds of electric type, the spectrum in a uniform field, and the Yang--Mills equation itself, of which
+only the conservation of the source was checked. Two fields give an abelian $b$, so the strong-coupling scale of a non-abelian connection,
+which \PI{Conjecture~9.17} invokes, is not available there, and $\so3$ is the first non-abelian case. An abelian theory with matter can still
+generate a scale by dimensional transmutation, as scalar electrodynamics does \cite{ColemanWeinberg73}; the mechanism of the conjecture is
+the non-abelian one.

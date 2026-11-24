@@ -1,0 +1,49 @@
+\chapter{Verification and code}
+\label{app:verification}
+
+\section{The scripts}
+
+The statements that close with a line \emph{Checks} are tested by sixteen Python scripts, one or more for each of
+\cref{ch:curl,ch:mass,ch:bcoupling,ch:quantum,ch:connection,ch:hyp,ch:rungs,ch:ew}, with four helper modules: \chk{p2common.py} (the
+generators, the tower and the reporting functions), \chk{p2fields.py} (symbolic vector calculus and Euler--Lagrange expressions),
+\chk{p2amplitudes.py} (tree amplitudes) and \chk{p2rung2.py} (the gauge algebra, the mass field and the vacuum directions of the second rung).
+Each script prints one line \chk{PASS <id>: <claim>} or \chk{FAIL <id>: <claim>} for each check and exits with status $0$ only if all pass,
+as the scripts of Part~I do. The matrices are those of \PI{eq.~(1.1)} in the convention of \PI{Appendix~A}, with
+$\epsilon=\bigl(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\bigr)$, extended to the tower. The runner \chk{run\_all.py} runs every script in
+its own process and writes the output of each, a summary and the environment.
+
+The prefix of a check names its subject: \chk{sc} the shift as curl, \chk{ma} the massive theory, \chk{bc} the coupling to $b$, \chk{qs} the
+quantum status, \chk{co} the completion, \chk{ax}, \chk{gm}, \chk{mf} and \chk{ca} the first constituent, \chk{er}, \chk{sr}, \chk{cf},
+\chk{mr}, \chk{ps} and \chk{fm} the tower, and \chk{ew}, \chk{pt} and \chk{ms} the electroweak stage. A label with $n$ in place of the rung
+stands for the same check at $n=1,2,3$: \chk{cf-na} is \chk{cf-1a}, \chk{cf-2a} and \chk{cf-3a}, and \chk{er-na to er-nj} is the same range
+at each rung. The checks labelled \chk{er} and \chk{sr} are made in the first form of the hypothesis (\cref{rem:firstform}), those labelled
+\chk{cf} in the form of \cref{def:hyp}. The inventory of the scripts, with their checks, the kind of each check and the chapter it serves,
+is the file \chk{verification/SCRIPTS.tsv}; the map from each numbered statement to the checks that close it is
+\chk{verification/STATEMENTS.tsv}; and the statements of Part~I that are used are listed in \chk{verification/PART1\_STATEMENTS.tsv}. The
+run recorded with this manuscript used Python~3.13.18, numpy~2.5.3, scipy~1.18.1 and sympy~1.14.0 and took about four and a half minutes on
+one machine: $312$ checks, all passing.
+
+\section{What a check establishes}
+
+A symbolic check establishes an identity between expressions in arbitrary smooth fields. A matrix check establishes an identity between
+matrices with integer or dyadic entries, held in floating point with every product exact. A numerical check establishes a number to the
+stated tolerance at the stated points, and nothing between them: the growth exponents of \cref{ch:quantum,ch:connection} are measured
+between two momenta, for the channels retained by a stated threshold; the equality of two amplitudes is tested on a stated number of random configurations, and for the amplitudes of
+\cref{prop:moment,thm:compton,thm:bounded} against closed forms at stated kinematic points; the dimensions of commutants and stabilisers are
+counted as the number of singular values below a stated relative tolerance, and the invariance of the kernels of \cref{prop:rung3s} under
+$\mathfrak s_3$ is tested on random probe vectors, which detect a nonzero commutator almost surely; weights and charges are rounded to the stated fractions after a
+bound on the rounding error, after which the arithmetic is exact; and the closed forms of \cref{thm:potential} and \cref{thm:vectors} are
+compared with the matrices at stated random or chosen vacua. Where two amplitudes are compared they are computed by different methods: by
+operator insertion in the two-form and vector theories, and by extraction of the vertices from the Lagrangian in the completed theory; the
+comparison is of magnitudes, since the external states carry different phase conventions.
+
+No check tests an interpretation, an assumption or a result taken from the literature. The statements for general $n$ of
+\cref{thm:commutant,thm:everyrung,thm:massrung} are proved in the text and checked at $n=1,2,3$; the copy symmetry of \cref{prop:copy} is
+proved in the text and checked at $n=1,2,3,4$.
+
+\section{Code availability}
+
+The scripts, the runner, the three inventories and the record of the run are part of \codearchive. From the directory \chk{verification}, the
+command \chk{python3 run\_all.py} reruns every check and writes the record, one file per script with \chk{summary.tsv} and
+\chk{environment.txt}; a single script runs alone, for instance \chk{python3 ch09b\_potential.py}. The scripts need Python~3 with numpy, scipy
+and sympy (\chk{verification/requirements.txt}).

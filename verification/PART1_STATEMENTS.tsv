@@ -1,0 +1,35 @@
+part1_statement	content_as_used
+Thm 3.3, Prop. 3.6	the field reading and l_G; the two Lorentz actions are not similar
+Prop. 3.7	Omega acts on the bivectors of the four-plane as minus the Hodge star
+Introduction, Section 3.5	the placement of E and B on the octants of the spinor module
+Prop. 3.10, Prop. 3.20	Maxwell's equations and Lagrangian on the frame
+Thm 3.15	the type rule: units, Lorentz action, energy, conjugate pairs
+Prop. 3.45, Thm 3.53	parity on the octants; Maxwell's equations on the octants
+Prop. 4.1, Thm 4.2	momentum; the factorisation alpha_- alpha_+ = d_tau^2 + kappa^2
+Thm 4.5, 4.7, 4.8	the virial identities of the positive and the split form; the binding root
+Prop. 4.9, 4.11, 4.13	drift; orbits and their energy; normalisation
+Thm 4.12, Cor. 4.15, Sections 4.2 and 4.3	the cross term is a total derivative; no ground state; the steps that use only the self-adjointness of G
+Prop. 4.24, Thm 4.26	the closure on the group S; Lorentz class against positive energy
+Cor. 4.30, Prop. 4.33	the multiscale criterion; several constituents and one rotor
+Prop. 4.49, 4.52	nothing fixes ell; the rate ladder
+Section 4.4, Section 4.5.8	the closure; the quantum status of the interior dynamics
+Section 5.2, Section 5.8	the spectator action (named after Thm 5.1); the mixed Lorentz action
+Section 7.1, 7.1.2, Prop. 7.2, 7.5	the rest rotation and the binding rotation; what the Dirac mass breaks; T on the frame
+Section 7.2	reading the rate as a mass is an added identification
+Cor. 7.10	the only mass kernel invariant under all of so(3,3) is T
+Lemma 7.11, Thm 7.12	the kernel space of the interior Lorentz algebra; the Dirac phase
+Section 7.5	the selection of Phi_0 by potentials
+Thm 7.34, Prop. 7.35, Example 7.36	the Pati-Salam vacuum and its vector masses; the electroweak stage, its fermion masses and its spectrum
+Sections 7.4 to 7.7, 7.4.3, 7.6.1, Prop. 7.43	the electroweak stage of Part I, the kernel field and its action (7.4), its normalisations; the bidoublet mass terms and their CP parity
+Thm 7.41, 7.42	no Majoron; one uneaten direction, with the anomalies of its charge
+Cor. 8.53, Prop. 8.55	the massless criterion; first-rung rigidity
+Def. 8.56, Thm 8.58	the second-rung vacuum and its family
+Section 8.5.3, Section 8.6	the spectator action at the second rung; the synthesis and what it leaves open
+Section 9.6, Thm 9.62	b on the temporal triple, c on the spatial triple; the temporal and spatial volumes of a rung
+Thm 9.12, Conjecture 9.17	zero-point cancellation; hbar kappa = Lambda_b
+Prop. 9.53, 9.54, 9.58, Remark 9.63	the temporal rotations on the Dirac data; the two su(2); the mass read by a fixed clock; the clock as Higgs vector
+Section 10.1.6	three manifolds and three generations: a time-odd invariant needs three labels
+Prop. 12.10, 12.11	kinetic terms of an adjoint scalar with an indefinite invariant form; the positive alternative
+Section 13.4	the readings meet as base and fibre
+Assumption 2.16, eq. (1.1), Appendix A	the clock; the generators and their convention
+Section I.3, Chapter 15	the AI-assisted method

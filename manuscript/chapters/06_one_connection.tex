@@ -1,0 +1,117 @@
+\chapter{One connection}
+\label{ch:connection}
+
+Following \cref{sec:needs}, we take the massive pair and $b$ to be components of one connection, in the minimal orthogonal embedding. The
+smallest case is an $\so3$ Yang--Mills field $b^A_\mu$, $A=1,2,3$, with a Higgs vector $n^A$:
+\begin{equation}
+\label{eq:Lcomp}
+L=-\tfrac14F^A_{\mu\nu}F^{A\mu\nu}+\half D_\mu n\cdot D^\mu n-\tfrac\lambda4\,(n\cdot n-v^2)^2,\qquad D_\mu n=\partial_\mu n+g\,b_\mu\times n .
+\end{equation}
+In the vacuum $n=(0,0,v)$ the component $b^3$ is massless, $b^1$ and $b^2$ have the mass $M=gv$, and the length of $n$ has one massive mode
+$h$ of mass $M_h=\sqrt{2\lambda}\,v$. This is the gauge--scalar sector of the model of Georgi and Glashow \cite{GeorgiGlashowPRL72}, an $\so3$
+model with an adjoint Higgs field, with the mechanism of \cite{EnglertBrout64,Higgs64}. We write it in the frame variables of Part~I and test its amplitudes; where it lives in the framework is the
+subject of \cref{ch:hyp}. Units are $\hbar=c=1$.
+
+\section{The frame form}
+
+\begin{theorem}[Three frame vectors]
+\label{thm:frame}
+For each component let $X^A=(\bB^A;\bE^A)$ be the frame vector of its field strength, $E_i=F_{0i}$ and $B_i=\half\epsilon_{ijk}F_{jk}$. Then:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item $L_{\rm YM}=-\half\sum_A\eta(X^A,X^A)$, the sum of three Maxwell Lagrangians of \PI{Prop.~3.20};
+\item the Bianchi identities are $D_t\bB^A=\curl_D\bE^A$ and $\dive_D\bB^A=0$: there is no magnetic current;
+\item the Yang--Mills equations, in electric and magnetic components, are
+\[
+\dive_D\bE^A=\rho^A,\qquad D_t\bE^A=-\curl_D\bB^A-\bj^A,\qquad (\rho,\bj)^A=\bigl(-g\,(n\times D_tn)^A,\ g\,(n\times D_in)^A\bigr):
+\]
+the system of \PI{Prop.~3.10} with covariant derivatives, which carry the non-abelian self-interaction, and with a current made from the
+Higgs vector;
+\item with the Higgs vector held at its vacuum value $n=(0,0,v)$ and $b$ arbitrary, $g\,(n\times D_\mu n)^A=g^2v^2\,(b^1_\mu,b^2_\mu,0)$, so the
+broken components of the source of (iii) satisfy $J^\mu_H=(\rho,\bj)^\mu=-M^2b^\mu_\perp$: a relation of London's form, exact in this gauge.
+With the radial mode in unitary gauge, $n=(0,0,v+h)$, $M^2$ becomes $g^2(v+h)^2$.
+\end{enumerate}
+\checks{co-1, co-2, co-3, co-4}
+\end{theorem}
+
+\begin{proposition}[What the completion adds to the working model]
+\label{prop:whatadds}
+With $W=(b^1+ib^2)/\sqrt2$, $a=b^3$, $f=da$ and $D=\partial+iga$,
+\[
+-\tfrac14F^A\!\cdot\!F^A=-\tfrac14f^2-\half|D\wedge W|^2+i\,g\,f^{\mu\nu}\bar W_\mu W_\nu
+-\tfrac{g^2}2\bigl[(\bar W\!\cdot\!W)^2-(W\!\cdot\!W)(\bar W\!\cdot\!\bar W)\bigr];
+\]
+for the conjugate field $(b^1-ib^2)/\sqrt2$ the signs of $g$ in $D$ and in the moment term are both reversed. These are minimal coupling of
+$W$ to $a$, the magnetic-moment term with coefficient exactly one, that is, gyromagnetic ratio two, and a quartic self-interaction. The
+working model of \cref{ch:bcoupling} contains the first of the three terms only.
+\checks{co-5}
+\end{proposition}
+
+At linear order the massive components of the connection and the massive two-form of \cref{ch:mass} describe the same free propagating
+modes in dual variables. With both fields canonically normalised the two-form is the dual curvature of the vector divided by its mass,
+$X^a=G\,F^a/M$ up to orientation; in \cref{prop:london} the potential is normalised by $X=G(dC)$ instead. \Cref{prop:whatadds} shows how the
+interactions of the two descriptions differ. The identification concerns the free spin-one description; it does not by itself match the
+numerical masses. The pole mass of \cref{ch:mass,ch:bcoupling,ch:quantum} equals that of the completion only if $\kappa=g\sqrt Z\,v$, which
+with the assignment $v=\kappa$ of \cref{ch:hyp} requires $g\sqrt Z=1$, a choice that \cref{sec:coupled} leaves free.
+
+\section{Amplitudes}
+
+\begin{theorem}[High-energy behaviour at fixed angle]
+\label{thm:bounded}
+Write $p=P/M$ for the centre-of-mass momentum in units of $M=gv$, and $r=M_h^2/M^2$.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item The amplitude for a massive quantum scattering off the massless component, computed from \cref{eq:Lcomp} with the vertices extracted
+from the Lagrangian, has the cubic and quartic vertices of the vector with unit moment term (\cref{prop:whatadds}), so its growth cancels
+at each fixed angle $0<\vartheta<\pi$, with the angle-dependent limit and the backward exception of \cref{prop:moment}; as a numerical
+cross-check, its magnitude equals that of the vector amplitude of \cref{prop:moment}, with relative difference below $10^{-8}$, on twelve
+random configurations.
+\item For $W^+W^-\to W^+W^-$ with all four states longitudinal, at $90^\circ$, away from the pole of the radial exchange,
+\begin{equation}
+\label{eq:LLLL}
+\frac{\mathcal M}{g^2}=2p^2+3-\frac{4(2p^2+1)^2}{4(p^2+1)-r}+\frac{4p^4}{2p^2+r} .
+\end{equation}
+In the gauge part the contact term is $-(p^2+1)(3p^2+1)$, the neutral exchange in the $s$ channel vanishes at this angle, and that in the
+$t$ channel is $3p^4+6p^2+4$; their sum $2p^2+3$ is the amplitude with a Higgs vector of fixed length, $\mathcal M=s/(2v^2)+g^2$, which grows
+linearly in $s$. The last two terms of \cref{eq:LLLL} are the exchange of the radial mode in the $s$ and $t$ channels; with them $\mathcal M$
+tends to $g^2(3-2r)=3g^2-2M_h^2/v^2$ as $p\to\infty$ for every fixed $r$. At $r=4$, $\mathcal M/g^2=-5+7/p^2-16/p^4+O(p^{-6})$, so its
+magnitude approaches the limit from below: the positive powers of the momentum cancel.
+\item At $p=100$ and $r=4$ the four contributions are $-300040001$, $+300060004$, $-40004.0001$ and $+19996.0008$, in units of $g^2$, and
+their sum is $-4.9993\,g^2$: terms of order $10^8$ cancel to leave the limit of (ii).
+\item Over all $81$ helicity combinations at $90^\circ$ with $M_h=2M$ the largest magnitude at $P=300M$ is $5.000\,g^2$ to the displayed
+precision; among the channels retained by the numerical threshold the largest exponent fitted between $P=100M$ and $300M$ is about
+$10^{-4}$.
+\end{enumerate}
+\checks{co-6, co-7, co-8, co-9, co-10, co-12, co-13; (ii) the closed form against the vertex extraction at $24$ points and its limit at five
+values of $(g,v,\lambda)$; (iv) numerically, at $90^\circ$}
+\end{theorem}
+
+Two conditions follow with the criterion $|\mathcal M|<8\pi$. With a Higgs vector of fixed length the leading term $s/(2v^2)$ reaches $8\pi$
+at $\sqrt s\approx\sqrt{16\pi}\,v\approx7.1\,v$, of the same order as the working model; within the completion studied, then, the length of the Higgs vector must be a field. With the
+radial mode, the $90^\circ$ limit $|3g^2-2M_h^2/v^2|<8\pi$ requires $M_h<\sqrt{(8\pi+3g^2)/2}\;v$, which is $3.75\,v$ at $g=1$ and
+$\sqrt{4\pi}\,v\approx3.54\,v$ as $g\to0$, and, when $3g^2>8\pi$, also $M_h^2>(3g^2-8\pi)v^2/2$. These are fixed-angle estimates with our
+perturbativity criterion. Lee, Quigg and Thacker derive a partial-wave bound in the electroweak theory \cite{LeeQuiggThacker77}; the
+analogous bound here would need normalised partial waves in the coupled channels and a treatment of the massless exchange in the forward
+direction. The theory is renormalisable \cite{tHooft71}.
+
+A Higgs vector that points radially, $n=\mathbf x/r$ with $b=0$, gives the field strength of the unbroken charge, the tensor of 't~Hooft
+\cite{tHooft74,Polyakov74}, a flux of magnitude $4\pi/g$ through every sphere; with the frame variable $\bB=-\Btext$ and the outward normal
+the flux of $\bB$ is $-4\pi/g$. For the global group $SU(2)$, which admits a doublet of charge $g/2$, this is one Dirac unit \cite{Dirac31}, and a probe of charge $g$ measures two.
+The configuration is a test of the flux, not a monopole solution: with $b=0$ and fixed length $|\partial_in|^2=2/r^2$, so the gradient
+energy in a ball grows linearly with its radius; a smooth monopole of finite energy needs a compensating gauge field and a profile at its
+core.
+\checks{co-11}
+
+\section{What the completion changes}
+
+Three things change. The mass of the pair is $M=gv$, with $v$ the length of the Higgs vector and its kinetic term normalised as in
+\cref{eq:Lcomp}; with a coefficient $Z$ in front of that term, $M=g\sqrt Z\,v$ (\cref{prop:coupled}). Here $v$ is a parameter. Under the
+assignment (A3) of \cref{ch:hyp} it is identified with the rate, $v=\kappa$, and the clock angle $\theta$ of \cref{thm:clock} then
+corresponds to the angle of the rotation generated by the generator of mass (\cref{thm:massgen}). The correspondence is kinematic: the
+action \cref{eq:Lcomp} contains no $\theta$, and a dynamical identification would need an additional coupling or field equation.
+
+Next, each component of the curvature is a frame vector, and its Lagrangian and field equations are those of \PI{Props.~3.10 and~3.20}
+with covariant derivatives (\cref{thm:frame}). \PI{Section~8.6} leaves open the link between the field-strength reading and the internal
+connection; here the link takes this form for the algebra of this chapter. It is an identification, not a derivation: the Yang--Mills term,
+the kinetic term and the potential of the Higgs vector are assumed.
+
+Finally, the magnetic current disappears. In \cref{ch:mass} the field strength of the two-form was dual to the magnetic current, while in
+the completed theory the Bianchi identity removes it, and the current that remains is the electric one, made from the Higgs vector.

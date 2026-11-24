@@ -1,0 +1,24 @@
+PASS ma-1: L_full = (m/2) eta(d_mu X, d^mu X) - (m kappa^2/2) eta(X, X): Euler-Lagrange = -m eta (Box + kappa^2) X
+PASS ma-2: L_full = L_A + L_B + (m kappa^2/2) eta(X, X), with L_B = -(m/2) J_m.J_m - (m kappa^2/2) eta(X,X) and L_A = +(m/2) J_e.J_e - (m kappa^2/2) eta(X,X)
+PASS ma-3: temporal half: div(EL_E) = m kappa^2 rho_e and d_t(EL_E) - curl(EL_B) = -m kappa^2 j: the electric charge and current vanish on solutions
+PASS ma-4: temporal half: E has no velocity and EL_E/m = kappa^2 E + curl k: E is auxiliary, E = -curl k / kappa^2
+PASS ma-5: temporal half: EL_B/m = d_t k + grad rho_m - kappa^2 B (force law d_t k = kappa^2 B - grad rho_m), and -EL_B/m = (Box + kappa^2)B + curl j
+PASS ma-6: temporal half: p = dL/d(d_t B) = -m k, and the canonical energy density is (m/2)(|k|^2 + rho_m^2) + m kappa^2 E_6 + div(E x p) - E.EL_E: positive on solutions
+PASS ma-7: spatial half: rho_m = 0 on solutions, p = dL/d(d_t E) = m j, and the energy density is -[(m/2)(|j|^2 + rho_e^2) + m kappa^2 E_6] up to a divergence and a multiple of EL_B
+PASS ma-8: the binding root exchanges the halves with a sign: L_B(GX) = -L_A(X), GX = (-E; B)
+PASS ma-9: temporal half = m[(1/12) H_{mnr}H^{mnr} - (kappa^2/4) X_{mn}X^{mn}] with X_{0i} = E_i, X_{ij} = eps_ijk B_k, H = dX: a massive two-form (Kalb-Ramond) field
+PASS ma-10: with X = G(dC), B = -d_t C + grad C0, E = curl C: the electric current and charge vanish identically, k = Box C - grad(d_t C0 - div C), rho_m = Lap C0 - d_t div C
+PASS ma-11: transverse and longitudinal waves (omega^2 = k^2 + kappa^2) solve the temporal half with C = -k/kappa^2, C0 = rho_m/kappa^2 (dual London relation); transverse: E perpendicular to B, |E|/|B| = k/omega, mean energy density m kappa^2 omega^2/2; longitudinal: E = 0, mean energy density m kappa^4/2
+PASS ma-12: -Box X = (curl j; d_t j + grad rho_e) + (d_t k + grad rho_m; -curl k), the first part without magnetic current, the second without electric current: on (Box + kappa^2)X = 0, X = X_a + X_b
+PASS ma-13: a wave of the temporal half and its G-image (a wave of the spatial half) carry mean energy densities +m kappa^2 omega^2/2 and -m kappa^2 omega^2/2 in the full theory
+PASS ma-14: uniform fields: a duality rotation z = e^{-i kappa t} z_0 has energy 0 in the full theory; B = cos(kappa t), E = 0 (a rest state of the temporal half, Part I, Prop. 4.11(iv)) has energy density m kappa^2/2
+PASS ma-15: with potentials (B = curl a, E = d_t a - grad A0) the magnetic current and charge vanish identically; on a transverse wave of the spatial half j = kappa^2 a (London relation, a = j/kappa^2)
+PASS ma-16: the same density varied in the potentials: L_M + (l^2/2) J_e.J_e has Euler-Lagrange expression (1 + l^2 Box)(rho_e, j): a massless branch and a massive one (Bopp-Podolsky form)
+PASS ma-17: the rotation-invariant matrices anticommuting with e1, e2, e3 form a space of dimension 2 = 2, alpha(-1)^N + beta T(-1)^N, with square (alpha^2 + beta^2) >= 0: Box + kappa^2 has no rotation-covariant first-order factor on the octants
+PASS ma-18: (m/2) eta(D_mu X, D^mu X) with D_mu = d_mu + (d_mu theta) G equals (m/2) eta(dX, dX) - m d_mu theta d^mu(E.B) - (m/2)(d theta)^2 eta(X, X): kappa^2 = (d theta)^2
+PASS ma-19: clamped clock theta = kappa t: Euler-Lagrange in X is -m eta (Box + kappa^2) X
+PASS ma-20: on fields that do not depend on x the clock Lagrangian is (I0/2) theta_t^2 + (m/2) eta(u, u), u = X_t + theta_t G X: the closure of Part I, Prop. 4.24
+PASS ma-21: the theta equation is the conservation law d_mu[(I0 - m eta(X, X)) d^mu theta - m d^mu(E.B)] = 0
+PASS ma-22: for a prescribed clock theta(x), the Euler-Lagrange equation of X is (Box + d theta.d theta) X + (Box theta) G X = 0; theta = t^2/2 has d theta = 0 at t = 0 and Box theta = 1, so pointwise vanishing of the clock gradient does not give the massless equation
+PASS ma-23: at theta = kappa t the clock equation of the full action is kappa d_t eta(X, X) + Box(E.B) = 0: the background theta = kappa t solves the joint system only for matter fields that satisfy it
+PASS ma-24: the free equations (Box + kappa^2)X = 0 conserve e = (1/2)(|d_t X|^2 + |grad X|^2 + kappa^2|X|^2) (Euclidean norm on the six components): d_t e + div S = d_t X.(Box + kappa^2)X with S_i = -d_t X.d_i X; e(GX) = e(X), so e is positive and duality invariant, while the canonical energy of L_full is m times the same expression with the sign of eta, negative on the E components

@@ -1,0 +1,200 @@
+\chapter{Quantum status}
+\label{ch:quantum}
+
+The working model of this chapter is the temporal half of \cref{ch:mass}, the Yang--Mills field $b$ of its copy symmetry, and the clock
+$\theta$. Units are $\hbar=c=1$. Fields are normalised canonically, so that $m$ drops out, and $I_0=f^2$ with $f$ an energy. We expand
+about the classical solution $X=b_\mu=0$, $\bar\theta=\kappa t$. The free matter spectrum and the Compton amplitude of order $g^2$ use
+this background with a prescribed clock. In \cref{sec:clockamp} the clock is dynamical and $\pi=f(\theta-\bar\theta)$ is its canonically
+normalised fluctuation, to which the action at $X=0$ gives the massless kinetic term; \cref{prop:ladder} quantises the homogeneous
+dynamical clock at fixed rotor charge. Amplitudes are computed at tree level from the Lagrangian.
+
+The criterion $|\mathcal M|<8\pi$, by which a growing amplitude is turned into an energy, is an order-of-magnitude criterion: it locates
+where a fixed-angle tree amplitude reaches a conventional value. It is not a partial-wave unitarity bound, which would need an angular
+projection in the coupled helicity channels.
+
+The free temporal half is a quantum theory with a positive-norm Fock space. With $b$ or with the clock its tree amplitudes grow with
+energy: at fixed angle they reach $8\pi$ at about $5\kappa/g$ with $b$ and at about $1.9\,(\kappa^2I_0)^{1/4}$ with the clock. A growing
+tree amplitude marks a limitation of the weakly coupled model as written, which must then be read as an effective theory; it does not
+settle whether a nonperturbative completion exists. In this model the clock does not remove the growth.
+
+\section{The free theory}
+
+\begin{proposition}[Poles and norms]
+\label{prop:poles}
+For each of the three theories the propagator, the inverse of the quadratic form in Fourier space, has poles only at
+$\omega^2=k^2+\kappa^2$, where the quadratic form has zero eigenvalues. The residue there has rank three with all directions positive for
+the temporal half, rank three with all directions negative for the spatial half, and rank six with three of each sign for the full theory.
+Along a ray of fixed non-null direction, with $|p^2|\to\infty$, the propagator of the full theory falls off like $1/p^2$, while that of the
+temporal half tends to a nonzero matrix of rank three and of size $1/(m\kappa^2)$. On the light cone $\omega=k$ the propagator of the full
+theory is the constant $-2\eta/(m\kappa^2)$, and that of the temporal half grows like $k^2/(m\kappa^4)$. Of the three polarisations at
+momentum $k$, the one with $\bB$ along $\mathbf k$ stays of size one, and the two with $\bB$ across $\mathbf k$ grow like $k/\kappa$.
+\checks{qs-1, qs-2, qs-3, qs-4, qs-22}
+\end{proposition}
+
+\begin{proof}[Proof of the signs]
+For $\mathbf k$ along $e_3$ the residue of the temporal half in the variable $\omega^2-|\mathbf k|^2-\kappa^2$ is
+$(2/m)\sum_hv_hv_h^\top$, where $v_h$ are the three polarisations, normalised by $\eta(v_h,v_h)=1$; it is therefore positive semidefinite of
+rank three. A rotation gives the other directions of $\mathbf k$, and the mirror map of \cref{prop:mirror} reverses the sign for the spatial
+half. The residue of the full theory is $2\eta/m$.
+\end{proof}
+
+The temporal half therefore has three positive-norm polarisations and nothing else, and with the positive energy \cref{eq:energyB} it has a
+Fock space with a ground state: the obstruction of \PI{Cor.~4.15} belongs to the full theory, where the spatial oscillators are present.
+The price is the usual one. Removing the negative-norm half leaves a propagator that does not fall off along non-null rays; the full theory
+has the opposite pair of properties.
+
+\section{With the connection}
+
+Consider two fields, one abelian $b$ and the coupling $g$; the two fields form one complex two-form of charge $g$, and
+$M=\kappa$ is its mass.
+
+\begin{theorem}[The amplitude $X+b\to X+b$]
+\label{thm:compton}
+At second order in $g$:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item the amplitude satisfies the Ward identity at the sampled point, to $10^{-10}$, and tends to the Thomson value
+$-2g^2(\varepsilon_1\!\cdot\!\varepsilon_2^*)(\beta_2^*\!\cdot\!\beta_1)$ at low energy;
+\item at $90^\circ$ in the centre-of-mass frame, with momentum $P$, the largest helicity amplitude grows as $|\mathcal M|\simeq g^2(P/\kappa)^2$,
+with the fitted coefficient $1.000$ and exponent $2.000$ between $P=300\kappa$ and $1000\kappa$. Longitudinal matter states grow as well:
+with both matter helicities zero and opposite helicities of $b$,
+\[
+\frac{|\mathcal M|}{g^2}=\frac{(v^2-1)(2v^4+7v^2-3)}{8v^2(v^2+1)},\qquad v=\frac{E+P}{\kappa},\quad E=\sqrt{\kappa^2+P^2},
+\]
+which grows like $(P/\kappa)^2$ with the same coefficient;
+\item for a scalar of the same charge and mass, put $D=(s-M^2)(M^2-u)>0$. The two independent helicity amplitudes have the magnitudes
+$2g^2(M^4-su)/D$ and $2g^2(-M^2t)/D$, which are nonnegative and add up to $2g^2$: $|\mathcal M|\le2g^2$ at all energies and angles;
+\item on forty random momenta, angles and polarisations the amplitude equals that of a vector field with minimal coupling, with relative
+difference below $10^{-8}$.
+\end{enumerate}
+\checks{qs-5, qs-6, qs-7, qs-20, qs-8, qs-21, qs-9; (ii) and (iii) numerically, the closed forms at sampled points}
+\end{theorem}
+
+The $90^\circ$ amplitude reaches $8\pi$ at $P\approx\sqrt{8\pi}\,\kappa/g\approx5\kappa/g$, a fixed-angle estimate of the scale at which
+perturbation theory fails. The equality (iv) has an exact reason: $W=\star(D\wedge X)/\kappa$ obeys the minimally coupled Proca equation,
+because no two covariant derivatives are commuted in the map. In the variables of \cref{ch:mass}, $W$ is $\ell$ times the magnetic
+four-current, and the gyromagnetic ratio is one \cite{LeeYang62,Holstein2006}.
+
+\begin{proposition}[What removes the growth in this amplitude]
+\label{prop:moment}
+Add the magnetic-moment term $i\,g\,c\,F^{\mu\nu}\bar W_\mu W_\nu$ to the vector form, of mass $M=\kappa$.
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item At $90^\circ$: for $c=0$ the largest amplitude grows with exponent two; for $c=+1$, gyromagnetic ratio two, it is bounded at this
+angle and tends to $4g^2$; the longitudinal channel of \cref{thm:compton}(ii), with opposite helicities of $b$, vanishes at this angle, and
+the longitudinal channels with equal helicities of $b$ have the magnitude $2g^2P/E$, which tends to $2g^2$; for $c=-1$ the largest amplitude grows
+with the same exponent as for $c=0$ and four times its coefficient.
+\item For $c=+1$ the growth cancels at each fixed angle $0<\vartheta<\pi$, with a limit that depends on the angle. The amplitude with all
+helicities $+1$, for which Bjerrum-Bohr, Holstein, Plant\'e and Vanhove give the spin-one helicity amplitudes
+\cite[Appendix~A]{BjerrumBohr2015}, has the magnitude $2[(s-M^2)^2+M^2t]^2/\bigl((s-M^2)^3(M^2-u)\bigr)\,g^2$, and at fixed $\vartheta$ it tends to
+$4g^2/(1+\cos\vartheta)$: $4g^2$ at $90^\circ$, $8g^2$ at $120^\circ$. At $s=100M^2$ and $120^\circ$ it is already $7.651\,g^2$, so no bound
+$4g^2$ holds at all angles.
+\item The backward direction is exceptional. At $\vartheta=\pi$, where $t=-(s-M^2)^2/s$ and $u=M^4/s$, the same expression is
+$2(s-M^2)^2g^2/(sM^2)$, which grows like $2s/M^2$: $800$, $8\times10^4$ and $8\times10^6$ times $g^2$ at $P/M=10$, $100$ and $1000$. The
+limit at fixed angle cannot be taken at $\vartheta=\pi$; the growth is a backward peak of angular width of order $M/\sqrt s$.
+\end{enumerate}
+\checks{qs-10, qs-17, qs-23, qs-19, numerically, (ii) and (iii) against the closed form}
+\end{proposition}
+
+The value two is the one that tree unitarity at fixed angle requires \cite{FerraraPorratiTelegdi92} and the one that a Yang--Mills
+embedding supplies (\cref{prop:whatadds}).
+
+\begin{proposition}[Several fields]
+\label{prop:stueck}
+For $\so3$ and a copy-vector-valued one-form $A$, $D\wedge(D\wedge A)=g\,F_b\wedge A$. So the substitution $X\to X+D\wedge A/\kappa$, which
+restores the two-form gauge symmetry, changes $H=D\wedge X$ by $(g/\kappa)F_b\wedge A$ and exposes the interactions
+$(g/\kappa)(D\wedge X)\cdot(F_b\wedge A)$ and $(g/\kappa)^2(F_b\wedge A)^2$, whose scale is again $\kappa/g$. With $Y=X+D\wedge A/\kappa$
+and the connection held fixed, the transformations $\delta X=D\wedge\Lambda$, $\delta A=-\kappa\Lambda$ leave $Y$ unchanged: this is the
+redundancy that the substitution introduces.
+\checks{qs-12, for the identity; no amplitude was computed for three fields}
+\end{proposition}
+
+\section{With the clock}
+\label{sec:clockamp}
+
+Here the clock is dynamical: $\theta=\kappa t+\pi/f$, so that $(\partial\theta)^2=\kappa^2+(2\kappa/f)\,\partial_t\pi+(\partial\pi)^2/f^2$,
+and $\pi$ is a massless field.
+
+\begin{theorem}[The amplitude $X+\pi\to X+\pi$]
+\label{thm:clockamp}
+At $90^\circ$ in the frame of the clock, label the amplitudes by the helicities $(h_{\rm in},h_{\rm out})$ of the incoming and the outgoing
+matter state. Between transverse states, $h_{\rm in},h_{\rm out}=\pm1$, the amplitudes grow as $|\mathcal M|\simeq2P^4/(\kappa^2f^2)$, with
+the fitted coefficient $2.000$ and exponent $4.000$. Between longitudinal states, $(0,0)$, the amplitude grows as $|\mathcal M|\simeq2P^2/f^2$.
+The mixed channels grow more slowly, linearly in $P$ at $\kappa=f$.
+\checks{qs-11, numerically}
+\end{theorem}
+
+The transverse amplitude reaches $8\pi$ at $P\approx(4\pi)^{1/4}\sqrt{\kappa f}\approx1.9\,(\kappa^2I_0)^{1/4}$, again a fixed-angle
+estimate. Since $I_0\kappa^2/2$ is the energy density of the clock, this is about twice the fourth root of that energy density.
+Dimensionally, it is the scale at which the fluctuation $\partial_t\pi/f$ of the rate, probed at the scale $1/P$, would be comparable to the
+rate itself, which suggests that the degenerate case of \cref{prop:clockhalf} becomes relevant there; that fluctuation, which would need a
+state, a smearing scale and an observable, is not computed. A window $\kappa\ll P\ll1.9\sqrt{\kappa f}$ exists only if $I_0\gg\kappa^2$.
+
+\begin{proposition}[The uniform sector as quantum mechanics]
+\label{prop:ladder}
+For fields that do not depend on $\mathbf x$, with the volume absorbed into the mechanical parameters $m$ and $I_0$, the reduced Hamiltonian
+is $H=|\bp|^2/2m+h^2/\bigl(2(I_0-m|\bB|^2)\bigr)$, with $h=\hbar N$ conserved, on the domain $|\bB|<\sqrt{I_0/m}$ where the inertia is
+positive. Quantise it canonically, with the flat measure in $\bB$; for a compact rotor angle $N$ is an integer. Take $N>0$ (for $N<0$
+replace $N$ by $|N|$; $N=0$ lies outside the expansion), Dirichlet conditions at $|\bB|=\sqrt{I_0/m}$, and the s-wave sector. Then $H$ is
+bounded below, and with $\kappa_N=\hbar N/I_0$, for each fixed radial level as $N\to\infty$:
+\begin{enumerate}[label=(\roman*),leftmargin=2.2em,itemsep=1pt]
+\item the levels above the rotor energy are $\hbar\kappa_N(1.5,3.5,5.5,\dots)(1+O(1/N))$;
+\item the ground state has the asymptotic expansion
+\[
+E_0(N)=\frac{\hbar^2}{I_0}\Bigl(\frac{N^2}2+\frac{3N}2+\frac{15}8+\frac{45}{32N}+O(N^{-2})\Bigr),
+\]
+and at $N=1600$ the shift of the lowest level times $N$ is $1.876$, as $15/8+45/(32N)$ gives;
+\item the ladder of \PI{Prop.~4.52}(i) holds with a zero-point term, up to a correction of order $\hbar^2/(I_0N^2)$:
+$E_0(N+1)-E_0(N)=\hbar(\kappa_N+\kappa_{N+1})/2+\tfrac32\hbar(\kappa_{N+1}-\kappa_N)+O(\hbar^2/(I_0N^2))$.
+\end{enumerate}
+\checks{qs-15, qs-16, qs-18; (ii) exactly by perturbation theory, and numerically}
+\end{proposition}
+
+In this proposition the mechanical inertia $I_0$ has absorbed the spatial volume $V$; write it $I_{\rm mech}=f^2V$ for the comparison. The
+mechanical expansion is controlled by $1/N=\hbar/(I_{\rm mech}\kappa)$, which is $1/(f^2V\kappa)$ for $\hbar=c=1$, the quantum form of the
+multiscale criterion of \PI{Cor.~4.30}. The field theory has the dimensionless ratio $\kappa^2/f^2$ at momenta of order $\kappa$, which
+corresponds to this mechanical parameter in a volume of order $\kappa^{-3}$; at large momentum the transverse clock amplitude grows as
+$P^4/(\kappa^2f^2)$ (\cref{thm:clockamp}).
+
+\begin{proposition}[What protects the relation between mass and rate]
+\label{prop:shifts}
+$D_\mu(e^{-\theta G}c)=0$ for every constant $c\in\R^{3,3}$, so the full clock-coupled theory of \cref{thm:clock} is invariant under the six
+shifts $X\to X+e^{-\theta G}c$, the frame translations of the group of \PI{Prop.~4.24}. They forbid a mass term that does not come from the
+clock. The form $\eta(X,X)$ is not invariant under them, so the mass term of the temporal half breaks them.
+\checks{qs-13, qs-14}
+\end{proposition}
+
+\section{Bearing on statements of Part~I}
+
+A quantum theory of the momentum field exists for the temporal half (\cref{prop:poles,prop:ladder}); \PI{Cor.~4.15 and Section~4.5.8}
+concern the full theory and stand. The zero-point cancellation of \PI{Thm~9.12} needs three positive and three negative oscillators at each
+frequency, and the temporal half keeps only the positive ones, so its zero-point energy does not cancel. The rate ladder of
+\PI{Prop.~4.52} survives in the mechanical model (\cref{prop:ladder}); in the field theory the clock background is a state of constant
+charge density of the shift symmetry of $\theta$, and the rate is not discrete, the spacing $\hbar/(I_0\times\text{volume})$ going to zero.
+The window $\kappa<P<5\kappa/g$ needs the coupling of $b$ to be small at the scale $\kappa$. If $\hbar\kappa=\Lambda_b$, the scale at which
+a non-abelian $b$ becomes strong, as \PI{Conjecture~9.17} proposes, a weak-coupling treatment at the scale $\kappa$ is not available, and
+the tree-level analysis of this chapter does not apply there; how strong the coupling is, and whether the massive quanta are then
+composites of $b$, would need the running and the matter content, which are not specified here. Finally, once $b$ or the clock is coupled,
+the remaining symmetries allow an electric-current kinetic term $J_e\!\cdot\!J_e$ of the spatial half. Its coefficient and sign, and the
+existence and nature of any additional pole within the range of the effective theory, require a matching or a loop calculation, which is
+not done: with one sign the term adds a pole with a negative kinetic term, with the other a tachyonic mode, and without it $\bE$ stays
+auxiliary.
+
+\section{What a completion needs}
+\label{sec:needs}
+
+In the model of this chapter the clock does not remove the growth. The amplitude with the clock grows in the channels computed
+(\cref{thm:clockamp}), and in the minimal model about $X=0$ there is no tree-level vertex coupling $\pi$ to two quanta of $b$, so the clock
+supplies no cancellation of the order-$g^2$ amplitude of \cref{thm:compton}. The growing channels there include transverse and longitudinal
+matter states (\cref{thm:compton}(ii)). These are statements about this model, not a general exclusion of scalar interactions. For one
+neutral field a vector with a coupling of the form $X\wedge F$ gives the mass \cite{CremmerScherk74,AllenBowickLahiri91}, with a constant
+mass and no clock.
+
+For charged massive spin-one particles, Llewellyn Smith gave the first argument \cite{LlewellynSmith73}, and Cornwall, Levin and
+Tiktopoulos the general result \cite{CornwallLevinTiktopoulos74}. They impose the high-energy bound on all tree amplitudes of a specified
+class of Lagrangians of scalars, spinors and vectors, with interactions of dimension at most four, at fixed nonexceptional kinematics. Under
+their hypotheses the theory is equivalent, up to field redefinitions and with their exception for masses associated with invariant abelian
+subgroups, to a spontaneously broken gauge theory, in which the massive charged vectors and $b$ are components of one connection. A bound
+in one helicity channel or at one angle, as computed here, does not by itself establish these hypotheses. For $n$ massive fields in the vector of $\so n$ a compact embedding is $\so{n+1}\supset\so n$: the adjoint of $\so{n+1}$
+decomposes into the unbroken $\so n$ and one $n$-vector, which is why it works. Other embeddings, with further generators, spectator factors
+or scalar sectors, are not excluded by this argument; we choose the minimal orthogonal one, $\so{n+1}$ broken to $\so n$. For $n=2$ it is
+$\so3$ broken to $\so2$, the pattern that \PI{Remark~9.63}(c) finds for the temporal rotations with the clock as the Higgs vector. In such a
+completion the mass is $g$ times the length of a vector field, and not the rate of $\theta$.
